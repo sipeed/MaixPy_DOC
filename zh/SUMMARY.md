@@ -108,7 +108,8 @@
 * MaixPy 例程解析
   - [MaixPy 基本例程解析]()
   - [MaixPy 视觉识别例程解析]()
-
+* MaixPy 综合例程
+  - [K210 实现人脸关键点检测教程](./example/k210_001_facepoint.md)
 
 
 -----
@@ -177,4 +178,3 @@
     - [Micropython Editor](./api_reference/application/pye.md)
     - [nes](./api_reference/application/nes.md)
     - [lvgl](./api_reference/application/lvgl.md)
-
