@@ -1,4 +1,4 @@
-SP_MOD
+SP-MOD
 ======
 
 ## SP-MOD 接口
