@@ -259,7 +259,7 @@ sensor.set_brightness(brightness)
 ```
 #### 参数
 
-* `constrast`: 摄像头亮度，范围为[-2,+2]
+* `brightness`: 摄像头亮度，范围为[-2,+2]
 
 ####  返回值
 
