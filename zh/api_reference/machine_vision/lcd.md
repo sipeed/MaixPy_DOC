@@ -5,20 +5,32 @@ lcd（屏幕显示）
 
 ## 函数
 
-### lcd.init(type=1, freq=15000000, color=lcd.BLACK)
+### lcd.init(type=1, freq=15000000, color=lcd.BLACK, invert = 0, lcd_type = 0)
 
 初始化 `LCD` 屏幕显示
 
 #### 参数
 
-* `type`： `LCD` 的类型（保留给未来使用）:
+* `type`： 设备的类型（保留给未来使用）:
   * `0`: None
   * `1`: lcd shield（默认值）
+  * `2`: Maix Cube
+  * `5`: sipeed rgb 屏转接板
 > type 是键值参数，必须在函数调用中通过写入 type= 来显式地调用
 
 * `freq`： `LCD` （实际上指 `SPI` 的通讯速率） 的频率
 
 * `color`： `LCD` 初始化的颜色， 可以是 16 位的 `RGB565` 颜色值，比如 `0xFFFF`； 或者 `RGB888` 元组， 比如 `(236, 36, 36)`， 默认 `lcd.BLACK`
+
+* `invert`: `LCD` 反色显示
+
+* `lcd_type`: lcd 类型：
+  * `0`: 默认类型
+  * `1`: LCD_TYPE_ILI9486
+  * `2`: LCD_TYPE_ILI9481
+  * `3`: LCD_TYPE_5P0_7P0，5 寸或 7 寸 分辨率为 800 * 480 的 lcd （需要搭配 sipeed 转接板）
+  * `4`: LCD_TYPE_5P0_IPS，5 寸 分辨率为 854*489 的 IPS lcd （需要搭配 sipeed 转接板）
+  * `5`: LCD_TYPE_480_272_4P3，4.3 寸分辨率为 480*272 的 lcd （需要搭 sipeed 配转接板）
 
 ### lcd.deinit()
 
@@ -131,7 +143,13 @@ roi 是一个感兴趣区域的矩形元组(x, y, w, h)。若未指定，即为�
 
 当前设置，是否镜面显示，返回`True`或者`False`
 
+### lcd.bgr_to_rgb(enable)
 
+设置是否启动 bgr 色彩显示
+
+#### 参数
+
+* `enable`：是否启用 bgr 显示，`True` 或者 `False`
 
 ## 例程
 
