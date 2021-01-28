@@ -34,7 +34,7 @@ NES 游戏模拟器
 ```python
 try:
   nes.init(nes.INPUT)
-  nes.load("mario.nes")
+  nes.load("/sd/mario.nes")
   while True:
     nes.loop()
 finally:
@@ -80,6 +80,8 @@ finally:
 
 ## 例 0： 代码输入
 
+> 2021年01月28日：现在建议使用 Maix handle （I2C 设备）进行游玩，如下代码注释 `nes.input(p1, p2, 0)` 表示输入两个手柄的数据。
+
 ```python
 import nes, lcd
 lcd.init(freq=15000000)
@@ -87,9 +89,9 @@ try:
   nes.init(nes.INPUT)
   nes.load("mario.nes")
   while True:
-    # tmp = i2c.readfrom(66, 1) # handle i2c addr
-    # tmp = i2c.readfrom(74, 1) # handle i2c addr
-    # nes.input(tmp[0], 0, 0)
+    # p1 = i2c.readfrom(66, 1) # handle i2c addr
+    # p2 = i2c.readfrom(74, 1) # handle i2c addr
+    # nes.input(p1, p2, 0)
     nes.loop()
 finally:
   nes.free()
