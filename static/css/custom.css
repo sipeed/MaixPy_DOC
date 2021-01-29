@@ -1,0 +1,28 @@
+#navbar h2 {
+    display: none;
+}
+
+#home_page h1 {
+    width: 100%;
+    font-size: 3em;
+    text-align: center;
+    font-family: sans-serif;
+}
+#home_page h3 {
+    width: 100%;
+    text-align: center;
+}
+#big_btn_wrapper {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 5em 1em;
+}
+#home_page .big_btn a {
+    padding: 2em;
+    background-color: #f7f7f9;
+    font-size: 1.3em;
+    border-radius: 10px;
+}
+#home_page .big_btn a:hover {
+    background-color: #f1f1f1;
+}

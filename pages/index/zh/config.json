@@ -1,0 +1,70 @@
+{
+    "navbar": {
+        "title": "MaixPy",
+        "logo": {
+            "alt": "MaixPy logo",
+            "src": "/static/image/logo.png"
+        },
+        "home_url": "/",
+        "items": [
+            {
+                "url": "/maixpy/zh",
+                "label": "MaixPy for Micropyton",
+                "position": "left"
+            },
+            {
+                "url": "/maixpy3/zh",
+                "label": "MaixPy for Python3",
+                "position": "left"
+            },
+            {
+                "url": "https://github.com/sipeed",
+                "label": "github",
+                "target": "_blank",
+                "position": "right"
+            },
+            {
+                "label": "语言: ",
+                "position": "right",
+                "items": [
+                    {
+                        "url": "/",
+                        "label": "中文"
+                    },
+                    {
+                        "url": "/en",
+                        "label": "English"
+                    }
+                ]
+            }
+        ]
+    },
+    "footer":{
+        "items":[
+            {
+                "url": "https://github.com/sipeed/MaixPy",
+                "label": "MaixPy github",
+                "target": "_blank",
+                "position": "left"
+            },
+            {
+                "url": "https://github.com/sipeed/MaixPy3",
+                "label": "MaixPy3 github",
+                "target": "_blank",
+                "position": "left"
+            },
+            {
+                "url": "https://www.sipeed.com",
+                "label": "sipeed",
+                "target": "_blank",
+                "position": "right"
+            },
+            {
+                "url": "https://beian.miit.gov.cn",
+                "label": "粤ICP备19015433号",
+                "target": "_blank",
+                "position": "middle"
+            }
+        ]
+    }
+}
