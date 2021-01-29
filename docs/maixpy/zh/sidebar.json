@@ -1,8 +1,88 @@
 {
     "items":[
         {
-            "label": "teedoc 开发",
+            "label": "简介",
             "file": "README.md"
+        },
+        {
+            "label": "MaixPy 能做哪些事",
+            "file": "what_maix_do.md"
+        },
+        {
+            "label": "MaixPy 发展历程",
+            "file": "maixpy_history.md"
+        },
+        {
+            "label": "入门必看指南",
+            "items": [
+                {
+                    "label": "如何正确阅读本文 (重要！！！)",
+                    "file": "how_to_read.md"
+                },
+                {
+                    "label": "如何优雅提问 (重要！！！)",
+                    "file": "how_to_ask.md"
+                },
+                {
+                    "label": "开发板和配件选购指南",
+                    "items": [
+                        {
+                            "label": "开发板选购指南(对比)",
+                            "file": "develop_kit_board/get_hardware.md"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "label": "MaixPy 手把手教程",
+            "items":[
+                {
+                    "label": "教程说明",
+                    "file": "course/readme.md"
+                }
+            ]
+        },
+        {
+            "label": "API手册",
+            "items": [
+
+            ]
+        },
+        {
+            "label": "常见问题 FAQ",
+            "file": "others/maixpy_faq.md"
+        },
+        {
+            "label": "进阶",
+            "items": [
+                {
+                    "label": "参与贡献",
+                    "items": [
+                        {
+                            "label": "参与文档编写（规范）",
+                            "file": "contribute/doc_convention.md"
+                        },
+                        {
+                            "label": "代码编写规范",
+                            "file": "contribute/code_convention.md"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "label": "社区 & 分享",
+            "items": [
+                {
+                    "label": "精选文章",
+                    "file": "share/recommend_articles.md"
+                },
+                {
+                    "label": "开源项目",
+                    "file": "share/open_projects.md"
+                }
+            ]
         }
     ]
 }

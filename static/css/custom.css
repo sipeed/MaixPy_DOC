@@ -34,7 +34,49 @@
 .dark #home_page .big_btn a:hover {
     background-color: #1f1f1f;
 }
-
+#sidebar .active > a, #navbar .active > a {
+    background-color: #ff6b63;
+    color: #ffffff;
+}
+#sidebar li > a:hover, #sidebar li.active_parent > a:hover, #navbar li > a:hover, #navbar .sub_items > a:hover {
+    background-color: #ff6b63;
+    color: #ffffff;
+}
+blockquote {
+    border-left: 4px solid #ff6b63;
+}
+.title_pic {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: center;
+}
+.logo_maixpy {
+    margin-bottom: 15px; 
+}
+.logo_maixpy img {
+    height: 200px;
+}
+.logo_sipeed img {
+    height: 43px;
+}
+.logo_mpy img {
+    height: 45px;
+}
+.limit_width {
+    min-width: 65px;
+    display: inline-block;
+}
+.grove_pic img{
+    height: 500px;
+}
+.center_table {
+    display: table;
+}
+th {
+    background-color: #ff6b63;
+    border: 2px solid #d8524b;
+}
+  
 
 @media screen and (max-width: 900px) {
     #big_btn_wrapper {

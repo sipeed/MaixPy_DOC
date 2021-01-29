@@ -15,6 +15,7 @@
         },
         "assets": {
             "/static": "static",
+            "/maixpy/assets": "docs/maixpy/assets",
             "/maixpy3/assets": "docs/maixpy3/assets"
         },
         "/blog": "blog"
@@ -34,7 +35,7 @@
             "config": {
                 "dark": true,
                 "env":{
-                    "main_color": "#4caf7d"
+                    "main_color": "#ff6b63"
                 },
                 "css": "/static/css/custom.css",
                 "js": "/static/js/custom.js"
