@@ -1,24 +1,24 @@
 {
     "navbar": {
-        "title": "teedoc",
+        "title": "MaixPy",
         "logo": {
-            "alt": "teedoc logo",
+            "alt": "MaixPy logo",
             "src": "/static/image/logo.png"
         },
         "home_url": "/",
         "items": [
             {
-                "url": "/get_started/zh",
-                "label": "安装使用",
+                "url": "/maixpy/zh",
+                "label": "MaixPy",
                 "position": "left"
             },
             {
-                "url": "/develop/zh",
-                "label": "开发",
+                "url": "/maixpy3/zh",
+                "label": "MaixPy3",
                 "position": "left"
             },
             {
-                "url": "https://github.com/neutree/teedoc",
+                "url": "https://github.com/sipeed",
                 "label": "github",
                 "target": "_blank",
                 "position": "right"
@@ -28,11 +28,11 @@
                 "position": "right",
                 "items": [
                     {
-                        "url": "/develop/zh",
+                        "url": "/maixpy/zh",
                         "label": "中文"
                     },
                     {
-                        "url": "/develop/en",
+                        "url": "/maixpy/en",
                         "label": "English"
                     }
                 ]
@@ -42,26 +42,26 @@
     "footer":{
         "items":[
             {
-                "url": "https://github.com/neutree/teedoc",
-                "label": "github",
+                "url": "https://github.com/sipeed/MaixPy",
+                "label": "MaixPy github",
                 "target": "_blank",
                 "position": "left"
             },
             {
-                "url": "https://neucrack.com",
-                "label": "neucrack",
+                "url": "https://github.com/sipeed/MaixPy3",
+                "label": "MaixPy3 github",
+                "target": "_blank",
+                "position": "left"
+            },
+            {
+                "url": "https://www.sipeed.com",
+                "label": "sipeed",
                 "target": "_blank",
                 "position": "right"
             },
             {
                 "url": "https://beian.miit.gov.cn",
-                "label": "*ICP备********号-1",
-                "target": "_blank",
-                "position": "middle"
-            },
-            {
-                "url": "https://beian.miit.gov.cn/#/Integrated/index",
-                "label": "*公网安备**************号",
+                "label": "粤ICP备19015433号",
                 "target": "_blank",
                 "position": "middle"
             }

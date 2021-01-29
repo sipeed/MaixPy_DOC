@@ -9,12 +9,12 @@
         "items": [
             {
                 "url": "/maixpy/zh",
-                "label": "MaixPy for Micropyton",
+                "label": "MaixPy",
                 "position": "left"
             },
             {
                 "url": "/maixpy3/zh",
-                "label": "MaixPy for Python3",
+                "label": "MaixPy3",
                 "position": "left"
             },
             {

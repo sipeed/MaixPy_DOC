@@ -7,7 +7,7 @@
 
 <div id="home_page">
     <div>
-        <h1>MaixPy</h1>
+        <h1><span style="color: #ff6b63;">Maix</span><span style="color: #5097ff;">Py</span></h1>
         <h3>易用的 AI 边缘计算 SDK</h3>
     </div>
     <div id="big_btn_wrapper">
