@@ -46,7 +46,28 @@
         {
             "label": "API手册",
             "items": [
-
+                {
+                    "label": "标准库",
+                    "items": [
+                        {
+                            "label": "cmath",
+                            "file": "api_reference/standard/cmath.md"
+                        }
+                    ]
+                },
+                {
+                    "label": "Maix",
+                    "items": [
+                        {
+                            "label": "FPIOA",
+                            "file": "api_reference/Maix/fpioa.md"
+                        },
+                        {
+                            "label": "KPU",
+                            "file": "api_reference/Maix/kpu.md"
+                        }
+                    ]
+                }
             ]
         },
         {

@@ -28,11 +28,11 @@
                 "position": "right",
                 "items": [
                     {
-                        "url": "/maixpy/zh",
+                        "url": "/maixpy3/zh",
                         "label": "中文"
                     },
                     {
-                        "url": "/maixpy/en",
+                        "url": "/maixpy3/en",
                         "label": "English"
                     }
                 ]
