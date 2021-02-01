@@ -11,6 +11,7 @@ I2C 的使用
 
 ```python
 from machine import I2C
+from fpioa_manager import fm
 # i2c = I2C(I2C.I2C0, freq=100000, scl=28, sda=29) # hardware i2c
 i2c = I2C(I2C.I2C4, freq=100000, scl=28, sda=29,gscl=fm.fpioa.GPIOHS3,gsda=fm.fpioa.GPIOHS2) # software i2c
 ```
