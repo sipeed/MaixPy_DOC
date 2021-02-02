@@ -68,7 +68,7 @@ chmod +x setup.sh
 
 ## 测试运行
 
-打开 MaixPy IDE, 上方工具栏里面选择开发板的型号.
+打开 MaixPy IDE, 上方工具栏里面选择开发板的型号。**amigo，cube 开发板请选择 Maixduino 进行连接**。
 
 `Tool-> Select Board` (工具->选择开发板)
 
@@ -97,7 +97,7 @@ chmod +x setup.sh
 
 * 点击连接后，不用和终端工具同时使用，否则会出现串口占用无法打开
 * 如果一直无法成功连接成功， 检查：
-  * 请检查是否开发板型号选择错误（amigo，cube 开发板请选择 Maixduino 进行连接）；
+  * 请检查是否开发板型号选择错误；
   * 观察开发板屏幕是否有变化，如果没有反应可能是串口选择错误；
   * 尝试升级到最新的 [master 分支固件](http://cn.dl.sipeed.com/MAIX/MaixPy/release/master)， 以及最新的 MaixPy IDE 软件
 
