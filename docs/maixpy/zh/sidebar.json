@@ -13,6 +13,10 @@
             "file": "maixpy_history.md"
         },
         {
+            "label": "致谢",
+            "file": "thanks.md"
+        },
+        {
             "label": "入门必看指南",
             "items": [
                 {
@@ -29,6 +33,24 @@
                         {
                             "label": "开发板选购指南(对比)",
                             "file": "develop_kit_board/get_hardware.md"
+                        },
+                        {
+                            "label": "开发板介绍",
+                            "items": [
+                                {
+                                    "label": "Maix Dock",
+                                    "file": "develop_kit_board/maix_dock.md"
+                                }
+                            ]
+                        },
+                        {
+                            "label": "外设模组（配件）",
+                            "items": [
+                                {
+                                    "label": "SP-MOD",
+                                    "file": "modules/sp_mod/README.md"
+                                }
+                            ]
                         }
                     ]
                 }
