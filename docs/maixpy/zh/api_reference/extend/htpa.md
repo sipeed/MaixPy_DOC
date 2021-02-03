@@ -7,9 +7,7 @@ desc: maixpy doc: modules.htpa（HTPA 热红外测温模组）
 
 海曼 HTPA 32x32 热红外测温模组
 
-<div class="grove_pic">
-<img src="../../../_book/assets/hardware/other/htpa32x32.png">
-</div>
+<img src="../../../assets/hardware/other/htpa32x32.png">
 
 ## 构造方法 htpa(i2c, scl_pin, sda_pin, i2c_freq)
 

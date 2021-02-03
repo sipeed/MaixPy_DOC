@@ -1,7 +1,7 @@
 ---
-title: 页面标题/一级标题
+title: 文档贡献规范
 keywords: maixpy, k210, AIOT, 边缘计算
-desc: maixpy doc: 页面标题/一级标题
+desc: maixpy doc: 文档贡献规范
 ---
 
 

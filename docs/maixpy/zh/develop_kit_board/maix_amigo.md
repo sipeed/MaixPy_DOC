@@ -35,7 +35,7 @@ desc: maixpy doc: MaixAmigo
 
 ### 引脚资源
 
-![MaixAmigo](../../assets/hardware/maix_amigo/sipeed_maix_amigo_vi.png)
+![MaixAmigo](../../assets/hardware/maix_amigo/sipeed_maix_amigo_vi.jpg)
 
 ### 硬件板载扩展接口
 

@@ -1,7 +1,7 @@
 ---
-title: lvgl [LittlevGL](https://littlevgl.com/)
+title: lvgl
 keywords: maixpy, k210, AIOT, 边缘计算
-desc: maixpy doc: lvgl [LittlevGL](https://littlevgl.com/)
+desc: maixpy doc: LittlevGL
 ---
 
 

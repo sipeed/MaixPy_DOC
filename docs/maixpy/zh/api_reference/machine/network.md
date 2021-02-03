@@ -1,7 +1,7 @@
 ---
-title: WIZNET5K_Module
+title: network
 keywords: maixpy, k210, AIOT, 边缘计算
-desc: maixpy doc: WIZNET5K_Module
+desc: maixpy doc: network
 ---
 
 
@@ -9,16 +9,15 @@ desc: maixpy doc: WIZNET5K_Module
 
 使用`WiFi`请确保已经接上了天线
 
-### [esp8285](#ESP8285_Module)
+### [esp8285](##network.ESP8285(uart))
 在部分开发板上带了 一个 使用`AT`方式交互的网卡模块，比如`esp8285`，与`k210`通过串口连接
 
 引脚`8`是使能脚，可以创建一个`GPIO`对象来控制它的高低电平来实现使能和失能，也可以用它复位（先低后高），复位后需要等待一小段时间才能操作，
 可以查看例程[network_espat.py](https://github.com/sipeed/MaixPy_scripts/blob/79a5485ec983e67bb8861305a52418b29e0dc205/network/network_espat.py)
 
-### [esp32](#ESP32_Module)
+### [esp32](##network.ESP32_SPI(cs,rst,rdy,mosi,miso,sclk))
 目前在`MaixDuino`开发板中有一个 `esp32` 模块通过 `spi` 与`k210`相连
 同时也有单独的`TF`插卡式模块
-
 
 
 ## network.ESP8285(uart)
@@ -260,8 +259,6 @@ nic.enable_ap("maixpy", "12345678", 5, network.ESP8285.OPEN)
 #### 例程
 
 [demo_esp32_read_adc.py](https://github.com/sipeed/MaixPy_scripts/blob/master/network/demo_esp32_read_adc.py)
-
-
 
 
 ## network.WIZNET5K(spi, cs)
