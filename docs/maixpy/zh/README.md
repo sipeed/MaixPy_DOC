@@ -1,18 +1,15 @@
----
-title: MaixPy 简介
-keywords: maixpy, 嵌入式AI, 边缘计算, k210, micropython, AIOT, SDK, 硬件加速
-desc: MaixPy 是将 Micropython 移植到 K210（一款 64 位双核带硬件 FPU、卷积加速器、FFT、Sha256 的 RISC-V CPU ） 的一个项目， 支持 MCU 常规操作， 更集成了硬件加速的 `AI` 机器视觉和麦克风阵列，`1TOPS` 算力 核心模块却不到`￥50`， 以快速开发具有极低成本和体积实用的 `AIOT` 领域智能应用。 
----
+MaixPy 文档简介
+=====
 
 <div class="title_pic">
     <div class="logo_maixpy">
-    <img src="/maixpy/assets/maixpy/maixpy.png" alt="maixpy logo">
+    <img src="../assets/maixpy/maixpy.png" alt="maixpy logo">
     </div>
     <span class="logo_sipeed">
-    <img src="/maixpy/assets/sipeed/sipeed_logo_4.svg" alt="sipeed logo">
+    <img src="../assets/sipeed/sipeed_logo_4.svg" alt="sipeed logo">
     </span>
     <span class="logo_mpy">
-    <img src="/maixpy/assets/maixpy/micropython.png" alt="micropython logo">
+    <img src="../assets/maixpy/micropython.png" alt="micropython logo">
     </span>
     <br/>
 </div>
@@ -191,7 +188,7 @@ MaixPy 源码托管在 [github](https://github.com/sipeed/MaixPy)
 
 以下交流方式提供辅助：
 
-<table role="table" class="center_table">
+<table role="table">
     <thead>
         <tr>
             <th>交流方式</th>
@@ -221,9 +218,11 @@ MaixPy 源码托管在 [github](https://github.com/sipeed/MaixPy)
         </tr>
         <tr>
             <td>E-mail(商业合作)</td>
-            <td><a target="_blank" rel="noopener noreferrer" href="/maixpy/assets/sipeed/support_email.jpg"><img src="/maixpy/assets/sipeed/support_email.jpg" alt="email" style="max-width:100%;"></a></td>
+            <td><a target="_blank" rel="noopener noreferrer" href="../assets/sipeed/support_email.jpg"><img src="../assets/sipeed/support_email.jpg" alt="email" style="max-width:100%;"></a></td>
         </tr>
     </tbody>
 </table>
 
 
+
+------------

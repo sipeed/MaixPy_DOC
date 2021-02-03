@@ -41,6 +41,12 @@
                 "css": "/static/css/custom.css",
                 "js": "/static/js/custom.js"
             }
+        },
+        "teedoc-plugin-search":{
+            "from": "pypi",
+            "config": {
+                "search_hint": "Search"
+            }
         }
     }
 }

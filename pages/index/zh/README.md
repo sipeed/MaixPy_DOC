@@ -1,9 +1,6 @@
 
 
 
-<style>
-
-</style>
 
 <div id="home_page">
     <div>
@@ -12,10 +9,10 @@
     </div>
     <div id="big_btn_wrapper">
         <div class="big_btn">
-            <a href="/maixpy/zh">MaixPy for Micropython</a>
+            <a href="/maixpy/zh/">MaixPy for Micropython</a>
         </div>
         <div class="big_btn">
-            <a href="/maixpy3/zh">MaixPy for Python3</a>
+            <a href="/maixpy3/zh/">MaixPy for Python3</a>
         </div>
     </div>
 
