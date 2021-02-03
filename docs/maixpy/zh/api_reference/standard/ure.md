@@ -1,5 +1,9 @@
-ure – 简单的正则表达式
-=====
+---
+title: ure – 简单的正则表达式
+keywords: maixpy, k210, AIOT, 边缘计算
+desc: maixpy doc: ure – 简单的正则表达式
+---
+
 
 
 该模块实现了相应CPython模块的子集，如下所述。 有关更多信息，请参阅原始CPython文档：[re](https://docs.python.org/3.5/library/re.html#module-re).

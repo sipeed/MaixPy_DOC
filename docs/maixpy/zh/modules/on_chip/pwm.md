@@ -1,5 +1,9 @@
-PWM 的使用
-=========
+---
+title: PWM 的使用
+keywords: maixpy, k210, AIOT, 边缘计算
+desc: maixpy doc: PWM 的使用
+---
+
 
 关于 PWM 详细介绍请参考[PWM-API 文档](../../api_reference/machine/pwm.md).
 

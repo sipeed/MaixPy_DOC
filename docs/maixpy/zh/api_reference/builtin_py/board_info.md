@@ -1,5 +1,9 @@
-Board
-=======
+---
+title: Board
+keywords: maixpy, k210, AIOT, 边缘计算
+desc: maixpy doc: Board
+---
+
 
 > **本文档在 MaixPy 0.5.1-128 版本测试通过。**
 

@@ -1,5 +1,9 @@
-系统控制
-==========
+---
+title: 系统控制
+keywords: maixpy, k210, AIOT, 边缘计算
+desc: maixpy doc: 系统控制
+---
+
 
 ## 复位（reset）
 

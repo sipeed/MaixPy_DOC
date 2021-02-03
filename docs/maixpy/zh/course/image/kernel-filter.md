@@ -1,4 +1,9 @@
-# 核滤波
+---
+title: 核滤波
+keywords: maixpy, k210, AIOT, 边缘计算
+desc: maixpy doc: 核滤波
+---
+
 
 ![image-20200812191240724](kernel-filter.assets/image-20200812191240724.png)
 

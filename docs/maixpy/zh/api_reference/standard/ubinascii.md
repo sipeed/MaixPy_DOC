@@ -1,6 +1,10 @@
+---
+title: ubinascii – 二进制/ ASCII转换
+keywords: maixpy, k210, AIOT, 边缘计算
+desc: maixpy doc: ubinascii – 二进制/ ASCII转换
+---
 
-ubinascii – 二进制/ ASCII转换
-=======
+
 
 该模块实现了相应CPython模块的子集，如下所述。有关更多信息，请参阅原始CPython文档：[binascii](https://docs.python.org/3.5/library/binascii.html#module-binascii).
 

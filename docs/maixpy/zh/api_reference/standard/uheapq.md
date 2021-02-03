@@ -1,6 +1,10 @@
+---
+title: uheapq – 堆队列算法
+keywords: maixpy, k210, AIOT, 边缘计算
+desc: maixpy doc: uheapq – 堆队列算法
+---
 
-uheapq – 堆队列算法
-====
+
 
 该模块实现了对应 CPython 模块的子集，如下所述。 有关更多信息，请参阅原始CPython文档：[heapq](https://docs.python.org/3.5/library/heapq.html#module-heapq)。
 

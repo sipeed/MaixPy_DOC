@@ -1,5 +1,9 @@
-Maix Go
-=====
+---
+title: Maix Go
+keywords: maixpy, k210, AIOT, 边缘计算
+desc: maixpy doc: Maix Go
+---
+
 
 ## 外观及功能介绍
 

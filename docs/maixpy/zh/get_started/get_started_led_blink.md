@@ -1,5 +1,9 @@
-点亮 LED
-==========
+---
+title: 点亮 LED
+keywords: maixpy, k210, AIOT, 边缘计算
+desc: maixpy doc: 点亮 LED
+---
+
 
 
 点灯程序作为学习所有开发板的第一个程序，就像学所有编程语言都是先学 hello world 一样，具有着神圣的意义

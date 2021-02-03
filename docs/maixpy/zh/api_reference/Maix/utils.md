@@ -1,5 +1,9 @@
-Maix.utils
-=====
+---
+title: Maix.utils
+keywords: maixpy, k210, AIOT, 边缘计算
+desc: maixpy doc: Maix.utils
+---
+
 
 ## gc_heap_size([size])
 

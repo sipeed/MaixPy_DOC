@@ -1,5 +1,9 @@
-如何选购开发板
-=====
+---
+title: 如何选购开发板
+keywords: maixpy, k210, AIOT, 边缘计算
+desc: maixpy doc: 如何选购开发板
+---
+
 
 要开始使用 MaixPy,  必须需要一款 K210 开发板, 可以从 Sipeed 官方淘宝店获得心仪的硬件：
 [Sipeed 官方淘宝店](https://sipeed.taobao.com/)

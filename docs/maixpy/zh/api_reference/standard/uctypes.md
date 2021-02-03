@@ -1,5 +1,9 @@
-uctypes – 以结构化方式访问二进制数据
-========
+---
+title: uctypes – 以结构化方式访问二进制数据
+keywords: maixpy, k210, AIOT, 边缘计算
+desc: maixpy doc: uctypes – 以结构化方式访问二进制数据
+---
+
 
 该模块为MicroPython实现“外部数据接口”。 它背后的想法类似于CPython的`ctypes`模块，但实际的API是不同的，流线型和小尺寸优化。 该模块的基本思想是定义具有与C语言允许的功能大致相同的数据的数据结构布局，然后使用熟悉的点语法访问它以引用子字段。
 

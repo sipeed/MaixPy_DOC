@@ -1,5 +1,9 @@
-Maix Dock
-=====
+---
+title: Maix Dock
+keywords: maixpy, k210, AIOT, 边缘计算
+desc: maixpy doc: Maix Dock
+---
+
 
 ## 外观及功能介绍
 

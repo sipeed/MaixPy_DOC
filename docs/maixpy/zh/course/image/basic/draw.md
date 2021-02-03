@@ -1,5 +1,9 @@
-画图 写字
-======
+---
+title: 画图 写字
+keywords: maixpy, k210, AIOT, 边缘计算
+desc: maixpy doc: 画图 写字
+---
+
 
 
 有两种方式，推荐第二种

@@ -1,5 +1,9 @@
-自学习分类器（self learning classifier）
-=====
+---
+title: 自学习分类器（self learning classifier）
+keywords: maixpy, k210, AIOT, 边缘计算
+desc: maixpy doc: 自学习分类器（self learning classifier）
+---
+
 
 无需单独训练， 直接在开发板上对物体特征进行学习，然后直接使用
 

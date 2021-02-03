@@ -1,5 +1,9 @@
-modules.ultrasonic（超声波测距模块）
-======
+---
+title: modules.ultrasonic（超声波测距模块）
+keywords: maixpy, k210, AIOT, 边缘计算
+desc: maixpy doc: modules.ultrasonic（超声波测距模块）
+---
+
 
 Grove - Ultrasonic Ranger(超声波测距模块)，只需要单根数据线
 

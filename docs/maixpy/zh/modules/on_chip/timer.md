@@ -1,5 +1,9 @@
-Timer（定时器） 的使用
-=========
+---
+title: Timer（定时器） 的使用
+keywords: maixpy, k210, AIOT, 边缘计算
+desc: maixpy doc: Timer（定时器） 的使用
+---
+
 
 关于 Timer 详细介绍请参考[Timer-API 文档](../../api_reference/machine/timer.md).
 

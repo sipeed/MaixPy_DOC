@@ -1,5 +1,9 @@
-SP-MOD
-======
+---
+title: SP-MOD
+keywords: maixpy, k210, AIOT, 边缘计算
+desc: maixpy doc: SP-MOD
+---
+
 
 ## SP-MOD 接口
 

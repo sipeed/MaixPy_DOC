@@ -1,5 +1,9 @@
-WDT（看门狗） 的使用
-=========
+---
+title: WDT（看门狗） 的使用
+keywords: maixpy, k210, AIOT, 边缘计算
+desc: maixpy doc: WDT（看门狗） 的使用
+---
+
 
 关于 WDT 详细介绍请参考[WDT API 文档](../../api_reference/machine/wdt.md).
 

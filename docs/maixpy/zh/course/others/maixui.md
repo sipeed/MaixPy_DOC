@@ -1,4 +1,9 @@
-# MaixUI 基础使用指导
+---
+title: MaixUI 基础使用指导
+keywords: maixpy, k210, AIOT, 边缘计算
+desc: maixpy doc: MaixUI 基础使用指导
+---
+
 
 如何正确的食用 MaixUI 项目？
 

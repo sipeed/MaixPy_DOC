@@ -1,4 +1,9 @@
-# 深度学习及 KPU 基础知识
+---
+title: 深度学习及 KPU 基础知识
+keywords: maixpy, k210, AIOT, 边缘计算
+desc: maixpy doc: 深度学习及 KPU 基础知识
+---
+
 
 ## 阅读完本章文档可以了解什么？
 

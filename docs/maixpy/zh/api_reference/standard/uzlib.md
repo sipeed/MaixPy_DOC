@@ -1,5 +1,9 @@
-uzlib  — zlib 解压缩
-=======
+---
+title: uzlib  — zlib 解压缩
+keywords: maixpy, k210, AIOT, 边缘计算
+desc: maixpy doc: uzlib  — zlib 解压缩
+---
+
 
 该模块实现了相应CPython模块的子集，如下所述。有关更多信息，请参阅原始CPython文档：[zlib](https://docs.python.org/3.5/library/zlib.html#module-zlib)。
 

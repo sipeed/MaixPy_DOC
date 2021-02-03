@@ -1,5 +1,9 @@
-外设模块
-======
+---
+title: 外设模块
+keywords: maixpy, k210, AIOT, 边缘计算
+desc: maixpy doc: 外设模块
+---
+
 
 这里的外设模块主要指片外外设（相对于片上外设，比如GPIO、I2C等），比如 `LCD`、 摄像头、 触摸屏等等
 

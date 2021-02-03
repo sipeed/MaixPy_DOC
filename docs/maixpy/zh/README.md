@@ -1,5 +1,9 @@
-MaixPy 文档简介
-=====
+---
+title: MaixPy 文档简介
+keywords: maixpy, k210, AIOT, 边缘计算
+desc: maixpy doc: MaixPy 文档简介
+---
+
 
 <div class="title_pic">
     <div class="logo_maixpy">

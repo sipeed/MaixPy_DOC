@@ -1,5 +1,9 @@
-machine.WDT
-========
+---
+title: machine.WDT
+keywords: maixpy, k210, AIOT, 边缘计算
+desc: maixpy doc: machine.WDT
+---
+
 
 MaixPy 的 WDT 看门狗模块，用于在应用程序崩溃且最终进入不可恢复状态时重启系统。一旦开始，当硬件运行期间没有定期进行喂狗（feed）就会在超时后自动复位。
 

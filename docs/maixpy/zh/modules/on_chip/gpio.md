@@ -1,5 +1,9 @@
-GPIO 的使用
-=========
+---
+title: GPIO 的使用
+keywords: maixpy, k210, AIOT, 边缘计算
+desc: maixpy doc: GPIO 的使用
+---
+
 
 关于 GPIO 详细介绍请参考[GPIO-API 文档](../../api_reference//Maix/gpio.md).
 

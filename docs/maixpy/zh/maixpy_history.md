@@ -1,5 +1,9 @@
-MaixPy 发展历程
-========
+---
+title: MaixPy 发展历程
+keywords: maixpy, k210, AIOT, 边缘计算
+desc: maixpy doc: MaixPy 发展历程
+---
+
 
 写下本篇发展历程， 希望让后来的开发者们了解到 MaixPy 都经历了什么，以及一些重大的改变的原因是什么，以及在何时取得了重大的进步等
 

@@ -1,5 +1,9 @@
-编辑并执行文件
-=====
+---
+title: 编辑并执行文件
+keywords: maixpy, k210, AIOT, 边缘计算
+desc: maixpy doc: 编辑并执行文件
+---
+
 
 
 ## MaixPy 内置了文件系统

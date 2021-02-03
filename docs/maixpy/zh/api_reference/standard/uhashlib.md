@@ -1,5 +1,9 @@
-uhashlib –哈希算法
-====
+---
+title: uhashlib –哈希算法
+keywords: maixpy, k210, AIOT, 边缘计算
+desc: maixpy doc: uhashlib –哈希算法
+---
+
 
 
 该模块实现了相应[CPython](http://docs.micropython.org/en/latest/reference/glossary.html#term-cpython)模块的子集，如下所述。有关更多信息，请参阅原始CPython文档：[hashlib](https://docs.python.org/3.5/library/hashlib.html#module-hashlib)。

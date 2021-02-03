@@ -1,5 +1,9 @@
-Maix Go USB 驱动安装
-======
+---
+title: Maix Go USB 驱动安装
+keywords: maixpy, k210, AIOT, 边缘计算
+desc: maixpy doc: Maix Go USB 驱动安装
+---
+
 
 这款 `STM32` 芯片的固件出厂默认采用 [open-ec](https://github.com/sipeed/open-ec) 的固件， 如果没问题，则会出现一个或者两个串口， 比如 `Linux` 下出现两个串口 `/dev/ttyUSB0` 和 `/dev/ttyUSB1`， 下载和访问串口时请使用 `/dev/ttyUSB1`。 Windows 也类似。
 

@@ -1,5 +1,9 @@
-GPIO
-=========
+---
+title: GPIO
+keywords: maixpy, k210, AIOT, 边缘计算
+desc: maixpy doc: GPIO
+---
+
 
 General Purpose Input Output （通用输入/输出）简称为 GPIO，或总线扩展器。
 

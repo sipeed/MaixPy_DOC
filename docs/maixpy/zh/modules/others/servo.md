@@ -1,5 +1,9 @@
-舵机
-=====
+---
+title: 舵机
+keywords: maixpy, k210, AIOT, 边缘计算
+desc: maixpy doc: 舵机
+---
+
 
 ## 警告！请外接电源，不要用电脑供电给舵机，烧了自理。
 

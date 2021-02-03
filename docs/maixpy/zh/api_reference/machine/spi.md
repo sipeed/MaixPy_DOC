@@ -1,5 +1,9 @@
-machine.SPI
-=========
+---
+title: machine.SPI
+keywords: maixpy, k210, AIOT, 边缘计算
+desc: maixpy doc: machine.SPI
+---
+
 
 SPI（Serial Peripheral Interface） 是一个同步串行协议，由主机和从机组成。
 

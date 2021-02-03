@@ -1,5 +1,9 @@
-MaixPy 查找二维码
-=======
+---
+title: MaixPy 查找二维码
+keywords: maixpy, k210, AIOT, 边缘计算
+desc: maixpy doc: MaixPy 查找二维码
+---
+
 
 从图片中识别二维码，常见的二维码为 QR Code，QR 全称 Quick Response，它比传统的条形码(Bar Code)能存更多的信息，也能表示更多的数据类型.
 

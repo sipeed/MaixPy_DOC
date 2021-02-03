@@ -1,5 +1,9 @@
-git 和 github 介绍
-=====
+---
+title: git 和 github 介绍
+keywords: maixpy, k210, AIOT, 边缘计算
+desc: maixpy doc: git 和 github 介绍
+---
+
 
 因为在学习 MaixPy 的过程中， 有很多地方用到 git 和 github， 所以这里简单解释一下它们是什么，以及区别是什么。
 

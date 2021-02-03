@@ -1,5 +1,9 @@
-MaixPy 能做哪些事
-===========
+---
+title: MaixPy 能做哪些事
+keywords: maixpy, k210, AIOT, 边缘计算
+desc: maixpy doc: MaixPy 能做哪些事
+---
+
 
 大多数是在 MaixPy 上已经有 API， 部分可能来自 [Maixduino](https://Maixduino.sipeed.com) 或者其它开发者～
 

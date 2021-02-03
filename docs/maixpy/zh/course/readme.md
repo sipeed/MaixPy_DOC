@@ -1,5 +1,9 @@
-MaixPy 手把手教程说明
-=========
+---
+title: MaixPy 手把手教程说明
+keywords: maixpy, k210, AIOT, 边缘计算
+desc: maixpy doc: MaixPy 手把手教程说明
+---
+
 
 看本教程之前， 请**务必先看左侧目录【入门必看指南】**
 

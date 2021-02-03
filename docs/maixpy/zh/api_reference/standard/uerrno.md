@@ -1,6 +1,10 @@
+---
+title: uerrno — 系统错误代码
+keywords: maixpy, k210, AIOT, 边缘计算
+desc: maixpy doc: uerrno — 系统错误代码
+---
 
-uerrno — 系统错误代码
-====
+
 
 
 该模块实现了相应CPython模块的子集，如下所述。有关更多信息，请参阅原始CPython文档：[errno](https://docs.python.org/3.5/library/errno.html#module-errno)。

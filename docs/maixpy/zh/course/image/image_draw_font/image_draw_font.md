@@ -1,5 +1,9 @@
-如何显示中文
-============
+---
+title: 如何显示中文
+keywords: maixpy, k210, AIOT, 边缘计算
+desc: maixpy doc: 如何显示中文
+---
+
 
 MaixPy 支持加载 Unicode 字库，Unicode（ 统一码、万国码、单一码）是计算机科学领域里的一项业界标准。
 

@@ -1,5 +1,9 @@
-touchscreen（触摸屏幕）
-=============
+---
+title: touchscreen（触摸屏幕）
+keywords: maixpy, k210, AIOT, 边缘计算
+desc: maixpy doc: touchscreen（触摸屏幕）
+---
+
 
 `touchscreen` 模块包含了基本的读取触摸屏幕操作
 

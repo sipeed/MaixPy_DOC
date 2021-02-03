@@ -1,6 +1,9 @@
-# mnist 手写数字识别
+---
+title: mnist 手写数字识别
+keywords: maixpy, k210, AIOT, 边缘计算
+desc: maixpy doc: mnist 手写数字识别
+---
 
-=========
 
 ```python
 import sensor,lcd,image

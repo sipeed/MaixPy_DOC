@@ -1,5 +1,9 @@
-image（机器视觉）
-=====
+---
+title: image（机器视觉）
+keywords: maixpy, k210, AIOT, 边缘计算
+desc: maixpy doc: image（机器视觉）
+---
+
 
 移植于 `openmv`， 与 `openmv` 功能相同
 

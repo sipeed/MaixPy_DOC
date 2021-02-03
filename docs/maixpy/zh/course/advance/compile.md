@@ -1,5 +1,9 @@
-开源 MaixPy 项目开发指南
-=====
+---
+title: === print('hello world!')
+keywords: maixpy, k210, AIOT, 边缘计算
+desc: maixpy doc: === print('hello world!')
+---
+
 
 本文是为了帮助一些想要成为开发者的用户而写的开源项目の开发文档。
 
@@ -124,10 +128,6 @@ Programming BIN: |==============================================================
 
 ```python
 >>> 
-paste mode; Ctrl-C to cancel, Ctrl-D to finish
-=== 
-=== print('hello world!')
-=== 
 hello world!
 >>> 
 ```

@@ -1,5 +1,9 @@
-MaixPy 精选文章
-===========
+---
+title: MaixPy 精选文章
+keywords: maixpy, k210, AIOT, 边缘计算
+desc: maixpy doc: MaixPy 精选文章
+---
+
 
 
 从社区**精选**的文章，收集一些不错的文章到这里，方便大家学习交流。

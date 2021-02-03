@@ -1,5 +1,9 @@
-安装 USB 驱动
-=====
+---
+title: 安装 USB 驱动
+keywords: maixpy, k210, AIOT, 边缘计算
+desc: maixpy doc: 安装 USB 驱动
+---
+
 
 正式使用 MaixPy 之前，我们需要先安装好串口驱动，才可进行下一步的开发与使用；因为板子是通过 USB 转串口设备与电脑连接（K210 没有 USB 硬件支持功能）。
 根据板子的 USB 转串口芯片型号装驱动。

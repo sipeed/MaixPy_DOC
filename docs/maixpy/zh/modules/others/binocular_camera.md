@@ -1,5 +1,9 @@
-双目摄像头
-======
+---
+title: 双目摄像头
+keywords: maixpy, k210, AIOT, 边缘计算
+desc: maixpy doc: 双目摄像头
+---
+
 
 ![](../../../assets/hardware/module/camera_binocular.png)
 

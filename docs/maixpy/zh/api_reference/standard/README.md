@@ -1,5 +1,9 @@
-标准库
-=======
+---
+title: 标准库
+keywords: maixpy, k210, AIOT, 边缘计算
+desc: maixpy doc: 标准库
+---
+
 
 * [cmath](cmath.md)
 * [gc](gc.md)

@@ -1,5 +1,9 @@
-NES 游戏模拟器
-=======
+---
+title: NES 游戏模拟器
+keywords: maixpy, k210, AIOT, 边缘计算
+desc: maixpy doc: NES 游戏模拟器
+---
+
 
 经典的 FC 红白机 游戏模拟器， 带我们回到小时候吧～～
 

@@ -1,5 +1,9 @@
-MaixPy AI 硬件加速基本知识
-=========
+---
+title: MaixPy AI 硬件加速基本知识
+keywords: maixpy, k210, AIOT, 边缘计算
+desc: maixpy doc: MaixPy AI 硬件加速基本知识
+---
+
 
 ## 模型使用和硬件加速原理
 

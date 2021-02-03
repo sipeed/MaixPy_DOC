@@ -1,5 +1,9 @@
-audio（音频） 的使用
-=====
+---
+title: audio（音频） 的使用
+keywords: maixpy, k210, AIOT, 边缘计算
+desc: maixpy doc: audio（音频） 的使用
+---
+
 
 详细 API 参考：[audio API](./../../api_reference/media/audio.md)
 

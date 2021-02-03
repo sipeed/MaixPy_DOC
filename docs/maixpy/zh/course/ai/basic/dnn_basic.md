@@ -1,5 +1,9 @@
-深度神经网络（DNN）基础知识
-========
+---
+title: 深度神经网络（DNN）基础知识
+keywords: maixpy, k210, AIOT, 边缘计算
+desc: maixpy doc: 深度神经网络（DNN）基础知识
+---
+
 
 这里介绍使用 MaixPy AI 相关功能需要了解的知识，让你能够理解后面的内容， 不在本篇中深入介绍。
 

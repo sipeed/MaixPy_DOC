@@ -1,5 +1,9 @@
-HTPA 热红外测温模组
-======
+---
+title: HTPA 热红外测温模组
+keywords: maixpy, k210, AIOT, 边缘计算
+desc: maixpy doc: HTPA 热红外测温模组
+---
+
 
 <img src="./../../../assets/hardware/other/htpa32x32.png">
 <img src="../../../assets/hardware/other/htpat_scale_240x240.png">

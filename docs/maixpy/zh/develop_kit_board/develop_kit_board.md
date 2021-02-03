@@ -1,4 +1,9 @@
-# MaixPy 系列开发板
+---
+title: MaixPy 系列开发板
+keywords: maixpy, k210, AIOT, 边缘计算
+desc: maixpy doc: MaixPy 系列开发板
+---
+
 
 -------
 

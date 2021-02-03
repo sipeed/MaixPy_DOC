@@ -1,5 +1,9 @@
-machine.I2C
-======
+---
+title: machine.I2C
+keywords: maixpy, k210, AIOT, 边缘计算
+desc: maixpy doc: machine.I2C
+---
+
 
 
 I2C 总线协议，简单地使用两条线（SCL，SDA）可以控制多个从机（主机模式）。

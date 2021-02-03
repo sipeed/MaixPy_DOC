@@ -1,5 +1,9 @@
-开机自启动脚本
-=======
+---
+title: 开机自启动脚本
+keywords: maixpy, k210, AIOT, 边缘计算
+desc: maixpy doc: 开机自启动脚本
+---
+
 
 系统会在 `/flash` 或者 `/sd`(优先) 目录创建 `boot.py` 文件和`main.py`， 开机会自动先执行`boot.py`，然后执行`main.py`（如果检测到SD卡则执行SD卡里的）， 编辑这两个脚本的内容即可实现开机自启，如果在 `boot.py` 里面写死循环（While True）程序，将会导致 `main.py` 不能运行（先调用 `boot.py` 后调用 `main.py`），重新发送不带死循环的 `boot.py` 即可解决。
 

@@ -1,5 +1,9 @@
-MaixPy 常见问题
-=====
+---
+title: MaixPy 常见问题
+keywords: maixpy, k210, AIOT, 边缘计算
+desc: maixpy doc: MaixPy 常见问题
+---
+
 
 
 可以点击右侧 目录按钮 ![](../../assets/other/contents_button.jpg) 来查看问题目录，方便快速寻找需要的问题

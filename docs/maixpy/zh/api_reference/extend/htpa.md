@@ -1,5 +1,9 @@
-modules.htpa（HTPA 热红外测温模组）
-====
+---
+title: modules.htpa（HTPA 热红外测温模组）
+keywords: maixpy, k210, AIOT, 边缘计算
+desc: maixpy doc: modules.htpa（HTPA 热红外测温模组）
+---
+
 
 海曼 HTPA 32x32 热红外测温模组
 

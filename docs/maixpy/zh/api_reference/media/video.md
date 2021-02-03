@@ -1,5 +1,9 @@
-video（视频）
-=====
+---
+title: video（视频）
+keywords: maixpy, k210, AIOT, 边缘计算
+desc: maixpy doc: video（视频）
+---
+
 
 
 支持播放和录制 `avi` 视频

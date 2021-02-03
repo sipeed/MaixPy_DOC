@@ -1,5 +1,9 @@
-machine.Timer
-===========
+---
+title: machine.Timer
+keywords: maixpy, k210, AIOT, 边缘计算
+desc: maixpy doc: machine.Timer
+---
+
 
 硬件定时器，可以用来定时触发任务或者处理任务，设定时间到了后可以触发中断（调用回调函数），精度比软件定时器高。
 需要注意的是，定时器在不同的硬件中可能会有不同的表现。MicroPython 的 Timer 类定义了在给定时间段内（或在一段延迟后执行一次回调）执行回调的基本操作，并允许特定的硬件上定义更多的非标准行为（因此不能移植到其他板）。

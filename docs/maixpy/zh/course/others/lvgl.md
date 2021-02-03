@@ -1,5 +1,9 @@
-lvgl [LittlevGL](https://littlevgl.com/)
-===========
+---
+title: lvgl [LittlevGL](https://littlevgl.com/)
+keywords: maixpy, k210, AIOT, 边缘计算
+desc: maixpy doc: lvgl [LittlevGL](https://littlevgl.com/)
+---
+
 
 **现在已经不推荐使用该模块，请使用者具备足够的开发水平，不接收有关于 LVGL 与 AI 功能共用的问题，谢谢配合（2020年12月11日大佬鼠宣）**
 

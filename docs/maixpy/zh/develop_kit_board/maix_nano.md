@@ -1,5 +1,9 @@
-Maix Nano
-=====
+---
+title: Maix Nano
+keywords: maixpy, k210, AIOT, 边缘计算
+desc: maixpy doc: Maix Nano
+---
+
 
 ## 外观及功能介绍
 

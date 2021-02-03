@@ -1,5 +1,9 @@
-存储系统介绍
-=========
+---
+title: 存储系统介绍
+keywords: maixpy, k210, AIOT, 边缘计算
+desc: maixpy doc: 存储系统介绍
+---
+
 
 MaixPy 存储系统大致如下图所示：
 

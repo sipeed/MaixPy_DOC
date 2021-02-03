@@ -1,5 +1,9 @@
-内置类（builtin_py）
-===========
+---
+title: 内置类（builtin_py）
+keywords: maixpy, k210, AIOT, 边缘计算
+desc: maixpy doc: 内置类（builtin_py）
+---
+
 
 `内置类` 库（builtin_py）是对 MaixPy 底层的类进行封装的用户层接口，方便用户使用 MaixPy 它包括以下：
 

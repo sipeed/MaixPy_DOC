@@ -1,4 +1,9 @@
-# MaixPy 编程规范
+---
+title: MaixPy 编程规范
+keywords: maixpy, k210, AIOT, 边缘计算
+desc: maixpy doc: MaixPy 编程规范
+---
+
 
 这是一份 **MaixPy** 开发人员的开发指引。**MaixPy** 做为一份开源软件，它需要由不同的人采用合作的方式完成，这份文档是开发人员的一个指引。
 

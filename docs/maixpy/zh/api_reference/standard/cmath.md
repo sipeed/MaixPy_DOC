@@ -1,5 +1,9 @@
-cmath – 复数的数学函数
-====
+---
+title: cmath – 复数的数学函数
+keywords: maixpy, k210, AIOT, 边缘计算
+desc: maixpy doc: cmath – 复数的数学函数
+---
+
 
 该模块实现了相应CPython模块的子集，如下所述。有关更多信息，请参阅原始CPython文档: [cmath](https://docs.python.org/3.5/library/cmath.html#module-cmath).
 

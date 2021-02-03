@@ -1,5 +1,9 @@
-I2C 的使用
-=========
+---
+title: I2C 的使用
+keywords: maixpy, k210, AIOT, 边缘计算
+desc: maixpy doc: I2C 的使用
+---
+
 
 关于 I2C 详细介绍请参考[I2C-API 文档](../../api_reference/machine/i2c.md).
 

@@ -1,5 +1,9 @@
-MaixCube
-=====
+---
+title: MaixCube
+keywords: maixpy, k210, AIOT, 边缘计算
+desc: maixpy doc: MaixCube
+---
+
 
 ## 概述
 

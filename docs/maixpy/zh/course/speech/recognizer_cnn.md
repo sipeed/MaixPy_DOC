@@ -1,5 +1,9 @@
-maix asr（自动语音识别）
-=======
+---
+title: maix asr（自动语音识别）
+keywords: maixpy, k210, AIOT, 边缘计算
+desc: maixpy doc: maix asr（自动语音识别）
+---
+
 
 > **本文档在 MaixPy 0.5.1_128 minimum_speech_with_ide_support 固件测试通过，使用前请确保录音功能/调用模型可用。**
 

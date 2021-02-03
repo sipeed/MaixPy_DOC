@@ -1,5 +1,9 @@
-如何正确 阅读 本文
-==========
+---
+title: 如何正确 阅读 本文
+keywords: maixpy, k210, AIOT, 边缘计算
+desc: maixpy doc: 如何正确 阅读 本文
+---
+
 
 **注意： 目前唯一文档官网： [maixpy.sipeed.com](https://maixpy.sipeed.com)**
 

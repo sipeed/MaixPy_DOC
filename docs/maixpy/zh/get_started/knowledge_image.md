@@ -1,4 +1,9 @@
-# 图像处理背景知识
+---
+title: 图像处理背景知识
+keywords: maixpy, k210, AIOT, 边缘计算
+desc: maixpy doc: 图像处理背景知识
+---
+
 
 
 ## 什么是摄像头？

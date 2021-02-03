@@ -1,5 +1,9 @@
-Grove
-=====
+---
+title: Grove
+keywords: maixpy, k210, AIOT, 边缘计算
+desc: maixpy doc: Grove
+---
+
 
 采用 Grove 标准接口的模块，Grove 为 Seeed 团队使用的统一接口系统，目前以支持大量模块。 
 

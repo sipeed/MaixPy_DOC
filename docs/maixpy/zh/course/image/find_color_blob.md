@@ -1,5 +1,9 @@
-MaixPy 查找色块
-=======
+---
+title: MaixPy 查找色块
+keywords: maixpy, k210, AIOT, 边缘计算
+desc: maixpy doc: MaixPy 查找色块
+---
+
 
 找出图片中指定颜色所有色块
 

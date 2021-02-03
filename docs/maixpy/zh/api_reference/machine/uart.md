@@ -1,5 +1,9 @@
-machine.UART
-=============
+---
+title: machine.UART
+keywords: maixpy, k210, AIOT, 边缘计算
+desc: maixpy doc: machine.UART
+---
+
 
 uart 模块主要用于驱动开发板上的异步串口，可以自由对 uart 进行配置。k210 一共有3个 uart，每个 uart 可以进行自由的引脚映射。
 

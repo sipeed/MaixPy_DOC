@@ -1,5 +1,9 @@
-sys – 系统特定功能
-====
+---
+title: sys – 系统特定功能
+keywords: maixpy, k210, AIOT, 边缘计算
+desc: maixpy doc: sys – 系统特定功能
+---
+
 
 
 该模块实现了相应CPython模块的子集，如下所述。 有关更多信息，请参阅原始CPython文档：[sys](https://docs.python.org/3.5/library/sys.html#module-sys).

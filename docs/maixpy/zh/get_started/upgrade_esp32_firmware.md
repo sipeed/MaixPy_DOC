@@ -1,4 +1,9 @@
-# 更新板载 ESP32 固件
+---
+title: 更新板载 ESP32 固件
+keywords: maixpy, k210, AIOT, 边缘计算
+desc: maixpy doc: 更新板载 ESP32 固件
+---
+
 
 ## 简介：
 

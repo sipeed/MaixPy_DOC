@@ -1,5 +1,9 @@
-FFT 瀑布图(雨图)
-========
+---
+title: FFT 瀑布图(雨图)
+keywords: maixpy, k210, AIOT, 边缘计算
+desc: maixpy doc: FFT 瀑布图(雨图)
+---
+
 
 FFT 瀑布图即为数据随时间变化的频率分布图，下面将介绍如何使用 MaixPy 绘制瀑布图。
 

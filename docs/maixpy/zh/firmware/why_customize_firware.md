@@ -1,5 +1,9 @@
-为何需要固件定制
-=========
+---
+title: 为何需要固件定制
+keywords: maixpy, k210, AIOT, 边缘计算
+desc: maixpy doc: 为何需要固件定制
+---
+
 
 
 主要是为了节省内存。

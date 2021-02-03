@@ -1,6 +1,10 @@
+---
+title: ustruct – 打包和解包原始数据类型
+keywords: maixpy, k210, AIOT, 边缘计算
+desc: maixpy doc: ustruct – 打包和解包原始数据类型
+---
 
-ustruct – 打包和解包原始数据类型
-====
+
 
 该模块实现了相应的`CPython`模块的子集，如下所述。有关更多信息，请参阅原始CPython文档： [struct](https://docs.python.org/3.5/library/struct.html#module-struct).
 

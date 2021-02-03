@@ -1,4 +1,9 @@
-# Maix Bit
+---
+title: Maix Bit
+keywords: maixpy, k210, AIOT, 边缘计算
+desc: maixpy doc: Maix Bit
+---
+
 
 ## 外观及功能介绍
 

@@ -1,6 +1,10 @@
+---
+title: ujson – JSON encoding and decoding
+keywords: maixpy, k210, AIOT, 边缘计算
+desc: maixpy doc: ujson – JSON encoding and decoding
+---
 
-ujson – JSON encoding and decoding
-=====
+
 
 该模块实现了相应 CPython 模块的子集，如下所述。有关更多信息，请参阅原始 CPython 文档：[json](https://docs.python.org/3.5/library/json.html#module-json).
 

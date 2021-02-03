@@ -1,5 +1,9 @@
-音频处理背景知识
-=====
+---
+title: 音频处理背景知识
+keywords: maixpy, k210, AIOT, 边缘计算
+desc: maixpy doc: 音频处理背景知识
+---
+
 
 ## 什么是声音（音频）
 

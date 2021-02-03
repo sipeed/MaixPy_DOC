@@ -1,5 +1,9 @@
-FFT 信号处理
-=========
+---
+title: FFT 信号处理
+keywords: maixpy, k210, AIOT, 边缘计算
+desc: maixpy doc: FFT 信号处理
+---
+
 
 FFT 即快速傅里叶变换（Fast Fourier Transform），将时域信号转化为频域信号，应用范围非常广，例如消除音频图像噪声。
 

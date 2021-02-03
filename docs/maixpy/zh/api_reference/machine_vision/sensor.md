@@ -1,5 +1,9 @@
-sensor（摄像头）
-=========
+---
+title: sensor（摄像头）
+keywords: maixpy, k210, AIOT, 边缘计算
+desc: maixpy doc: sensor（摄像头）
+---
+
 
 sensor 传感器模块(这里特指摄像头模块)，进行摄像头配置及图像抓取等，用于控制开发板摄像头完成摄像任务。
 

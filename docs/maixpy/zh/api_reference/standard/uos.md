@@ -1,5 +1,9 @@
-uos – 基本的“操作系统”服务
-====
+---
+title: uos – 基本的“操作系统”服务
+keywords: maixpy, k210, AIOT, 边缘计算
+desc: maixpy doc: uos – 基本的“操作系统”服务
+---
+
 
 
 该模块实现了相应CPython模块的子集，如下所述。有关更多信息，请参阅原始CPython文档：[os](https://docs.python.org/3.5/library/os.html#module-os)。

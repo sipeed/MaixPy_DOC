@@ -1,5 +1,9 @@
-Maix.freq
-========
+---
+title: Maix.freq
+keywords: maixpy, k210, AIOT, 边缘计算
+desc: maixpy doc: Maix.freq
+---
+
 
 频率模块，支持程序修改 cpu 和 kpu 频率
 

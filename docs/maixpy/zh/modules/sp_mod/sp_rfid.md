@@ -1,5 +1,9 @@
-SP_RFID 的使用
-====
+---
+title: SP_RFID 的使用
+keywords: maixpy, k210, AIOT, 边缘计算
+desc: maixpy doc: SP_RFID 的使用
+---
+
 
 <img src="../../../assets/hardware/module_spmod/sp_rfid.png"/>
 

@@ -1,5 +1,9 @@
-modules.onewire（单总线）
-=====
+---
+title: modules.onewire（单总线）
+keywords: maixpy, k210, AIOT, 边缘计算
+desc: maixpy doc: modules.onewire（单总线）
+---
+
 
 单总线即只有单根信号线，该线即传输数据也传输时钟，并且数据传输也为双向，节约 IO 口。
 

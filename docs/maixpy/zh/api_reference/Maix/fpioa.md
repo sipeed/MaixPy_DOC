@@ -1,5 +1,9 @@
-FPIOA (现场可编程 IO 阵列， Field Programmable Input and Output Array)
-=======
+---
+title: FPIOA (现场可编程 IO 阵列， Field Programmable Input and Output Array)
+keywords: maixpy, k210, AIOT, 边缘计算
+desc: maixpy doc: FPIOA (现场可编程 IO 阵列， Field Programmable Input and Output Array)
+---
+
 
 K210 支持每个外设随意映射到任意引脚， 使用 FPIOA 功能来实现。
 

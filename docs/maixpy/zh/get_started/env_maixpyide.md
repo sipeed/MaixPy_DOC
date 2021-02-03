@@ -1,5 +1,9 @@
-MaixPy IDE 安装与使用
-=======
+---
+title: MaixPy IDE 安装与使用
+keywords: maixpy, k210, AIOT, 边缘计算
+desc: maixpy doc: MaixPy IDE 安装与使用
+---
+
 
 ![maixpy_ide_start](../../assets/maixpy/maixpy_ide_start.png)
 

@@ -1,5 +1,9 @@
-使用串口工具
-========
+---
+title: 使用串口工具
+keywords: maixpy, k210, AIOT, 边缘计算
+desc: maixpy doc: 使用串口工具
+---
+
 
 ## 连接硬件
 

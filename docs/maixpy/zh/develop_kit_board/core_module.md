@@ -1,4 +1,9 @@
-# Sipeed M1/M1W (Lichee Dan)
+---
+title: Sipeed M1/M1W (Lichee Dan)
+keywords: maixpy, k210, AIOT, 边缘计算
+desc: maixpy doc: Sipeed M1/M1W (Lichee Dan)
+---
+
 
 1. M1/M1W
 

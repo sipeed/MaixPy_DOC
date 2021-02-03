@@ -1,5 +1,9 @@
-machine
-===========
+---
+title: machine
+keywords: maixpy, k210, AIOT, 边缘计算
+desc: maixpy doc: machine
+---
+
 
 machine 库主要包含了与硬件相关的各种接口，如下：
 

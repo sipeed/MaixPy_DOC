@@ -1,3 +1,9 @@
+---
+title: 
+keywords: maixpy, k210, AIOT, 边缘计算
+desc: maixpy doc: 
+---
+
 ## 如何使用 ESP32 获取 ADC 模拟量
 
 由于 K210 没有 ADC 读取模拟量的功能，所以该功能只能从 ESP32 、ESP82XX 等硬件上获取，ADC 最基础的用途就是实现一个可触摸的按键触点。

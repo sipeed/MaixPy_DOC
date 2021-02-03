@@ -1,5 +1,9 @@
-MaixPy 开发板上电
-====
+---
+title: === f = os.listdir()
+keywords: maixpy, k210, AIOT, 边缘计算
+desc: maixpy doc: === f = os.listdir()
+---
+
 
 当我们拿到 MaixPy 开发板之后
 
@@ -92,10 +96,6 @@ print(f)
 
 ```python
 >>>
-paste mode; Ctrl-C to cancel, Ctrl-D to finish
-=== import os
-=== f = os.listdir()
-=== print(f)
 ['boot.py','main.py', 'freq.conf']
 >>>
 

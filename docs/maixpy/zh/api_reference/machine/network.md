@@ -1,5 +1,9 @@
-network
-=========
+---
+title: WIZNET5K_Module
+keywords: maixpy, k210, AIOT, 边缘计算
+desc: maixpy doc: WIZNET5K_Module
+---
+
 
 该模块用于初始化各种网卡驱动，网卡具有连接路由，断开路由，查看网卡连接信息，检查是否连接等功能。
 
@@ -16,8 +20,6 @@ network
 同时也有单独的`TF`插卡式模块
 
 
-ESP8285_Module
-=========
 
 ## network.ESP8285(uart)
 
@@ -223,8 +225,6 @@ nic.enable_ap("maixpy", "12345678", 5, network.ESP8285.OPEN)
 
 参考[network目录下的例程](https://github.com/sipeed/MaixPy_scripts/tree/master/network)
 
-ESP32_Module
-=========
 
 ## network.ESP32_SPI(cs,rst,rdy,mosi,miso,sclk)
 
@@ -262,8 +262,6 @@ ESP32_Module
 [demo_esp32_read_adc.py](https://github.com/sipeed/MaixPy_scripts/blob/master/network/demo_esp32_read_adc.py)
 
 
-WIZNET5K_Module
-=========
 
 
 ## network.WIZNET5K(spi, cs)

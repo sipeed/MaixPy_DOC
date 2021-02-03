@@ -1,5 +1,9 @@
-pye (Micropython Editor)
-=========
+---
+title: pye (Micropython Editor)
+keywords: maixpy, k210, AIOT, 边缘计算
+desc: maixpy doc: pye (Micropython Editor)
+---
+
 
 在 MaixPy 中, 我们内置了一款编开源编辑器 [Micropython Editor(pye)](https://github.com/robert-hh/Micropython-Editor)
 

@@ -1,5 +1,9 @@
-如何用 C 添加一个 MaixPy 模块
-=====
+---
+title: 如何用 C 添加一个 MaixPy 模块
+keywords: maixpy, k210, AIOT, 边缘计算
+desc: maixpy doc: 如何用 C 添加一个 MaixPy 模块
+---
+
 
 
 ## 预备知识

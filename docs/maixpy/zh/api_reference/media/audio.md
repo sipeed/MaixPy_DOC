@@ -1,5 +1,9 @@
-audio（音频）
-============
+---
+title: audio（音频）
+keywords: maixpy, k210, AIOT, 边缘计算
+desc: maixpy doc: audio（音频）
+---
+
 
 抽象的音频对象，该对象可以被当做参数传入也可以直接使用其方法来播放音频
 

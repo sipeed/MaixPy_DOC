@@ -1,5 +1,9 @@
-Maixhub 常见问题
-========
+---
+title: Maixhub 常见问题
+keywords: maixpy, k210, AIOT, 边缘计算
+desc: maixpy doc: Maixhub 常见问题
+---
+
 
 ## 怎么制作数据集
 

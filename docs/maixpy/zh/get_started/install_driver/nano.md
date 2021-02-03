@@ -1,5 +1,9 @@
-Maix Nano USB 驱动安装
-======
+---
+title: Maix Nano USB 驱动安装
+keywords: maixpy, k210, AIOT, 边缘计算
+desc: maixpy doc: Maix Nano USB 驱动安装
+---
+
 
 ## Linux
 

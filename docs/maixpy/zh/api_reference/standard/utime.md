@@ -1,5 +1,9 @@
-utime – 时间相关的功能
-=====
+---
+title: utime – 时间相关的功能
+keywords: maixpy, k210, AIOT, 边缘计算
+desc: maixpy doc: utime – 时间相关的功能
+---
+
 
 
 该模块实现了相应CPython模块的子集，如下所述。有关更多信息，请参阅原始CPython文档： [time](https://docs.python.org/3.5/library/time.html#module-time).

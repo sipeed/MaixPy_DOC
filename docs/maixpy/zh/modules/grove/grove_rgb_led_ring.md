@@ -1,5 +1,9 @@
-Grove - RGB LED Ring(LED 灯条)
-==========
+---
+title: Grove - RGB LED Ring(LED 灯条)
+keywords: maixpy, k210, AIOT, 边缘计算
+desc: maixpy doc: Grove - RGB LED Ring(LED 灯条)
+---
+
 
 <div class="grove_pic">
 <img src="../../../assets/hardware/module_grove/grove_led_ring.jpg">

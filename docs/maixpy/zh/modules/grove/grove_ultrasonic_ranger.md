@@ -1,5 +1,9 @@
-Grove - Ultrasonic Ranger(超声波测距)
-=======
+---
+title: Grove - Ultrasonic Ranger(超声波测距)
+keywords: maixpy, k210, AIOT, 边缘计算
+desc: maixpy doc: Grove - Ultrasonic Ranger(超声波测距)
+---
+
 
 <div class="grove_pic">
 <img src="../../../assets/hardware/module_grove/ultrasonic.jpg">

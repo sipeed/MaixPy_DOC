@@ -1,5 +1,9 @@
-machine.PWM
-========
+---
+title: machine.PWM
+keywords: maixpy, k210, AIOT, 边缘计算
+desc: maixpy doc: machine.PWM
+---
+
 
 PWM： 脉宽调制模块， 硬件支持的PWM， 可以指定任意引脚（0到47引脚）
 
