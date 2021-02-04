@@ -1,3 +1,8 @@
+iframe {
+    width: 43vw;
+    height: 34vw;
+    min-width: 90%;
+}
 #navbar h2 {
     display: none;
 }
