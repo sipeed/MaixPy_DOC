@@ -1,0 +1,52 @@
+{
+    "site_name": "MaixPy",
+    "site_slogon": "让AIOT更简单",
+    "site_root_url": "/",
+    "route": {
+        "docs": {
+            "/maixpy/zh": "docs/maixpy/zh",
+            "/maixpy/en": "docs/maixpy/en",
+            "/maixpy3/zh": "docs/maixpy3/zh",
+            "/maixpy3/en": "docs/maixpy3/en"
+        },
+        "pages": {
+            "/": "pages/index/zh",
+            "/en": "pages/index/en"
+        },
+        "assets": {
+            "/static": "static",
+            "/maixpy/assets": "docs/maixpy/assets",
+            "/maixpy3/assets": "docs/maixpy3/assets"
+        },
+        "/blog": "blog"
+    },
+    "executable": {
+        "python": "python3",
+        "pip": "pip3"
+    },
+    "plugins": {
+        "teedoc-plugin-markdown-parser":{
+            "from": "pypi",
+            "config": {
+                "toc_depth": 3
+            }
+        },
+        "teedoc-plugin-theme-default":{
+            "from": "pypi",
+            "config": {
+                "dark": true,
+                "env":{
+                    "main_color": "#ff6b63"
+                },
+                "css": "/static/css/custom.css",
+                "js": "/static/js/custom.js"
+            }
+        },
+        "teedoc-plugin-search":{
+            "from": "pypi",
+            "config": {
+                "search_hint": "Search"
+            }
+        }
+    }
+}
