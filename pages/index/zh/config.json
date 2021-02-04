@@ -40,30 +40,63 @@
         ]
     },
     "footer":{
-        "items":[
+        "top":[
             {
-                "url": "https://github.com/sipeed/MaixPy",
-                "label": "MaixPy github",
-                "target": "_blank",
-                "position": "left"
+                "label": "链接",
+                "items": [
+                    {
+                        "label": "Sipeed",
+                        "url": "https://www.sipeed.com",
+                        "target": "_blank"
+                    },
+                    {
+                        "label": "BBS 论坛",
+                        "url": "https://bbs.sipeed.com/",
+                        "target": "_blank"
+                    },
+                    {
+                        "label": "Sipeed 淘宝",
+                        "url": "https://sipeed.taobao.com/",
+                        "target": "_blank"
+                    },
+                    {
+                        "label": "使用 teedoc 构建",
+                        "url": "https://github.com/neutree/teedoc",
+                        "target": "_blank"
+                    }
+                ]
             },
             {
-                "url": "https://github.com/sipeed/MaixPy3",
-                "label": "MaixPy3 github",
-                "target": "_blank",
-                "position": "left"
-            },
+                "label": "源码",
+                "items": [
+                    {
+                        "label": "MaixPy3",
+                        "url": "https://github.com/sipeed/MaixPy3",
+                        "target": "_blank"
+                    },
+                    {
+                        "label": "MaixPy",
+                        "url": "https://github.com/sipeed/MaixPy",
+                        "target": "_blank"
+                    },
+                    {
+                        "label": "文档源文件",
+                        "url": "https://github.com/sipeed/MaixPy_DOC",
+                        "target": "_blank"
+                    }
+                ]
+            }
+        ],
+        "bottom": [
             {
+                "label": "Copyright © 2018-2021 Sipeed Ltd",
                 "url": "https://www.sipeed.com",
-                "label": "sipeed",
-                "target": "_blank",
-                "position": "right"
+                "target": "_blank"
             },
             {
-                "url": "https://beian.miit.gov.cn",
                 "label": "粤ICP备19015433号",
-                "target": "_blank",
-                "position": "middle"
+                "url": "https://beian.miit.gov.cn",
+                "target": "_blank"
             }
         ]
     },

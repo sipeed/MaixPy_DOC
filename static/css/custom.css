@@ -81,7 +81,9 @@ th {
     background-color: #ff6b63;
     border: 2px solid #d8524b;
 }
-  
+#footer_top > ul {
+    margin: 0 15em;
+}
 
 @media screen and (max-width: 900px) {
     #big_btn_wrapper {
