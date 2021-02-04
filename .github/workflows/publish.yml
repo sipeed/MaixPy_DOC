@@ -37,7 +37,9 @@ jobs:
           export PATH=~/.local/bin/:$PATH
           teedoc install
           teedoc build
-          out_dir=out`python3 -c 'import json; f=open("site_config.json");config=json.load(f);print(config["site_root_url"])'`
+          out_dir=out`python3 -c 'import json; f=open("site_config.json");config=json.load(f);path=config["site_root_url"] if config["site_root_url"].endswith("/") else config["site_root_url"][:-1];print(path)'`
+          mkdir -p $out_dir/.github/workflows
+          cp .github/workflows/* $out_dir/.github/workflows/
           cd $out_dir
           git init
           git config user.name ${{ secrets.GIT_NAME }}
