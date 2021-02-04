@@ -1,7 +1,7 @@
-teedoc official website
+MaixPy and MaixPy3 doc
 =====
 
-visit: [teedoc.github.io](https://teedoc.github.io)
+visit: [maixpy.sipeed.com](https://maixpy.sipeed.com)
 
 
 ## build locally
