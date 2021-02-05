@@ -92,5 +92,8 @@ th {
     #big_btn_wrapper > div {
         margin: 2em 0;
     }
+    #footer_top > ul {
+        margin: 0 0;
+    }
 }
 
