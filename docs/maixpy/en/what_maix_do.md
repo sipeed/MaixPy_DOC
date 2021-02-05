@@ -5,94 +5,102 @@ desc: maixpy ​​doc: What can MaixPy do
 ---
 
 
-Most of the APIs already exist on MaixPy, some may come from [Maixduino](https://Maixduino.sipeed.com) or other developers~
+Powerful Maix Board(k210) and MaixPy Can Do
+===========
 
+Most of them integrated to MaixPy, or some of them include in [Maixduino](https://Maixduino.sipeed.com) or from other developers
 
-## Face Detection
-
-<iframe style src="//player.bilibili.com/player.html?aid=48648880&cid=85194253&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true "> </iframe>
-
-## MobileNet Object Recognition
-
-<iframe src="//player.bilibili.com/player.html?aid=46664014&cid=81743560&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" > </iframe>
-
-## tiny yolov2 20 categories
-
-<iframe src="//player.bilibili.com/player.html?aid=50442796&cid=88307224&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" > </iframe>
 
 ## Face recognition
 
-<iframe src="//player.bilibili.com/player.html?aid=77466790&amp;cid=132521878&amp;page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen ="true"> </iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/hS_mcGptXeo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-## Emotion recognition
+## draw picture Turorial
 
-<iframe src="//player.bilibili.com/player.html?aid=627513525&bvid=BV1Jt4y1i755&cid=247518143&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen=" true"> </iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/el6CB-h9Lo0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-## Identify color values, find shapes, find straight lines, facial recognition, etc.
+## Openmv and Record video
 
-<iframe src="//player.bilibili.com/player.html?aid=48652548&cid=85200171&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" > </iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/fpJZIisYKao" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-Video from [Hardware.ai](https://www.youtube.com/channel/UCCBSoR9ZO0Uj7W6jH9Y317g)
 
-## MNIST Handwritten Digit Recognition
+## MobileNet
 
-<iframe src="//player.bilibili.com/player.html?aid=46663492&cid=81742916&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" > </iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/9hGWvLRDhrM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-## License Plate Recognition
+## Face detection
 
-<iframe src="//player.bilibili.com/player.html?aid=628060482&bvid=BV1it4y1Y7zc&cid=263532620&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen=" true"> </iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/BGctumZuhao" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-## Sorting system
 
-<iframe src="//player.bilibili.com/player.html?aid=927463889&bvid=BV1pT4y1w7Aq&cid=246175512&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen=" true"> </iframe>
+## NES gamer emulator
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/y7-hM2UHuNw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+## MNIST
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/WhJuCODEfpQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+## Play video
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/BbrdCNxnxv0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 
 ## Feature map display
 
-<iframe src="//player.bilibili.com/player.html?aid=44971536&cid=78764427&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" > </iframe>
-
-## Video playback and recording
-
-<iframe src="//player.bilibili.com/player.html?aid=44971751&cid=78764762&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" > </iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/jA6JQ3Wevdw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
+## GBA game emulator
 
-## NES game emulator (FC red and white machine)
-
-<iframe src="//player.bilibili.com/player.html?aid=48653991&cid=85202525&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" > </iframe>
-
-
-## GBA Game Emulator
-
-<iframe src="//player.bilibili.com/player.html?aid=48654358&cid=85203041&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" > </iframe>
-
-[Source code](https://github.com/44670/mgba-k210)
-
+<iframe width="560" height="315" src="https://www.youtube.com/embed/kPpH_cA83-I" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
 ## Game Quake I
 
-<iframe src="//player.bilibili.com/player.html?aid=48656943&cid=85206864&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" > </iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/poBBrIWt_HE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-[Source code](https://github.com/elect-gombe/quake-k210)
+[source code](https://github.com/elect-gombe/quake-k210)
 
-## MMD 3D real-time rendering
 
-<iframe src="//player.bilibili.com/player.html?aid=48656998&cid=85206967&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" > </iframe>
+## Game Doom
 
-[Source code](https://github.com/elect-gombe/k210_mmd)
+<iframe width="560" height="315" src="https://www.youtube.com/embed/fRjF498k2r4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-## GUI interface littlevGL
+[source code](https://github.com/elect-gombe/k210-doom)
 
-<iframe src="//player.bilibili.com/player.html?aid=48653253&cid=85201363&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" > </iframe>
+## MMD 3D rendering
 
-## Yuntai face tracking
+<iframe width="560" height="315" src="https://www.youtube.com/embed/L7xmXQgnf3c" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-<iframe src="//player.bilibili.com/player.html?aid=36466137&cid=64024878&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" > </iframe>
+<video src="http://dl.cdn.sipeed.com/k210_mmd.MOV" controls="controls">
+your browser does not support the video tag
+</video>
 
-## Microphone array
+[source code](https://github.com/elect-gombe/k210_mmd)
 
-<iframe src="//player.bilibili.com/player.html?aid=37058760&cid=65120313&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" > </iframe>
 
-## FFT Spectrogram
+## Gimbal face track
 
-<iframe src="//player.bilibili.com/player.html?aid=44617696&cid=78104545&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" > </iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/7bpNVzFbGa0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+## Mic array
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Wb2Dnd-Wk60" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+## LittlevGL
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Bcwkg3qOwY8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+
+## FFT spectrum
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/HvBVj-QgaB8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+
+

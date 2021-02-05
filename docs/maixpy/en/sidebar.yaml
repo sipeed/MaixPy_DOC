@@ -7,17 +7,17 @@ items:
     file: maixpy_history.md
 -   label: Thanks
     file: thanks.md
--   label: A must-see guide for getting started
+-   label: Getting started
     items:
-    -   label: How to read this article correctly (important!!!)
+    -   label: How to read correctly (important!!!)
         file: how_to_read.md
-    -   label: How to ask questions gracefully (important!!!)
+    -   label: How to ask gracefully (important!!!)
         file: how_to_ask.md
-    -   label: Development Board and Accessories Selection Guide
+    -   label: Development Boards
         items:
-        -   label: Development Board Selection Guide (Comparison)
+        -   label: Boards Comparison
             file: develop_kit_board/get_hardware.md
-        -   label: Development board introduction
+        -   label: Boards introduction
             items:
             -   label: Maix Dock
                 file: develop_kit_board/maix_dock.md
@@ -51,7 +51,7 @@ items:
             file: get_started/knowledge_image.md
         -   label: MaixPy audio basics
             file: get_started/knowledge_audio.md
-    -   label: Development Environment Preparation
+    -   label: Environment Preparation
         items:
         -   label: Install Driver
             file: get_started/env_install_driver.md
@@ -84,31 +84,31 @@ items:
         items:
         -   label: Power on
             file: get_started/get_started_power_on.md
-        -   label: 'First program: use screen and camera'
+        -   label: 'First program: screen and camera'
             file: get_started/get_started_cam_lcd.md
-        -   label: 'Second program: turn on the LED'
+        -   label: 'Second program: LED'
             file: get_started/get_started_led_blink.md
         -   label: Introduction to Storage System
             file: get_started/get_started_fs.md
-        -   label: Edit and run script
+        -   label: Edit and run scripts
             file: get_started/get_started_edit_file.md
-        -   label: Upload script to development board
+        -   label: Upload scripts to board
             file: get_started/get_started_upload_script.md
-        -   label: Automatically run script when booting
+        -   label: Auto-run when booting
             file: get_started/get_started_boot.md
-        -   label: Development board configuration file
+        -   label: Board configuration file
             file: api_reference/builtin_py/board_info.md
-        -   label: Getting started video tutorial
+        -   label: Video tutorial
             file: get_started/maixpy_get_started_video.md
     -   label: Firmware customization
         items:
-        -   label: Why do I need customized firmware
+        -   label: Why customized firmware
             file: firmware/why_customize_firware.md
         -   label: Online Compile
             file: firmware/online_compile.md
-        -   label: Source code compilation
+        -   label: Compile from source code
             file: firmware/compile.md
--   label: MaixPy hands-on tutorial
+-   label: Tutorial
     items:
     -   label: Tutorial Description
         file: course/readme.md
@@ -264,7 +264,7 @@ items:
             items:
             -   label: NES game console
                 file: api_reference/media/nes.md
--   label: API Manual
+-   label: API reference
     items:
     -   label: Standard Library
         file: api_reference/standard/README.md
@@ -377,11 +377,11 @@ items:
             file: api_reference/extend/htpa.md
         -   label: modules.onewire
             file: api_reference/extend/onewire.md
--   label: Frequently Asked Questions FAQ
+-   label: FAQ
     items:
     -   label: MaixPy FAQ
         file: others/maixpy_faq.md
-    -   label: MaixHub platform FAQ
+    -   label: MaixHub FAQ
         file: others/maixhub_faq.md
 -   label: Advanced
     items:

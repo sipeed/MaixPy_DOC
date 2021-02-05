@@ -1,24 +1,24 @@
 {
     "navbar": {
-        "title": "teedoc",
+        "title": "MaixPy",
         "logo": {
-            "alt": "teedoc logo",
+            "alt": "MaixPy logo",
             "src": "/static/image/logo.png"
         },
-        "home_url": "/en",
+        "home_url": "/en/",
         "items": [
             {
-                "url": "/get_started/en",
-                "label": "Install",
+                "url": "/maixpy/en/",
+                "label": "MaixPy",
                 "position": "left"
             },
             {
-                "url": "/develop/en",
-                "label": "Develop",
+                "url": "/maixpy3/en/",
+                "label": "MaixPy",
                 "position": "left"
             },
             {
-                "url": "https://github.com/neutree/teedoc",
+                "url": "https://github.com/sipee]",
                 "label": "github",
                 "target": "_blank",
                 "position": "right"
@@ -28,11 +28,11 @@
                 "position": "right",
                 "items": [
                     {
-                        "url": "/develop/zh",
+                        "url": "/maixpy/zh",
                         "label": "中文"
                     },
                     {
-                        "url": "/develop/en",
+                        "url": "/maixpy/en",
                         "label": "English"
                     }
                 ]

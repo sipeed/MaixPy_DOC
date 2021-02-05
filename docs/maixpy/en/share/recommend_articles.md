@@ -20,4 +20,6 @@ You can also directly add experience sharing in the document according to [Parti
 
 The article links are all included in the following posts to facilitate updates:
 
-[[Selected Article Navigation]](https://cn.bbs.sipeed.com/d/481)
+[Selected Article Navigation](https://cn.bbs.sipeed.com/d/481) (Maybe Chienese article, you can use google translation to translate)
+
+

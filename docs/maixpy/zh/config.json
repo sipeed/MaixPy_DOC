@@ -8,12 +8,12 @@
         "home_url": "/",
         "items": [
             {
-                "url": "/maixpy/zh",
+                "url": "/maixpy/zh/",
                 "label": "MaixPy",
                 "position": "left"
             },
             {
-                "url": "/maixpy3/zh",
+                "url": "/maixpy3/zh/",
                 "label": "MaixPy3",
                 "position": "left"
             },
@@ -28,11 +28,11 @@
                 "position": "right",
                 "items": [
                     {
-                        "url": "/maixpy/zh",
+                        "url": "/maixpy/zh/",
                         "label": "中文"
                     },
                     {
-                        "url": "/maixpy/en",
+                        "url": "/maixpy/en/",
                         "label": "English"
                     }
                 ]

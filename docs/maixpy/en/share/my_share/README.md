@@ -32,14 +32,14 @@ cd MaixPy_DOC
 ### New directory
 
 Need to create a new directory dedicated to writing shared articles,
-Create a folder in the `MaixPy_DOC/zh/share/my_share/` directory, the folder name can only be in lowercase English and underscore, you can name it with your English name, such as `tom` or `lihua`,
-The following uses `MaixPy_DOC/zh/share/my_share/tom` as an example
+Create a folder in the `MaixPy_DOC/docs/maixpy/zh/share/my_share/` directory, the folder name can only be in lowercase English and underscore, you can name it with your English name, such as `tom` or `lihua`,
+The following uses `MaixPy_DOC/docs/maixpy/zh/share/my_share/tom` as an example
 
-Of course, if you write an English document, you need to put it in the `MaixPy_DOC/en/share/my_share/tom` folder
+Of course, if you write an English document, you need to put it in the `MaixPy_DOC/docs/maixpy/en/share/my_share/tom` folder
 
 Create a file in this folder, name it `readme.md`, and use the `markdown` syntax to write and share in it,
-Create a `MaixPy_DOC/zh/share/my_share/tom/assets` directory to store pictures,
-The relative path is used to reference the pictures in the document. For example, if the path of an image is `MaixPy_DOC/zh/share/my_share/tom/assets/cover.jpg`, it will be in `MaixPy_DOC/zh/share/my_share/tom/readme.md `Use the following syntax to quote pictures in
+Create a `MaixPy_DOC/docs/maixpy/zh/share/my_share/tom/assets` directory to store pictures,
+The relative path is used to reference the pictures in the document. For example, if the path of an image is `MaixPy_DOC/docs/maixpy/zh/share/my_share/tom/assets/cover.jpg`, it will be in `MaixPy_DOC/docs/maixpy/zh/share/my_share/tom/readme.md `Use the following syntax to quote pictures in
 ```
 ![Cover](./assets/cover.jpg)
 ```
@@ -54,7 +54,7 @@ To write a document **must** follow the grammar and format requirements: **See [
 
 **Document template**, write an article according to the template, you can modify it according to your own situation
 
-```
+```markdown
 
 
 | Author | Contact | Personal Homepage |
@@ -122,7 +122,7 @@ Indicate the articles and source code cited in the article in a list here
 ### Add this share to the directory column on the left side of the document
 
 
-Open `MaixPy_DOC/zh/SUMMARY.md`, add your own share at the end, such as
+Open `MaixPy_DOC/docs/maixpy/zh/SUMMARY.md`, add your own share at the end, such as
 
 
 

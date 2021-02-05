@@ -29,18 +29,20 @@ desc: maixpy ​​doc: Introduction to MaixPy documentation
     <tbody>
         <tr>
             <td><strong>MaixPy</strong> The only official document official website</td>
-            <td><span class="limit_width">Official website:</span> <span class=""><a href="https://maixpy.sipeed.com" rel="nofollow"><strong>maixpy. sipeed.com</strong></a></span><br><span class="limit_width">Chinese site: </span><span class=""><a href="https://cn .maixpy.sipeed.com" rel="nofollow"><strong>cn.maixpy.sipeed.com</strong></a></span></td>
+            <td><span class="limit_width">Official website:</span> <span class=""><a href="https://maixpy.sipeed.com" rel="nofollow"><strong>maixpy. sipeed.com</strong></a></span><br><span class="limit_width">Chinese site: </span><span class=""><a href="https://cn.maixpy.sipeed.com" rel="nofollow"><strong>cn.maixpy.sipeed.com</strong></a></span>
+            <br><span class="limit_width">Site on github: </span><span class=""><a href="https://en.maixpy.sipeed.com" rel="nofollow"><strong>en.maixpy.sipeed.com</strong></a></span>
+            </td>
         </tr>
         <tr>
-            <td><strong>MaixPy</strong> Routine Warehouse</td>
-            <td><span class="limit_width">github:</span> <span class=""><a href="https://github.com/sipeed/MaixPy_scripts"><strong>github/maixpy_script</span> strong></a></span> <br><span class="limit_width">Domestic:</span><span class=""><a href="https://gitee.com/Sipeed/maixpy_scripts "rel="nofollow"><strong>gitee/maixpy_scripts</strong></a></span></td>
+            <td><strong>MaixPy</strong> demo repository</td>
+            <td><span class="limit_width">github:</span> <span class=""><a href="https://github.com/sipeed/MaixPy_scripts"><strong>github/maixpy_script </strong></a></span> <br><span class="limit_width">Domestic:</span><span class=""><a href="https://gitee.com/Sipeed/maixpy_scripts "rel="nofollow"><strong>gitee/maixpy_scripts</strong></a></span></td>
         </tr>
         <tr>
             <td>MaixPy source code</td>
             <td><span class="limit_width"></span><span class=""><a href="https://github.com/sipeed/MaixPy"><strong>github: MaixPy</strong> </a></span></td>
         </tr>
         <tr>
-            <td>Development board data download</td>
+            <td>Hardware data download</td>
             <td><span class="limit_width"></span><span class=""><a href="http://dl.sipeed.com/MAIX/HDK" rel="nofollow"><strong> dl.sipeed.com</strong></a></span></td>
         </tr>
         <tr>
@@ -57,7 +59,7 @@ desc: maixpy ​​doc: Introduction to MaixPy documentation
 ## About MaixPy
 
 
-[**MaixPy**](https://maixpy.sipeed.com/zh/maixpy.sipeed.com) is to port [Micropython](http://micropython.org/) to [K210](https:/ /canaan-creative.com/product/kendryteai) (a 64-bit dual-core RISC-V CPU with hardware FPU, convolution accelerator, FFT, Sha256) is a project that supports the normal operation of the MCU and integrates hardware acceleration. AI` machine vision and microphone array, `1TOPS` computing power core module is less than `￥50`, in order to quickly develop intelligent applications in the field of `AIOT` with extremely low cost and practical size.
+[**MaixPy**](https://maixpy.sipeed.com/zh/maixpy.sipeed.com) is to port [Micropython](http://micropython.org/) to [K210](https:/ /canaan-creative.com/product/kendryteai) (a 64-bit dual-core RISC-V CPU with hardware FPU, convolution accelerator, FFT, Sha256) is a project that supports the normal operation of the MCU and integrates hardware acceleration. `AI` machine vision and microphone array, `1TOPS` computing power core module is less than `￥50`, in order to quickly develop intelligent applications in the field of `AIOT` with extremely low cost and practical size.
 
 > MicroPython is a parser based on the grammar of Python3. It contains most of the basic grammar of Python3. It mainly runs on embedded chips with limited performance and memory. (Note that Micropython does not include all the syntax of Python3)
 
@@ -150,7 +152,7 @@ All about MaixPy, including:
 * Detailed step-by-step tutorial
 * Sharing from the community (tutorial or open source project)
 
-**In order to avoid encountering difficult problems during the learning process, please read from top to bottom according to the directory structure on the left, especially the chapters written in the front, do not skip **
+**In order to avoid encountering difficult problems during the learning process, please read from top to bottom according to the directory structure on the left, especially the chapters written in the front, do not skip**
 
 
 ## Can run MaixPy development board
@@ -160,10 +162,10 @@ First of all, we need to choose a development board that suits us. For the MaixP
 To get these boards, you can visit the official website of Sipeed [www.sipeed.com](https://www.sipeed.com/), or [official Taobao shop](https://sipeed.taobao.com/ )
 ## MaixPy source code
 
-`MaixPy` source code refers to the `Micropython` parser running on `K210`, written in `C language`, if you just want to use MaixPy, you don't need to know the source code;
+`MaixPy` source code refers to the `Micropython` parser running on `K210`, written in `C language`, source code is hosted on [github](https://github.com/sipeed/MaixPy), if you just want to use MaixPy, you don't need to know the source code, but you can also give MaixPy project a star [here](https://github.com/sipeed/MaixPy);
+
 If you want to participate in the development of MaixPy’s built-in functions, you can download for development, and welcome everyone to submit a PR
 
-MaixPy source code is hosted on [github](https://github.com/sipeed/MaixPy)
 
 This project is mainly maintained by &copy;<a href="https://www.sipeed.com" style="color: #f14c42">Sipeed</a> Co.,Ltd., and accepts contributions from the open source community, For specific contributions, see [Contributor List](https://github.com/sipeed/MaixPy/graphs/contributors)
 
@@ -198,7 +200,7 @@ The following communication methods provide assistance:
     </thead>
     <tbody>
         <tr>
-            <td>issue</td>
+            <td>issue(recommend)</td>
             <td><a href="https://github.com/sipeed/MaixPy/issues">https://github.com/sipeed/MaixPy/issues</a></td>
         </tr>
         <tr>
@@ -206,11 +208,11 @@ The following communication methods provide assistance:
             <td><a href="https://bbs.sipeed.com" rel="nofollow">https://bbs.sipeed.com</a></td>
         </tr>
         <tr>
-            <td>MaixPy AI QQ exchange group</td>
+            <td>MaixPy AI QQ group</td>
             <td>878189804</td>
         </tr>
         <tr>
-            <td>MaixPy AI QQ Exchange Group (Second Group)</td>
+            <td>MaixPy AI QQ Group (Second Group)</td>
             <td>1129095405</td>
         </tr>
         <tr>

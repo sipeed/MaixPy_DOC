@@ -11,10 +11,10 @@ This is a development guide for **MaixPy** developers. **MaixPy** as an open sou
 
 ## Normative principles
 
--[x] Simple, avoid obscure syntax
--[x] Strict and logical thinking
--[x] Simple, concise naming and refined code
--[x] Performance, optimized by algorithm, compiler and hardware
+- [x] Simple, avoid obscure syntax
+- [x] Strict and logical thinking
+- [x] Simple, concise naming and refined code
+- [x] Performance, optimized by algorithm, compiler and hardware
 
 ## Directory structure && file name
 
@@ -23,7 +23,7 @@ This is a development guide for **MaixPy** developers. **MaixPy** as an open sou
 The entire project is divided into subdirectories according to functional modules, and each subdirectory is divided into header files and source file directories to make the structure clear and easy to understand.
 If the catalog name has no special requirements, please use all lowercase; the catalog name should reflect part of the meaning, and the components directory can reflect the meaning of components.
 
--File structure
+- File structure
 
 If there is no special requirement for the file name (if you quote other places, you can keep the corresponding name), please use all lowercase. In addition, in order to avoid the problem of duplicate file names, please try not to use generalized and frequently used names in some places.
 
@@ -212,6 +212,6 @@ parameter:
 
 ## Specification Reference
 
--AliOS-Things - [《AliOS Things Coding Style Guide》](https://github.com/alibaba/AliOS-Things/wiki/AliOS-Things-Coding-Style-Guide)
+- AliOS-Things - [《AliOS Things Coding Style Guide》](https://github.com/alibaba/AliOS-Things/wiki/AliOS-Things-Coding-Style-Guide)
 
--RT-Thread - [《RT-Thread Programming Style》](https://github.com/RT-Thread/rt-thread/blob/master/documentation/coding_style_cn.md)
+- RT-Thread - [《RT-Thread Programming Style》](https://github.com/RT-Thread/rt-thread/blob/master/documentation/coding_style_cn.md)

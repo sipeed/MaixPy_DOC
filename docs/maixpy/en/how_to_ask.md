@@ -71,7 +71,7 @@ Such a title must **not** appear:
 * `I run the xxx program and something went wrong`
 
 You can ask:
-* `[MaixPy question] My board cannot be started after I connected the power reversely. How can I tell where the board is burned? If so, how can I save it?
+* `[MaixPy question] My board cannot be started after I connected the power reversely. How can I tell where the board is burned? If so, how can I save it?`~
 * `[MaixPy BUG] pix_to_ai did not convert the last pixel`
 
 #### Content

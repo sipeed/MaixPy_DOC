@@ -163,10 +163,10 @@ please read doc before run it!
 
 ## MaixPy 源码
 
-`MaixPy` 源码是指 运行在 `K210` 上的 `Micropython` 语法解析器， 使用 `C语言` 编写，如果只是想使用 MaixPy，不需要了解源码；
+`MaixPy` 源码是指 运行在 `K210` 上的 `Micropython` 语法解析器， 使用 `C语言` 编写， 源码托管在 [github](https://github.com/sipeed/MaixPy), 如果只是想使用 MaixPy，不需要了解源码， 但是也欢迎给 `MaixPy` 项目一个 `star` ;
+
 如果想参与开发 MaixPy 的内置功能，可以下载进行开发，欢迎大家提交 `PR`
 
-MaixPy 源码托管在 [github](https://github.com/sipeed/MaixPy)
 
 本项目主要由 &copy;<a href="https://www.sipeed.com" style="color: #f14c42">Sipeed</a> Co.,Ltd. 维护， 并接受来自开源社区的贡献， 具体贡献这见[贡献者列表](https://github.com/sipeed/MaixPy/graphs/contributors)
 

@@ -6,9 +6,6 @@ desc: maixpy ​​doc: MaixPy FAQ
 
 
 
-You can click the directory button on the right ![](../../assets/other/contents_button.jpg) to view the problem list, which is convenient for quickly finding the problem you need
-
-
 
 ## What are the similarities and differences between MaixPy and C development, and how should I choose
 
@@ -31,18 +28,22 @@ So if you are a quick verification, novice, only python, less hair, etc., you ca
 
   * Try to upgrade to the latest [master branch firmware](http://cn.dl.sipeed.com/MAIX/MaixPy/release/master), and the latest MaixPy IDE software
 
-    > MaixPy version number is lower than 0.5.0_v0 does not support connection to MaixPy IDE
+> MaixPy version number is lower than 0.5.0_v0 does not support connection to MaixPy IDE
+
 
 ## The document webpage cannot be opened and the speed is slow
 
 If you encounter some pages that cannot be accessed, please check whether the URL (path) is correct, and you can return to the home page (`maixpy.sipeed.com`) and re-enter.
 
 For example, this URL is caused by clicking too quickly:
-```
+
+```shell
 http://localhost:4000/zh/zh/get_started/how_to_read.html
 ```
+
 The correct URL should be:
-```
+
+```shell
 http://localhost:4000/zh/get_started/how_to_read.html
 ```
 
@@ -58,13 +59,13 @@ Some files provide CDN download links, which will be faster, for example, IDE ha
 
 Micro SD cannot be read phenomenon and solutions:
 
-1. Confirm whether the SD can be used normally on the computer, if not, the SD is damaged,
+* Confirm whether the SD can be used normally on the computer, if not, the SD is damaged,
 
-2. The computer can be used normally, read SD, but MaixPy development board cannot be used:
+* The computer can be used normally, read SD, but MaixPy development board cannot be used:
 
   SD card is not formatted as MBR partition FAT32 format
 
-3. The computer can use the SD card normally. It is also confirmed that the disk format of the SD card is FAT32, but the MaixPy development board still cannot be used:
+* The computer can use the SD card normally. It is also confirmed that the disk format of the SD card is FAT32, but the MaixPy development board still cannot be used:
 
   Possible reasons: When some SDs leave the factory, there is no disk partition table in the sd, or the disk partition table type is not MBR
 
@@ -79,8 +80,7 @@ Micro SD cannot be read phenomenon and solutions:
 
 ![MBR Type](../../assets/other/diskgenius_sd.png)
 
-
-3. SD card does not support SPI protocol
+* SD card does not support SPI protocol
 
 At present, the hardware can only support SPI protocol reading, try to buy a regular card
 
@@ -140,7 +140,7 @@ Since MaixPy supports many hardware models, the display direction will be incorr
 Before correcting the display direction, we need to confirm whether the sensor direction is rotated (the image in the upper right corner of MaixPy IDE is the image directly output by the Sensor) or the LCD direction is rotated
 Correction method:
 
--Sensor direction correction:
+- Sensor direction correction:
 
 ```python
 # Set camera horizontal mirroring
@@ -152,7 +152,7 @@ sensor.set_hmirror(enable)
 sensor.set_vflip(enable)
 ```
 
--lcd direction correction:
+- lcd direction correction:
 
 ```python
 # Set `LCD` screen orientation
@@ -205,9 +205,9 @@ Possible software reasons:
 
 kflash_gui configuration options
 
--Development board model
-  -The wrong development board model is selected
--Burning space (SRAM/Flash)
-  -Wrong selection of burning space
--Baud rate & download speed mode
-  -Download baud rate is too high
+- Development board model
+  - The wrong development board model is selected
+- Burning space (SRAM/Flash)
+  - Wrong selection of burning space
+- Baud rate & download speed mode
+  - Download baud rate is too high

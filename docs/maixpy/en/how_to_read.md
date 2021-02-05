@@ -20,7 +20,7 @@ desc: maixpy ​​doc: how to read this article correctly
   * **Built-in class**: Built-in class written in mpy (short for micropython), which can be found in the source code project
   * **Machine Vision**: Some machine vision related modules, image sensor lcd is roughly compatible with OpenMV API, but will not be updated with OpenMV in real time later
   * **Additional Peripheral Modules**: The use of some peripheral modules, such as touch screen, ultrasonic, LED lights, etc.
-  * **Built-in applications**: Built-in applications, such as NES game console (FC red and white console, that is, the Xiaobawang game console when I was a child), pye (built-in document editor)
+  * **Built-in applications**: Built-in applications, such as NES game console (FC gamer), pye (built-in document editor)
 * **Frequently Asked Questions FAQ**: Summary of frequently asked questions
 * **Advanced**: Some advanced gameplay, and how to participate in the modification of the document and the modification of the source code, or the contribution of the routine
 * **Community & Sharing**: Collect some good tutorials, works, open source projects, etc. from the community. You can also share your own works or tutorials according to the contribution instructions
@@ -38,7 +38,7 @@ desc: maixpy ​​doc: how to read this article correctly
 
 ## Learn to search
 
-* Regarding the interface and parameters of the module, please refer to it according to your needs when using it. **There is a search box** in the upper left corner, which can be used well. At the same time, you can also use the browser's page search function, that is, press the keyboard <kbd> Ctrl +F </kbd>, then enter the content to be searched and press the confirm key
+* Regarding the interface and parameters of the module, please refer to it according to your needs when using it. **There is a search box** in the upper right corner, which can be used well. At the same time, you can also use the browser's page search function, that is, press the keyboard <kbd> Ctrl +F </kbd>, then enter the content to be searched and press the confirm key
 * Please don’t worry if there is anything you can’t find, you can go to the [issue](https://github.com/sipeed/MaixPy/issues) page of github to find (search and search) if anyone has mentioned it , If not, you can create a new issue, or go to [Forum](https://bbs.sipeed.com) to search for the issue, and don’t ask for help anymore, or contact technical support.
 
 ## FAQ of this document

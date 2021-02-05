@@ -28,4 +28,6 @@ Claim:
 
 | Project Home | Introduction | Author |
 | --- | --- | --- |
+| [sipeed/MaixUI](https://github.com/sipeed/MaixUI)| An UI written with MaixPy scripts | Sipeed |
 | [eggfly/M5StickVComputer](https://github.com/eggfly/M5StickVComputer) | A pure Python application framework running on `M5StickV` | [eggfly](https://github.com/eggfly) |
+

@@ -12,17 +12,17 @@ If you have any doubts about the template format and content, please go to the p
 🙇‍ Thank you for your enthusiastic support!
 
 
--About documentation tools
+- About documentation tools
 
 > The document is written using `MarkDown` syntax, and the overall document project is built using `gitbook`; here it is recommended to use `Typora` and `VS Code` with `MarkDown` plug-in as a text editor
 
--About document storage
+- About document storage
 
 > Please save the example tutorial document to the path `./MaixPy_DOC/zh (here distinguish Chinese and English, Chinese: zh, English: en)/application/xxx (specific classification, please refer to the subsequent description for classification suggestions)/xxx (specific routine Name, it is recommended to use English name)`.md
 
 > It is recommended to use relative links for the pictures referenced in the document, and store the picture files in the folder `[file name].assets` in the same directory as the document;
 
--Establish storage path for document classification
+- Establish storage path for document classification
 
 > The recommended naming (storage path) that is strongly related to hardware peripherals is: ``
 
@@ -51,13 +51,13 @@ If you have any doubts about the template format and content, please go to the p
 
 > Explain the hardware and software environment to be prepared
 
--Preliminary knowledge
+- Preliminary knowledge
 
--Hardware
+- Hardware
 
     > Graphic description of the development board && peripheral modules used
 
--Software
+- Software
 
     > Graphic description of the software tools used, MaixPy version
     > If you use third-party software tools, you can attach the relevant name or download link
@@ -81,7 +81,7 @@ xxxxx
 
 -----
 
--Contributor description:
+- Contributor description:
 
 > Here is an entry point for contributors
 

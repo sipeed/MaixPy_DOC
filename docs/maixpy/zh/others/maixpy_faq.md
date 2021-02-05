@@ -6,10 +6,6 @@ desc: maixpy doc: MaixPy 常见问题
 
 
 
-可以点击右侧 目录按钮 ![](../../assets/other/contents_button.jpg) 来查看问题目录，方便快速寻找需要的问题
-
-
-
 ## MaixPy 与 C 开发有什么异同，我该怎么选择
 
 MaixPy 是基于 Micropython 的脚本语言， 不需要编译，在运行时解析，编写起来更简单方便，只是运行时时实性不如 C 语言。
