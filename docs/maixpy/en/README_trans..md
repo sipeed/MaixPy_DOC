@@ -1,13 +1,13 @@
 ---
 title: Introduction to MaixPy documentation
 keywords: maixpy, k210, AIOT, edge computing
-desc: maixpy ​​doc: Introduction to MaixPy documentation
+desc: maixpy ​​​​doc: Introduction to MaixPy documentation
 ---
 
 
 <div class="title_pic">
     <div class="logo_maixpy">
-    <img src="../assets/maixpy/maixpy.png" alt="maixpy ​​logo">
+    <img src="../assets/maixpy/maixpy.png" alt="maixpy ​​​​logo">
     </div>
     <span class="logo_sipeed">
     <img src="../assets/sipeed/sipeed_logo_4.svg" alt="sipeed logo">
@@ -29,11 +29,11 @@ desc: maixpy ​​doc: Introduction to MaixPy documentation
     <tbody>
         <tr>
             <td><strong>MaixPy</strong> The only official document official website</td>
-            <td><span class="limit_width">Official website:</span> <span class=""><a href="https://maixpy.sipeed.com" rel="nofollow"><strong>maixpy. sipeed.com</strong></a></span><br><span class="limit_width">Chinese site: </span><span class=""><a href="https://cn .maixpy.sipeed.com" rel="nofollow"><strong>cn.maixpy.sipeed.com</strong></a></span></td>
+            <td><span class="limit_width">Official website:</span> <span class=""><a href="https://maixpy.sipeed.com" rel="nofollow"><strong>maixpy . sipeed.com</strong></a></span><br><span class="limit_width">Chinese site: </span><span class=""><a href="https:// cn .maixpy.sipeed.com" rel="nofollow"><strong>cn.maixpy.sipeed.com</strong></a></span></td>
         </tr>
         <tr>
             <td><strong>MaixPy</strong> Routine Warehouse</td>
-            <td><span class="limit_width">github:</span> <span class=""><a href="https://github.com/sipeed/MaixPy_scripts"><strong>github/maixpy_script</span> strong></a></span> <br><span class="limit_width">Domestic:</span><span class=""><a href="https://gitee.com/Sipeed/maixpy_scripts "rel="nofollow"><strong>gitee/maixpy_scripts</strong></a></span></td>
+            <td><span class="limit_width">github:</span> <span class=""><a href="https://github.com/sipeed/MaixPy_scripts"><strong>github/maixpy_script</span> span> strong></a></span> <br><span class="limit_width">Domestic:</span><span class=""><a href="https://gitee.com/Sipeed /maixpy_scripts "rel="nofollow"><strong>gitee/maixpy_scripts</strong></a></span></td>
         </tr>
         <tr>
             <td>MaixPy source code</td>
@@ -123,7 +123,6 @@ while True:
 ```
 
 **AI Object Detection**:
-
 ```python
 import KPU as kpu
 import sensor
