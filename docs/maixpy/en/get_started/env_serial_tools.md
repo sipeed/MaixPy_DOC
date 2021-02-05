@@ -24,7 +24,7 @@ If the device is not found, you need to confirm whether the driver is installed 
 
 Commonly used serial terminal software for Windows includes [putty](https://www.putty.org/), [mobaxterm](https://mobaxterm.mobatek.net/), [xshell](https://xshell.en .softonic.com/) and other tools
 
--Putty
+- Putty
 
 Then select the serial port mode, then set the serial port and baud rate, and open the serial port.
 
@@ -38,7 +38,7 @@ Type `help()` to view the help
 
 > Source of the above picture: [laurentopia's tutorial](https://github.com/laurentopia/Learning-AI/wiki/MaixPy)
 
--Mobaxterm
+- Mobaxterm
 
 [MobaXterm](https://mobaxterm.mobatek.net/) is a very easy-to-use multi-function terminal software under Windows (of course it also includes a serial terminal)
 

@@ -8,6 +8,7 @@ desc: maixpy ​​doc: first program: use screen and camera
 The development board has a matching camera and screen, please check whether the hardware connection is correct before powering on
 
 Then power on, open the serial terminal, press the keyboard `Ctrl+E`, and paste the following code:
+
 ```python
 import sensor, lcd
 
@@ -31,6 +32,7 @@ If it displays `reset fail`, the camera is not connected well, or the camera is 
 
 The meaning of the above programs can be found in the API manual, which can be found in the directory on the left, or you can use the search box in the upper left corner to search.
 Now explain the above program:
+
 * `import sensor, lcd`: first import the built-in `sensor` (camera) library and `lcd` (screen) library
 * `sensor.reset()`: Initialize the camera. If it fails, check the hardware
 * `sensor.set_pixformat(sensor.RGB565)`: Set the camera to `RGB565` format, the default is to use `RGB565`

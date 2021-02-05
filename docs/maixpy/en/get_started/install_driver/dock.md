@@ -4,7 +4,6 @@ keywords: maixpy, k210, AIOT, edge computing
 desc: maixpy doc: Maix Dock USB driver installation
 ---
 
-
 ## Linux
 
 Linux does not need to install the driver, the system comes with it, use `ls /dev/ttyUSB*` to see the device number

@@ -9,14 +9,14 @@ desc: maixpy ​​doc: update MaixPy firmware
 
 hardware:
 
--USB Type-C data cable
--MaixPy development board
--PC (computer)
+- USB Type-C data cable
+- MaixPy development board
+- PC (computer)
 
 software:
 
--MaixPy development board USB driver
--kflash_gui
+- MaixPy development board USB driver
+- kflash_gui
 
 ## Confirm that the driver has been installed correctly
 

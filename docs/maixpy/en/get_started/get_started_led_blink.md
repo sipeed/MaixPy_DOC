@@ -20,11 +20,12 @@ For example, we want the red light to light up, that is, the LED connected to `L
 
 > Note that here `LED_R` is an alias for this pin, which is actually connected to a pin of the chip, such as `Pin13` or `IO13`
 
-## Peripheral to pin mapping: FPIOA (Field Programmable Input and Output Array)
+## FPIOA (Field Programmable Input and Output Array)
 
 Maybe you have used some single-chip microcomputers, and the manual stipulates the binding of pins and on-chip peripheral functions (that is, the peripherals integrated in the chip, such as `GPIO`, `I2C`, `SPI`, etc.), or re Mapping. For example, it is stipulated that `I2C` can only use `Pin9` and `Pin10`. After the remapping function is enabled, only `Pin11` and `Pin12` can be used
 
 However, the pins (hardware pins) corresponding to the on-chip peripherals of the hardware K210 used by MaixPy can be **arbitrarily mapped**. In contrast, the K210 hardware design and software design have more freedom. For example, `I2C` can use `Pin11` and `Pin12`, and can also be changed to any other pin
+
 > Pay attention to distinguish the difference between `GPIO` and `IO`. `IO` can also be called `Pin`, which is a hardware pin derived from the chip, and `GPIO` is a peripheral device that can control these Peripherals of `Pin/IO`
 
 Because of this powerful mapping function, when using pins, you need to add a step of mapping:

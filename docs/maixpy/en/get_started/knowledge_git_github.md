@@ -60,8 +60,10 @@ Solution:
 
 ## What is star
 
-On github, everyone can like and collect every public warehouse, that is, star, in the upper right corner of github ⭐-shaped button
-![](/assets/other/github_star.jpg)
+On github, everyone can like and collect every public warehouse, that is, star, in the upper right corner of github ⭐ shaped button
+
+![](../../assets/other/github_star.jpg)
+
 If you think the project is good, please give it a star. This will encourage developers to spend more time maintaining the warehouse, and also tell first-time visitors that this is a good project and deserves attention.
 
 After star, you can find your star warehouse in your profile, so you can find it next time

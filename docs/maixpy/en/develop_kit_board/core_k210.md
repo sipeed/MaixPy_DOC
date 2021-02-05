@@ -11,7 +11,7 @@ Kendryte K210 is a system-on-chip (SoC) that integrates machine vision and machi
 
 Kendryte K210 is located in the SoC of the AI ​​and IoT market, and it is also a very convenient MCU.
 
-The Chinese meaning of Kendryte is **Kingzhi**, and Kingzhi is derived from Geophysical Prospecting. The main application field of this chip is the Internet of Things field, and it is developed in the field of Internet of Things, so it is Prospecting; this chip mainly provides Artificial intelligence solutions are explored in the field of artificial intelligence, so they are intellectual exploration.
+The Chinese meaning of Kendryte is **Kanzhi(堪智)**, and Kanzhi is derived from Geophysical Prospecting. The main application field of this chip is the Internet of Things field, and it is developed in the field of Internet of Things, so it is Prospecting; this chip mainly provides Artificial intelligence solutions are explored in the field of artificial intelligence, so they are intellectual exploration.
 
 Have machine vision capabilities
 With machine hearing ability
