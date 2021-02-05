@@ -1,4 +1,8 @@
-
+---
+title: MaixPy - 易用的 AI 边缘计算 SDK
+keywords: maixpy, maixpy3, k210, AIOT, 边缘计算, AI, 单片机, 人脸识别, v831, v833, 嵌入式芯片
+desc: maixpy doc: MaixPy, 易用的 AI 边缘计算 SDK, 让 AIOT 开发更简单
+---
 
 
 

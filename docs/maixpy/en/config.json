@@ -14,11 +14,11 @@
             },
             {
                 "url": "/maixpy3/en/",
-                "label": "MaixPy",
+                "label": "MaixPy3",
                 "position": "left"
             },
             {
-                "url": "https://github.com/sipee]",
+                "url": "https://github.com/sipeed",
                 "label": "github",
                 "target": "_blank",
                 "position": "right"
@@ -82,6 +82,16 @@
                     {
                         "label": "Doc Source Files",
                         "url": "https://github.com/sipeed/MaixPy_DOC",
+                        "target": "_blank"
+                    }
+                ]
+            },
+            {
+                "label": "Analytics",
+                "items": [
+                    {
+                        "label": "Baidu Analytics",
+                        "url": "https://tongji.baidu.com/web/welcome/ico?s=90c693aa2475224142e727c14a50bb49",
                         "target": "_blank"
                     }
                 ]

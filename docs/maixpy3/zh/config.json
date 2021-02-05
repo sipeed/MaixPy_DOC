@@ -1,19 +1,19 @@
 {
     "navbar": {
-        "title": "MaixPy",
+        "title": "MaixPy3",
         "logo": {
-            "alt": "MaixPy logo",
+            "alt": "MaixPy3 logo",
             "src": "/static/image/logo.png"
         },
         "home_url": "/",
         "items": [
             {
-                "url": "/maixpy/zh",
+                "url": "/maixpy/zh/",
                 "label": "MaixPy",
                 "position": "left"
             },
             {
-                "url": "/maixpy3/zh",
+                "url": "/maixpy3/zh/",
                 "label": "MaixPy3",
                 "position": "left"
             },
@@ -28,11 +28,11 @@
                 "position": "right",
                 "items": [
                     {
-                        "url": "/maixpy3/zh",
+                        "url": "/maixpy3/zh/",
                         "label": "中文"
                     },
                     {
-                        "url": "/maixpy3/en",
+                        "url": "/maixpy3/en/",
                         "label": "English"
                     }
                 ]
