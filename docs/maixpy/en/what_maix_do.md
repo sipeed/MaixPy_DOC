@@ -4,10 +4,6 @@ keywords: maixpy, k210, AIOT, edge computing
 desc: maixpy ​​doc: What can MaixPy do
 ---
 
-
-Powerful Maix Board(k210) and MaixPy Can Do
-===========
-
 Most of them integrated to MaixPy, or some of them include in [Maixduino](https://Maixduino.sipeed.com) or from other developers
 
 
