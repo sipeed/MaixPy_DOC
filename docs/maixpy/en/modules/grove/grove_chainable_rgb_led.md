@@ -13,11 +13,12 @@ Grove-Chainable RGB LED uses 2-wire transmission (data and clock) to communicate
 
 ## Parameters
 
-| --- | --- |
-| --- | --- |
-| --- | --- |
-| --- | --- |
-| --- | --- |
+|Item|Value|
+|----|----|
+|Working voltage|5V |
+|Electric current|20mA|
+|Communication protocol|serial communication|
+
 
 ## Instructions
 

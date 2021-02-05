@@ -9,7 +9,7 @@ Recognize the two-dimensional code from the picture. The common two-dimensional 
 
 ## Instructions
 
-The image module has implemented a method to find the QR code, you need to use a non-minimum firmware version, you need to prepare a QR code, you can use [草料 QR code](https://cli.im/) to generate the content you want .
+The image module has implemented a method to find the QR code, you need to use a non-minimum firmware version, you need to prepare a QR code, you can use [caoliao QR code](https://cli.im/) to generate the content you want .
 
 * Get pictures from the camera, and point the camera at the QR code
 
