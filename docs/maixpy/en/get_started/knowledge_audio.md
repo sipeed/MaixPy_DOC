@@ -16,13 +16,13 @@ And the vibration of universal objects forms sound waves, that is, sound
 
 ## Audio coding basics
 
--Number of channels (number of channels)
+- Number of channels (number of channels)
 
 That is, the number of sound channels. When recording the sound, simultaneously record the audio of different spatial positions, that is, record multi-channel audio;
 
 Common audio files are divided into mono and stereo, that is, mono records audio at a single location, while stereo has left and right channels to record audio at different spatial locations, and can play different channels of audio through different speakers. In this way, the audio of different spatial positions is restored, and the human ear can feel the different spatial positions through audio (more spatial sense).
 
--Number of sampling bits
+- Number of sampling bits
 
 That is, the sampling value or sampling value (that is, the sampling sample amplitude is quantized). It is a parameter used to measure the fluctuation of sound, and it can also be said to be the resolution of the sound card. The larger its value, the higher the resolution and the stronger the sound power.
 

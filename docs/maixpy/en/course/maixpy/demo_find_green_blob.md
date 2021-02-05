@@ -1,12 +1,10 @@
 ---
-title:
+title: MaixPy finds color patches
 keywords: maixpy, k210, AIOT, edge computing
-desc: maixpy doc:
+desc: maixpy doc: MaixPy finds color patches
 ---
 
-MaixPy finds color patches
-
-##
+## MaixPy finds color patches
 
 ```python
 import sensor

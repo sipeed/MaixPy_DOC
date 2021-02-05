@@ -15,7 +15,7 @@ The Grove-RGB LED ring uses 3535 size LEDs, and the LEDs are embedded with embed
 
 |Item | Value |
 | --- | --- |
-| --- | --- |
+|Working voltage| 3.3V/5V|
 |Quiet current |0.7mA/LED|
 |RGB channel constant current |16mA/LED|
 |Refresh frequency |2Hz|

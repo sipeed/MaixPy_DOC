@@ -14,10 +14,10 @@ The final interface provided to users is **Micropython**, so we need to be famil
 MicroPython is a streamlined and efficient implementation of the programming language Python3. The syntax is consistent with Python3, but only a small part of the Python standard library is implemented. It is optimized and can be used in resource-constrained environments such as MCU and WIFI SOC. So we To use MicroPython, you need to understand its syntax.
 
 If you have previous programming experience in **C/C++/Java** (or any other language), it is recommended
-["Liao Xuefeng's Python Tutorial"](https://www.liaoxuefeng.com/wiki/1016959663602400)
+[*(Liao Xuefeng's Python Tutorial).*](https://www.liaoxuefeng.com/wiki/1016959663602400)
 
 If you do not have any programming experience before, recommend
-[《Learn Python in a Stupid Way》](https://wizardforcel.gitbooks.io/lpthw/content/)
+[*(Learn Python in a Stupid Way).*](https://wizardforcel.gitbooks.io/lpthw/content/)
 
 ## REPL and serial port
 
@@ -77,7 +77,7 @@ a = "ABC";// Error: Cannot assign a string to an integer variable
 
 Compared with static languages, dynamic languages ​​are more flexible for this reason.
 
-### list list
+### List
 
 One of the built-in data types of Python is **list**: **list**.<br/>
 **list** is an ordered collection, elements can be added and deleted at any time.
@@ -183,7 +183,7 @@ len(L)
 0
 ```
 
-### tuple
+### Tuple
 
 Another kind of ordered list is called tuple: **tuple**.<br/>
 Tuple is very similar to list, but once the `tuple` is initialized, it cannot be modified. For example, it also lists the names of classmates:

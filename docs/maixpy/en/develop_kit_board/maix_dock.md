@@ -9,11 +9,11 @@ desc: maixpy ​​doc: Maix Dock
 
 ### Appearance list
 
--MaixDock(M1W)
+- MaixDock(M1W)
 
 ![MaixDock(M1W)](../../assets/hardware/maix_dock/sipeed_maix_dock_m1w.jpg)
 
--MaixDock(M1)
+- MaixDock(M1)
 
 ![MaixDock(M1)](../../assets/hardware/maix_dock/sipeed_maix_dock_m1.jpg)
 

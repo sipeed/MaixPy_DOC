@@ -5,7 +5,7 @@ desc: maixpy doc: LittlevGL
 ---
 
 
-**It is not recommended to use this module now, please have sufficient development level, and will not accept questions about the sharing of LVGL and AI functions, thank you for your cooperation (December 11, 2020) **
+**It is not recommended to use this module now, please have sufficient development level, and will not accept questions about the sharing of LVGL and AI functions, thank you for your cooperation (December 11, 2020)**
 
 Please use the bin firmware with LVGL to operate.
 

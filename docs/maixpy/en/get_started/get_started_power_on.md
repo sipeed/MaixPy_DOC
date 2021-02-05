@@ -4,7 +4,6 @@ keywords: maixpy, k210, AIOT, edge computing
 desc: maixpy ​​doc: MaixPy development board power
 ---
 
-
 When we get the MaixPy development board
 
 ## Check the hardware
@@ -70,6 +69,7 @@ If you encounter problems during the development process, you can also try to up
 ```shell
 >>>
 ```
+
 That is, we are waiting for us to enter the code. If there is no such symbol, there may be a program running automatically when booting up. You can press `Ctrl+C` to cancel the running program
 
 * Then enter the program to execute
@@ -83,6 +83,7 @@ hello world
 ## Paste and execute multiple lines of code
 
 When we have multiple lines of code copied from other places, such as
+
 ```python
 import os
 f = os.listdir()

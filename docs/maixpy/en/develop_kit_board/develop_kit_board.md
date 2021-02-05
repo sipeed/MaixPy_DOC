@@ -11,12 +11,12 @@ desc: maixpy ​​doc: MaixPy series development board
 
 At present, MaixPy series development boards have the following models:
 
--Maix Go
--Maix Dock
--Maix Duino
--Maix Bit
--Maix Cube
--Maix Amigo
+- Maix Go
+- Maix Dock
+- Maix Duino
+- Maix Bit
+- Maix Cube
+- Maix Amigo
 
 ## Difference comparison
 

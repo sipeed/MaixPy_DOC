@@ -55,6 +55,7 @@ print("read:", content)
 In the above example, the `spiffs` file system is automatically mounted to the `/flash` directory when booting. The user only needs to pass in the `"/flash"` directory name as a parameter when using the `os` interface to access the file system .
 
 Interpretation:
+
 * Import the `uos` module
 * List all files in the `/flash` directory
 * Write a file named `test.txt` to the `/flash` directory with the content of `hello text`,
@@ -64,11 +65,13 @@ Interpretation:
 * This content is powered on after the development board is powered off, the correct content can still be read (the content will not be lost after the Flash is powered off)
 
 Of course, SD card is also supported. If you need to use it, SD card needs to meet the following points:
+
 * Support `SPI` mode, most genuine cards on the market support
 * The partition is `MBR (msdos)`
 * Format as `FAT32`
 * The size tested is the largest `128GiB` available
-After inserting the `SD` after power off, the `SD` card will be mounted on `/sd` if it is powered on. If there are multiple partitions, the second partition name is `/sd2`
+
+sAfter inserting the `SD` after power off, the `SD` card will be mounted on `/sd` if it is powered on. If there are multiple partitions, the second partition name is `/sd2`
 
 Note that `/` (root directory) cannot write data, only write data to `/flash` or `/sd`
 If there is a `SD` card at boot, it will automatically switch the current directory to `/sd`, if not, it will automatically switch to `/flash`

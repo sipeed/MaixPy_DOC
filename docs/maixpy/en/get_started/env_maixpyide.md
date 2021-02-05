@@ -10,7 +10,6 @@ desc: maixpy ​​doc: MaixPy IDE installation and use
 ## About MaixPy IDE
 
 
-
 ![MaixPy IDE](../../assets/maixpy/maixpy_ide.png)
 
 First of all, you need to clarify: **MaixPy** uses `Micropython` script syntax, so it does not need to be compiled like `C` language. In fact, it can be used happily without `IDE`: Use the serial terminal tool, which has been installed before
@@ -37,7 +36,7 @@ Please refer to the `readme.txt` file in the latest version folder for the descr
 
 `Windows` directly double-click the `exe` file to run the installer; `Linux` command line to run the permission and then execute
 
-```
+```shell
 chmod +x maixpy-ide-linux-x86_64-0.2.2.run
 ./maixpy-ide-linux-x86_64-0.2.2.run
 ```

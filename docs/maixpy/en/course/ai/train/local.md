@@ -88,4 +88,4 @@ python3 train.py -t detector -z datasets/test_detector_xml_format.zip train
 
 ## Use model
 
-Like the model trained with `Maixhub`, a `zip` file will be generated in the `out` folder, which contains the results, copy all ** files to the root directory of the `SD` card, and then power on the development board Just run
+Like the model trained with `Maixhub`, a `zip` file will be generated in the `out` folder, which contains the results, copy **all** files to the root directory of the `SD` card, and then power on the development board Just run

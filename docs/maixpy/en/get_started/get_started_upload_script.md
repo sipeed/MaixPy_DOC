@@ -12,8 +12,6 @@ But slowly we will find that this method is only suitable for changing a small a
 
 There are currently the following methods:
 
-
-
 ### Use MaixPy IDE to upload scripts to the development board
 
 Open `MaixPy IDE`, connect to the development board

@@ -72,23 +72,24 @@ Steps to get started:
 
 Hardware preparation:
 
-  -**Computer** one
-  -**MaixAmigo** Development Board
-  -One **reliable** USB Type-C data cable: pay attention to a **reliable** data cable
+  - **Computer** one
+  - **MaixAmigo** Development Board
+  - One **reliable** USB Type-C data cable: pay attention to a **reliable** data cable
 
 Software preparation:
 
-  -USB driver: **FT2232** ->[[download link here](https://dl.sipeed.com/MAIX/tools/ftdi_vcp_driver)](https://dl.sipeed.com/MAIX/tools /ftdi_vcp_driver)
-  -Kflash_gui: [https://dl.sipeed.com/MAIX/tools/kflash_gui](https://dl.sipeed.com/MAIX/tools/kflash_gui)
-  -MaixPy IDE: [https://dl.sipeed.com/MAIX/MaixPy/ide/_/v0.2.5](https://dl.sipeed.com/MAIX/MaixPy/ide/_/v0.2.5)
-  -Routine library: [https://github.com/sipeed/MaixPy_scripts](https://github.com/sipeed/MaixPy_scripts)
+  - USB driver: **FT2232** ->[[download link here](https://dl.sipeed.com/MAIX/tools/ftdi_vcp_driver)](https://dl.sipeed.com/MAIX/tools /ftdi_vcp_driver)
+  - Kflash_gui: [https://dl.sipeed.com/MAIX/tools/kflash_gui](https://dl.sipeed.com/MAIX/tools/kflash_gui)
+  - MaixPy IDE: [https://dl.sipeed.com/MAIX/MaixPy/ide/_/v0.2.5](https://dl.sipeed.com/MAIX/MaixPy/ide/_/v0.2.5)
+  - Routine library: [https://github.com/sipeed/MaixPy_scripts](https://github.com/sipeed/MaixPy_scripts)
 
 ###  install driver
 
 When we get Maix Amigo and connect to the computer, we can open the device manager to check whether the serial port driver has been installed. The methods to open the device manager are:
--This computer (right click) -> Properties -> Device Manager
--Start menu (right click) -> Device Manager
--Control Panel -> (Search) Device Manager
+
+- This computer (right click) -> Properties -> Device Manager
+- Start menu (right click) -> Device Manager
+- Control Panel -> (Search) Device Manager
 
   <img src="../../assets/get_started/win_device_1.png" height="400">
 
@@ -116,7 +117,7 @@ When we get Maix Amigo and connect to the computer, we can open the device manag
 ### Run the first program `Hello World`
 
 
--LCD real-time preview Camera (when connecting with MaixPy IDE, select Maixduino)
+- LCD real-time preview Camera (when connecting with MaixPy IDE, select Maixduino)
 
 
 ```python

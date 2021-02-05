@@ -15,11 +15,11 @@ Normally we don’t need to update the firmware of the WIFI SOC ESP8285 inside t
 
 ## Verify that ESP8285 can work normally
 
--MaixPy verifies whether ESP8285 is working properly
+- MaixPy verifies whether ESP8285 is working properly
 
 > View the end of text routine
 
--External USB to serial module test
+- External USB to serial module test
 
    Use USB to serial port module, connect according to the following table, and then power on
 
@@ -89,15 +89,15 @@ Taking MaixDock as an example, you can see the schematic diagram of MaixDock as 
 
 > Here is MaixDock(M1W), Windows 10 system as an example
 
--Hardware: MaixDock, USB Type-C data cable
--Software:
+- Hardware: MaixDock, USB Type-C data cable
+- Software:
 
--ESP firmware update tool: ESP8285 **flash_download_tools**
-  -Espressif's official website download link: [**flash_download_tools**](https://www.espressif.com/zh-hans/support/download/other-tools)
+- ESP firmware update tool: ESP8285 **flash_download_tools**
+  - Espressif's official website download link: [**flash_download_tools**](https://www.espressif.com/zh-hans/support/download/other-tools)
 
--ESP8285 AT firmware:
-  -Download link: [**ESP8266 AT bin**](https://cn.dl.sipeed.com/MAIX/factory_firmware/)
- -Espressif's official download link: [espressif_esp8266-at](https://www.espressif.com/zh-hans/support/download/at?keys=&field_type_tid%5B%5D=14)
+- ESP8285 AT firmware:
+  - Download link: [**ESP8266 AT bin**](https://cn.dl.sipeed.com/MAIX/factory_firmware/)
+ - Espressif's official download link: [espressif_esp8266-at](https://www.espressif.com/zh-hans/support/download/at?keys=&field_type_tid%5B%5D=14)
 
    ![](../../assets/hardware/module_esp8285/image-20210105192007.png)
 
@@ -131,7 +131,7 @@ Taking MaixDock as an example, you can see the schematic diagram of MaixDock as 
 
 6. Verify that the update is complete
 
-   -Use the XCOM baud rate of 115200, open the ESP8285 serial port, and output `AT\r\n`, as shown in the figure, it prompts `OK` to flash in successfully
+   - Use the XCOM baud rate of 115200, open the ESP8285 serial port, and output `AT\r\n`, as shown in the figure, it prompts `OK` to flash in successfully
     ![esp8285_at.png](../../assets/hardware/maix_dock/esp8285_at.png)
 
 ### LINUX uses esp_tool to update ES8285 (here, MaixDock is taken as an example):

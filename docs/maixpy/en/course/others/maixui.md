@@ -17,21 +17,21 @@ That is, when you can't use QT or LVGL, you want to be able to use Python to wri
 
 Based on the latest MaixPy firmware, the following requirements will be met on October 7, 2020.
 
--Ensure that MicroPython's GC memory is recyclable and controllable at all times.
+- Ensure that MicroPython's GC memory is recyclable and controllable at all times.
 
--Ensure that the UI component code is independent, not included in the firmware, and can be debugged and modified.
+- Ensure that the UI component code is independent, not included in the firmware, and can be debugged and modified.
 
--Ensure system stability, ensure that code and hardware resources can be re-entered, and no core dump phenomenon will occur.
+- Ensure system stability, ensure that code and hardware resources can be re-entered, and no core dump phenomenon will occur.
 
--Run reentrant, which means running dynamic code to show UI style, similar to HTML5 / CSS design.
+- Run reentrant, which means running dynamic code to show UI style, similar to HTML5 / CSS design.
 
--Python's exception capture is fed back to the screen in real time to quickly locate the error line.
+- Python's exception capture is fed back to the screen in real time to quickly locate the error line.
 
--UI-related drawing functions can be used in multiple decorations or run independently.
+- UI-related drawing functions can be used in multiple decorations or run independently.
 
--All MicroPython hardware drivers provided by the framework can independently run corresponding unit tests.
+- All MicroPython hardware drivers provided by the framework can independently run corresponding unit tests.
 
--When the framework is running, it allows dynamic loading of external UI applications that conform to the structure, and user-defined applications can be obtained from storage or network.
+- When the framework is running, it allows dynamic loading of external UI applications that conform to the structure, and user-defined applications can be obtained from storage or network.
 
 So in the most basic example, it will strictly control the memory usage to 512k ~ 1M and keep the drawing performance between 15 ~ 24fps.
 
@@ -69,23 +69,23 @@ except ImportError as e:
 
 They are the dependent code of import required to run it, and the following dependencies are:
 
--from core import agent, system
-  -Provide an agent soft timer and a global instance system soft timer object.
--from dialog import draw_dialog_alpha
-  -Provides drawing operations for a rounded border MessageBox control.
--from ui_canvas import ui, print_mem_free
-  -Provides a basic interface of UI canvas, through which to manage the overall unified drawing operation.
--from ui_container import container
-  -Provides a container module for running UI applications, which can be used to switch between different UI applications.
--from wdt import protect
-  -Watchdog, to ensure that the system can restart and recover after a core dump occurs.
--from creater import get_time_curve
-  -A curve generation function based on time or counter to maintain non-linear animation effects.
+- from core import agent, system
+  - Provide an agent soft timer and a global instance system soft timer object.
+- from dialog import draw_dialog_alpha
+  - Provides drawing operations for a rounded border MessageBox control.
+- from ui_canvas import ui, print_mem_free
+  - Provides a basic interface of UI canvas, through which to manage the overall unified drawing operation.
+- from ui_container import container
+  - Provides a container module for running UI applications, which can be used to switch between different UI applications.
+- from wdt import protect
+  - Watchdog, to ensure that the system can restart and recover after a core dump occurs.
+- from creater import get_time_curve
+  - A curve generation function based on time or counter to maintain non-linear animation effects.
 
 These two pieces of code are used to import the code loaded into different areas (under the root directory or folder of Flash/SD), so you only need to know how to import the code.
 
--You can use MaixPy IDE to send files, or use [mpfshell-lite](https://github.com/junhuanchen/mpfshell-lite) to put files to the flash or sd of the hardware.
--You can use an SD card reader, put the entire folder under the maixui warehouse into the SD card and start it.
+- You can use MaixPy IDE to send files, or use [mpfshell-lite](https://github.com/junhuanchen/mpfshell-lite) to put files to the flash or sd of the hardware.
+- You can use an SD card reader, put the entire folder under the maixui warehouse into the SD card and start it.
 
 ### Define UI application
 
@@ -125,11 +125,11 @@ Here, __class__ is similar to the this pointer in the instance class, through wh
 
 The static class has three life cycle functions of load / free / event to provide to the UI container to maintain the continuous operation of the UI application.
 
--load will only be executed once and is used to initialize the UI application.
--free will only be executed once, for the release of UI applications.
--The event will be provided to the UI container to perform its operations in a loop.
-  -UI container refers to [ui/ui_container.py](https://github.com/sipeed/MaixUI/tree/master/ui/ui_container.py).
-  -Of course, you can also keep running without the UI container.
+- load will only be executed once and is used to initialize the UI application.
+- free will only be executed once, for the release of UI applications.
+- The event will be provided to the UI container to perform its operations in a loop.
+  - UI container refers to [ui/ui_container.py](https://github.com/sipeed/MaixUI/tree/master/ui/ui_container.py).
+  - Of course, you can also keep running without the UI container.
 
 You can see that the UI application defines the agent soft timer and sets the expected execution cycle of the drawing function to 20ms when it is loaded, and the setting will not be lower than the actual running cycle.
 
@@ -270,8 +270,8 @@ if __name__ == "__main__":
 
 ```
 
--You can use time.sleep(0.1) to reduce the execution rate of the UI container to observe whether the change state of the UI is in line with expectations. Sometimes changes higher than 15 fps are not perceived by the human eye, which can reduce unnecessary drawing processes. Compress the drawing process to improve performance.
--You can use except Exception as e: to ensure that any exception will not cause the UI framework to crash, but you can comment this out to catch possible exceptions when debugging.
+- You can use time.sleep(0.1) to reduce the execution rate of the UI container to observe whether the change state of the UI is in line with expectations. Sometimes changes higher than 15 fps are not perceived by the human eye, which can reduce unnecessary drawing processes. Compress the drawing process to improve performance.
+- You can use except Exception as e: to ensure that any exception will not cause the UI framework to crash, but you can comment this out to catch possible exceptions when debugging.
 
 > By default, if the program does not execute protect.keep() for more than 10 seconds to reset the watchdog, the system will automatically restart. This starts when the wdt driver is imported. For details, please see [driver/wdt.py](https ://github.com/sipeed/MaixUI/tree/master/driver/wdt.py) driver.
 

@@ -26,12 +26,12 @@ The SP_Weather weather module has two sensors, the magnetic sensor QMC7983, whic
   * Measuring range: -40°C~85
   * Accuracy:
   
-| --- | --- |
-| --- | --- |
-| --- | --- |
-| --- | --- |
-| --- | --- |
-| --- | --- |
+|range(°C)|accuracy(°C)|
+|----|----|
+|25|±0.5|
+|0~65|±1.0|
+|-20~0|±1.25|
+|-40~-20|±1.5|
 
 * Key parameters of humidity sensor
   * Response time (τ63%): 1 s

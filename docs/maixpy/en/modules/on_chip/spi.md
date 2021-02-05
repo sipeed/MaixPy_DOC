@@ -44,7 +44,7 @@ cs.value(1)
 
 ### Slave mode
 
-K210 SPI slave mode only supports three-wire communication, so this mode is not implemented in MaixPy. For slave mode, please refer to [SPI_SLAVE bare metal implementation](https://github.com/kendryte/kendryte-standalone-demo/tree/develop /spi_slave).
+K210 SPI slave mode only supports three-wire communication, so this mode is not implemented in MaixPy. For slave mode, please refer to [SPI_SLAVE C SDK implementation](https://github.com/kendryte/kendryte-standalone-demo/tree/develop /spi_slave).
 
 ## Example
 

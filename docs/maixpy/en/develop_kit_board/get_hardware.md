@@ -144,7 +144,7 @@ As of the firmware version `MicroPython v0.5.0-173`, the related camera test con
 | MaixBit | OV2640, GC0328, OV7740, GC2145, OV5640 |
 | Maix Amigo | OV7740 (rear shot), GC0328 (front shot) |
 
--The color mode of the current camera
+- The color mode of the current camera
 
 | YUV422 | RGB565 & YUV422 |
 | --- | --- |
@@ -180,7 +180,7 @@ If you buy a `Maix Go`, a `STM32` chip is integrated on it to simulate the `USB 
 
 ### JTAG debugger (optional)
 
--**Note:**
+- **Note:**
 
 **!!! After burning ken_gen.bin, the JTAG debugging function of K210 will be permanently disabled**
 

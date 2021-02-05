@@ -5,19 +5,19 @@ desc: maixpy ​​doc: isolated word
 ---
 
 
-> **This document has passed the MaixPy 0.5.1_128 minimum_speech_with_ide_support firmware test. Please make sure the hardware recording function is available before use. **
+> **This document has passed the MaixPy 0.5.1_128 minimum_speech_with_ide_support firmware test. Please make sure the hardware recording function is available before use.**
 
 This is an algorithm module for isolated word recognition. The user generates a vocabulary template through recording and loads it into the module, and then recognizes the vocabulary template loaded by the user through it, and returns the possibility of matching. Please refer to [STM32-based isolated word speech recognition ](https://gk969.com/stm32-speech-recognition/).
 
--Isolated word recognition
+- Isolated word recognition
 
     According to the way of pronunciation, there are three types: isolated word recognition, connected word recognition, and continuous speech recognition; the so-called isolated word recognition (Isolated Word Recognition) means that when the sound to be recognized is issued, only one word in the vocabulary is included at a time Article.
 
--Vocabulary template
+- Vocabulary template
 
     We record a vocabulary spoken by the human voice and use algorithms to make it into a recognizable template, which is called a vocabulary template.
 
--Template matching
+- Template matching
 
     Assuming that the algorithm module is loaded with a vocabulary template, after we input data to the algorithm module through recording, it will perform internal matching to obtain the most likely recognition result.
 
@@ -70,10 +70,10 @@ operation result:
 
 The parameters initialized by isolated_word are as follows:
 
--[dmac] The DMA channel used for recording. [Channel 2] is used by default.
--[i2s] Recording device, I2S.DEVICE_0 is used by default.
--[size] The capacity of vocabulary templates, which means the total number of templates that can be loaded. The default is 10.
--[shift] Channel selection. Maix series hardware recording devices usually use mono input. Set 0 as the left channel, so 1 is the right channel.
+- [dmac] The DMA channel used for recording. [Channel 2] is used by default.
+- [i2s] Recording device, I2S.DEVICE_0 is used by default.
+- [size] The capacity of vocabulary templates, which means the total number of templates that can be loaded. The default is 10.
+- [shift] Channel selection. Maix series hardware recording devices usually use mono input. Set 0 as the left channel, so 1 is the right channel.
 
 ```python
 from speech_recognizer import isolated_word
@@ -105,10 +105,10 @@ The results are as follows:
 
 Call the following code:
 
--If the surrounding environment is very noisy, it will output 2 (isolated_word.Ready) to 3 (isolated_word.MaybeNoise) repeatedly, and you need to be in a quiet environment to enter the vocabulary template
--If the status is isolated_word.Speak, it means you can speak
--If you run sr.record(0) and its status changes to isolated_word.Done, it means the recording is complete and it will be saved to the template number 0.
--You can check the current module status through sr.state()
+- If the surrounding environment is very noisy, it will output 2 (isolated_word.Ready) to 3 (isolated_word.MaybeNoise) repeatedly, and you need to be in a quiet environment to enter the vocabulary template
+- If the status is isolated_word.Speak, it means you can speak
+- If you run sr.record(0) and its status changes to isolated_word.Done, it means the recording is complete and it will be saved to the template number 0.
+- You can check the current module status through sr.state()
 
 ```python
 ## record and get & set

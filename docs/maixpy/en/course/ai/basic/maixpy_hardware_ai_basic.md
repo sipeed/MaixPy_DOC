@@ -158,6 +158,7 @@ If this problem occurs, you can try the following solutions:
 
 1. If you are loading the model in the Flash, please make sure that the `flash offset` is filled in correctly and that there is no conflict with the address of the maixpy ​​firmware (the address of the model in the Flash is too high, and then when the firmware is programmed into the Flash, the firmware size Exceeded the starting address of the model, causing the model to be destroyed)
 2. If it is `kmodel V4` converted with `nncase 0.2.0`, please try to convert with `nncase 0.1.0` to generate `kmodel V3`
+
 ### I want to select and load different models (for example, press the button to run the target classification, press the button again to run the target detection), how should I write the program?
 
 Because the internal RAM is limited, when you need to switch between different models for `kpu.load(address)`, please execute `kpu.deinit(k210model)` to release the memory occupied by the previous model, and then load the new model.Time-shared memory

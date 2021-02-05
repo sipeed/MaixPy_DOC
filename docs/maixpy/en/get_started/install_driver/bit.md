@@ -21,12 +21,12 @@ Windows download [ch340 ch341 driver](https://api.dl.sipeed.com/shareURL/MAIX/to
 
 The development board uses the `CH552` chip to realize the `USB` to serial port function. There is no `JTAG` simulation function. `Windows` needs to install the `FT2232` driver.
 
--USB driver: **FT2232** ->[[download link here](https://dl.sipeed.com/MAIX/tools/ftdi_vcp_driver)](https://dl.sipeed.com/MAIX/tools /ftdi_vcp_driver)
+- USB driver: **FT2232** ->[[download link here](https://dl.sipeed.com/MAIX/tools/ftdi_vcp_driver)](https://dl.sipeed.com/MAIX/tools /ftdi_vcp_driver)
 
 When we get the MaixPy development board and connect it to the computer, we can open the device manager to check whether the serial port driver has been installed. The methods to open the device manager are:
--This computer (right click) -> Properties -> Device Manager
--Start menu (right click) -> Device Manager
--Control Panel -> (Search) Device Manager
+- This computer (right click) -> Properties -> Device Manager
+- Start menu (right click) -> Device Manager
+- Control Panel -> (Search) Device Manager
 
 <img src="../../../assets/get_started/win_device_1.png" height="400">
 
