@@ -1,7 +1,7 @@
 ---
-title: === print('hello world!')
+title: How to complie
 keywords: maixpy, k210, AIOT, edge computing
-desc: maixpy ​​doc: === print('hello world!')
+desc: maixpy ​​doc: How to complie
 ---
 
 
@@ -61,14 +61,14 @@ First press [build.md](https://github.com/sipeed/MaixPy/blob/master/build.md) to
 
 The steps are as follows:
 
--Install the necessary compilation tools and Python modules for the linux environment, and make sure cmake / make / python3 are available.
--Set the toolchain toolchain to the directory `/opt/kendryte-toolchain/` in the system to facilitate the SDK to find the compilation tool, and ensure that the /opt/kendryte-toolchain/bin/riscv64-unknown-elf-gcc compilation tool exists.
--Enter `cd projects/maixpy_k210` under the specific hardware project of MaixPy and enter `python3 project.py build` to start compiling.
+- nstall the necessary compilation tools and Python modules for the linux environment, and make sure cmake / make / python3 are available.
+- Set the toolchain toolchain to the directory `/opt/kendryte-toolchain/` in the system to facilitate the SDK to find the compilation tool, and ensure that the /opt/kendryte-toolchain/bin/riscv64-unknown-elf-gcc compilation tool exists.
+- Enter `cd projects/maixpy_k210` under the specific hardware project of MaixPy and enter `python3 project.py build` to start compiling.
 
 This is the end of the entire compilation step. After successful compilation, you will get a build folder in the `projects/maixpy_k210` directory, which contains the following files:
 
--maixpy.bin will be burned to the K210 firmware at address 0x000000.
--maixpy.txt The content of the decompiled code corresponding to the current firmware, to help you check the information of the pointer address of the core dump.
+- maixpy.bin will be burned to the K210 firmware at address 0x000000.
+- maixpy.txt The content of the decompiled code corresponding to the current firmware, to help you check the information of the pointer address of the core dump.
 
 Other files are .a and .o intermediate files generated during the compilation process and can be ignored.
 
@@ -89,9 +89,9 @@ build tool, e.g. `python project.py build`
 
 Among them, `-B goE` is the choice of version, and the optional items are `dan, bit, bit_mic, goE, goD, maixduino, kd233, auto` indicating the burning method, which has a lot to do with the specific hardware.
 
--Bit usually corresponds to the chip using CH340.
+- Bit usually corresponds to the chip using CH340.
 
--maixduino usually corresponds to the chip using CH552.
+- maixduino usually corresponds to the chip using CH552.
 
 Specifically, you can try a variety of options, and you can also choose the BAUDRATE option of burning frequency 115200 and 1.500000. Of course, no matter which configuration, as long as it can be burned in, you need to check the help description of -h for more usage methods.
 
@@ -151,13 +151,13 @@ But MaixPy only adds micropython to its environment as a dependent library packa
 
 So you can go to the hello_world project in the maixpy ​​folder to see how it is composed.
 
--hello_world
-  -build
-  -compile
-  -main
-  -CMakeLists.txt
-  -config_defaults.mk
-  -project.py
+- hello_world
+  - build
+  - compile
+  - main
+  - CMakeLists.txt
+  - config_defaults.mk
+  - project.py
 
 The MaixPy project has prepared a template for you to build the K210 project. Ignore the process of project construction here, and focus on the project configuration part that needs to be compiled and linked, that is, CMakeLists.txt under main. Its content is as follows.
 
@@ -215,9 +215,9 @@ And [spiffs](https://github.com/pellepl/spiffs) does not support directory struc
 
 There is a gen_spiffs_image.py script in the tools/spiffs/mkspiffs directory to complete the function of this packaged image. For usage, please refer to the instructions in tools/spiffs/README.md.
 
--Prepare an fs folder under the spiffs directory, which contains the code or resource file content you want to package.
--Execute `python gen_spiffs_image.py ../../projects/maixpy_k210/config_defaults.mk` to get the maixpy_spiffs.img binary file.
--Burn the img obtained above to 0xD00000 to restore the content in the micropython file system.
+- Prepare an fs folder under the spiffs directory, which contains the code or resource file content you want to package.
+- Execute `python gen_spiffs_image.py ../../projects/maixpy_k210/config_defaults.mk` to get the maixpy_spiffs.img binary file.
+- Burn the img obtained above to 0xD00000 to restore the content in the micropython file system.
 
 If you make some small systems and publish them in this way, users will get the img file you provided and burn them in and you will immediately get the same environment as you. This is actually the same as publishing a system image based on a Linux system. of.
 
@@ -237,4 +237,4 @@ Having said that, from a personal point of view, in addition to the basic requir
 
 ## Final reference
 
--bing.com + keyword + yourself
+- bing.com + keyword + yourself

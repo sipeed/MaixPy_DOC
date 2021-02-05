@@ -1,7 +1,7 @@
 ---
-title: === print('hello world!')
+title: 如何编译
 keywords: maixpy, k210, AIOT, 边缘计算
-desc: maixpy doc: === print('hello world!')
+desc: maixpy doc: 如何编译
 ---
 
 

@@ -5,7 +5,7 @@ desc: maixpy ​​doc: maix asr (automatic speech recognition)
 ---
 
 
-> **This document has passed the MaixPy 0.5.1_128 minimum_speech_with_ide_support firmware test. Please make sure that the recording function/call model is available before use. **
+> **This document has passed the MaixPy 0.5.1_128 minimum_speech_with_ide_support firmware test. Please make sure that the recording function/call model is available before use.**
 
 This is a speech recognition module based on an acoustic model. When the user sets a vocabulary composed of pinyin and loads it into the module, the user can start recording to recognize the vocabulary input by the user and return a list of possible matching words.
 
@@ -15,7 +15,7 @@ This is a speech recognition module based on an acoustic model. When the user se
 
 **Warning** Students who don't know how to use the recording and call the model, please learn the prerequisite skills before using this document.
 
--Burn acoustic model
+- Burn acoustic model
 
 > After TODO, it will be stored in a unified link to the download station.
 
@@ -23,9 +23,9 @@ Get the acoustic model [maix_asr_2900k_0x500000](https://github.com/sipeed/MaixP
 
 > Load the module without burning the model, it will core dump, don't ask how to report the error.
 
--Create recording equipment
+- Create recording equipment
 
-This module supports all Maix series hardware. We only need to configure an I2S.DEVICE_0 device and set CHANNEL_0 to the recording input. If it is Cube and amigo, you need to configure the specific audio decoder chip first, and then turn on the I2C recording device .
+This module supports all Maix series hardware. We only need to configure an I2S.DEVICE_0 device and set CHANNEL_0 to the recording input. If it is Cube and amigo, you need to configure the specific audio decoder chip first, and then turn on the I2C recording device.
 
 ```python
 from Maix import GPIO, I2S
@@ -41,7 +41,7 @@ rx.set_sample_rate(16000)
 print(rx)
 ```
 
--Create an auxiliary class for maix_asr, you can skip it.
+- Create an auxiliary class for maix_asr, you can skip it.
 ```python
 
 from speech_recognizer import asr
@@ -116,7 +116,7 @@ finally:
   del t
 ```
 
--Speak into the microphone
+- Speak into the microphone
 
 We can see that the following words are defined in the code:
 
@@ -130,6 +130,6 @@ We can see that the following words are defined in the code:
   print(t.get())
 ```
 
-That is, you can complete the recognition by saying [you-good], [good-of], and [little-love] into the microphone within 6 seconds. The configuration items are two fields, and the length of the first field does not exceed six.Group Pinyin, the second field indicates the lowest threshold of recognition (matching threshold). If it is higher than this value, it will be printed, and if it is lower than this value, it will be discarded.
+That is, you can complete the recognition by saying [ni-hao], [hao-de], and [xiao-ai] into the microphone within 6 seconds. The configuration items are two fields, and the length of the first field does not exceed six.Group Pinyin, the second field indicates the lowest threshold of recognition (matching threshold). If it is higher than this value, it will be printed, and if it is lower than this value, it will be discarded.
 
 At the beginning of the test, you can speak a little louder, see [Demo Video](https://www.bilibili.com/video/BV1C5411L7JC/) for specific effects, complete example: [test_maix_asr.py](https://github.com/sipeed/MaixPy_scripts/blob/d1d95a4d2fbe4c4b87d683c5fb79fda1fe3f9aae/multimedia/speech_recognizer/test_maix_asr.py)

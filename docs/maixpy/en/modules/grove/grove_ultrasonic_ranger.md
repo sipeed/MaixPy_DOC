@@ -13,8 +13,8 @@ Grove-Ultrasonic Ranger is a non-contact ranging module with a working frequency
 
 ## Parameters
 
-| --- | --- |
-| --- | --- |
+| Item    |Value  |
+| -------- | ----------- |
 |Working voltage |3.2~5.2V |
 |Working current |8ma |
 |Ultrasonic frequency | 40kHz |

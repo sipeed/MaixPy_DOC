@@ -1,12 +1,10 @@
 ---
-title: 
+title: MaixPy 查找色块
 keywords: maixpy, k210, AIOT, 边缘计算
-desc: maixpy doc: 
+desc: maixpy doc: MaixPy 查找色块
 ---
 
-MaixPy 查找色块
-
-##
+## MaixPy 查找色块
 
 ```python
 import sensor

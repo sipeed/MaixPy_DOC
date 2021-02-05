@@ -9,11 +9,11 @@ desc: maixpy ​​doc: How to connect MaixPy to the Internet
 
 Since it is called AIOT, it can't be without networking. MaixPy now supports W5X00 / EPS32 / ESPAT and other networking methods, as shown below.
 
--ESP32 needs to be equipped with [dedicated SPI firmware](https://github.com/sipeed/Maixduino_esp32_fimware) to support TCP / UDP client.
+- ESP32 needs to be equipped with [dedicated SPI firmware](https://github.com/sipeed/Maixduino_esp32_fimware) to support TCP / UDP client.
 
--ESPAT works with Espressif[AT firmware (esp-at)](https://github.com/espressif/esp-at), and only supports TCP clients.
+- ESPAT works with Espressif[AT firmware (esp-at)](https://github.com/espressif/esp-at), and only supports TCP clients.
 
--W5X00 can be configured + used by connecting to the Internet cable, and supports TCP/UDP client.
+- W5X00 can be configured + used by connecting to the Internet cable, and supports TCP/UDP client.
 
 Before using the Socket, please connect the network first. The wired one needs to resolve the DNS and IP address, gateway, and the wireless one needs to fill in the WIFI account (SSID) and password. Do not ask "Bug found!!! How to access No problem with Baidu (I don’t have internet access).
 
@@ -23,8 +23,8 @@ Before using the Socket, please connect the network first. The wired one needs t
 
 It is recommended to know the following keywords when applying MaixPy network function:
 
--What are network and socket?
--What is TCP \ UDP? What is HTTP \ HTTPS \ MQTT \ FTP?
+- What are network and socket?
+- What is TCP \ UDP? What is HTTP \ HTTPS \ MQTT \ FTP?
 
 From the perspective of pragmatism, in maixpy ​​(micropython), the content about the network is divided into the most basic two-layer interface.
 
