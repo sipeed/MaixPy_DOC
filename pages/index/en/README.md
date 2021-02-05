@@ -13,10 +13,10 @@ desc: maixpy doc: MaixPy, Easy-to-use AI edge computing SDK, let AIOT developmen
     </div>
     <div id="big_btn_wrapper">
         <div class="big_btn">
-            <a href="/maixpy/zh/">MaixPy for Micropython</a>
+            <a href="/maixpy/en/">MaixPy for Micropython</a>
         </div>
         <div class="big_btn">
-            <a href="/maixpy3/zh/">MaixPy for Python3</a>
+            <a href="/maixpy3/en/">MaixPy for Python3</a>
         </div>
     </div>
 
