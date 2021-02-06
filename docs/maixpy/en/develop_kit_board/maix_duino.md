@@ -23,7 +23,7 @@ desc: maixpy ​​doc: MaixDuino
 | CPU: | Dual-core 64bit RISC-V / 400MHz* (double-precision FPU integration) |
 | Memory: | 8MiB 64bit on-chip SRAM |
 | Storage: | 16MiB Flash, support micro SDXC expansion storage (max 128GB) |
-| Screen (package): | 2.4 inch TFT, capacitive touch screen resolution: 320\*240 |
+| Screen (package): | 2.4 inch TFT, screen resolution: 320\*240 |
 | Camera (package): | 30W pixel GC0328 camera |
 | DVP: | Standard Camera DVP 24PIN interface |
 | Power + USB: | USB Type-C interface |

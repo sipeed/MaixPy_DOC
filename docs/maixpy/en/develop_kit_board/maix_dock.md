@@ -24,7 +24,7 @@ desc: maixpy ​​doc: Maix Dock
 | CPU: | Dual-core 64bit RISC-V / 400MHz* (double-precision FPU integration) |
 | Memory: | 8MiB 64bit on-chip SRAM |
 | Storage: | 16MiB Flash, support micro SDXC expansion storage (max 128GB) |
-| Screen (package): | 2.4 inch TFT, capacitive touch screen resolution: 320\*240 |
+| Screen (package): | 2.4 inch TFT, screen resolution: 320\*240 |
 | Camera (package): | 30W pixel GC0328 camera |
 | WIFI: | MaixDock(M1W) uses M1W (integrated ESP8285 WIFI SOC); MaixDock(M1) has no internal WIFI function |
 | TF card slot: | Multimedia resource expansion, support large-capacity storage |
