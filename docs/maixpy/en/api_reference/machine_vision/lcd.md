@@ -104,6 +104,9 @@ If the height of roi is greater than the height of lcd, the roi is at the center
 
 > roi is a key-value parameter, which must be explicitly called by writing roi= in the function call.
 
+* `oft`: Set the offset coordinate, after setting this coordinate, the surrounding will not be automatically filled
+
+
 ### lcd.clear()
 
 Clear the LCD screen to black or the specified color.
@@ -154,6 +157,18 @@ Set whether to enable bgr color display
 #### Parameters
 
 * `enable`: Whether to enable bgr display, `True` or `False`
+
+### lcd.fill_rectangle(x, y, w, h, color)
+
+Fill a rectangle area on `LCD`
+
+#### Parameters
+
+* `x`: start coordinate `x`
+* `x`: starting coordinate `y`
+* `w`: padding width
+* `h`: Fill height
+* `color`: Fill color, which can be a tuple, such as `(255, 255, 255)`, or `RGB565``uint16` value, such as red `0x00F8`
 
 ## Routine
 
