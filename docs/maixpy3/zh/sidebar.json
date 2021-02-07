@@ -33,8 +33,8 @@
             ]
         },
         {
-            "label": "如何安装",
-            "file": "install/maixpy3_install.md",
+            "label": "如何安装 MaixPy3 ",
+            "file": "install/readme.md",
             "items": [
                 {
                     "label": "Linux x86_64",
@@ -88,9 +88,13 @@
             ]
         },
         {
-            "label": "开发工具",
+            "label": "常用的开发工具",
             "file": "tools/readme.md",
             "items": [
+                {
+                    "label": "MobaXterm",
+                    "file": "tools/mobaxterm.md"
+                },
                 {
                     "label": "Jupyter",
                     "file": "tools/jupyter.md"
@@ -100,17 +104,13 @@
                     "file": "tools/vscode.md"
                 },
                 {
-                    "label": "MobaXterm",
-                    "file": "tools/mobaxterm.md"
-                },
-                {
                     "label": "pyqt_rtsp",
                     "file": "tools/pyqt_rtsp.md"
                 }
             ]
         },
         {
-            "label": "入门示例",
+            "label": "一些使用案例",
             "file": "usage/readme.md",
             "items": [
                 {
@@ -148,7 +148,7 @@
             ]
         },
         {
-            "label": "内置模块",
+            "label": "内置模块说明",
             "items": [
                 {
                     "label": "Maix 模块",
@@ -245,7 +245,7 @@
             ]
         },
         {
-            "label": "支持平台",
+            "label": "支持的芯片平台",
             "items": [
                 {
                     "label": "针对不同平台的开发方法",
