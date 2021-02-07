@@ -16,7 +16,6 @@
         },
         {
             "label": "新手上路",
-            "file": "guide/readme.md",
             "items": [
                 {
                     "label": "项目使用说明",
