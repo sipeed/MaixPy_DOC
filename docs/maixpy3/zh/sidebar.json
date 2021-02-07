@@ -11,10 +11,6 @@
                 {
                     "label": "MaixPy 与 MaixPy3 的区别",
                     "file": "origin/difference.md"
-                },
-                {
-                    "label": "使用 MaixPy3 有什么好处？",
-                    "file": "origin/what_good.md"
                 }
             ]
         },
@@ -23,7 +19,7 @@
             "file": "guide/readme.md",
             "items": [
                 {
-                    "label": "开源项目说明",
+                    "label": "项目使用说明",
                     "file": "guide/project.md"
                 },
                 {
