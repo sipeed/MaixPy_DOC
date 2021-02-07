@@ -2,6 +2,8 @@
     "site_name": "MaixPy",
     "site_slogon": "让AIOT更简单",
     "site_root_url": "/",
+    "site_domain": "maixpy.sipeed.com",
+    "site_protocol": "https",
     "route": {
         "docs": {
             "/maixpy/zh": "docs/maixpy/zh",
@@ -54,5 +56,9 @@
                 "code": "90c693aa2475224142e727c14a50bb49"
             }
         }
+    },
+    "rebuild_changes_delay": 0,
+    "robots":{
+        "User-agent": "*"
     }
 }
