@@ -4,7 +4,7 @@ keywords: maixpy3, linux, AIOT, 边缘计算
 desc: maixpy doc: MaixPy 是什么？能做什么？
 ---
 
-[![MIT](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE) [![PyPI version](https://badge.fury.io/py/MaixPy3.svg)](https://badge.fury.io/py/MaixPy3) ![Python](https://img.shields.io/badge/Python-3.5↗-ff69b4.svg) ![issue](https://img.shields.io/github/issues/sipeed/maixpy3.svg)
+![MIT](https://img.shields.io/badge/license-MIT-blue.svg) [![PyPI version](https://badge.fury.io/py/MaixPy3.svg)](https://badge.fury.io/py/MaixPy3) ![Python](https://img.shields.io/badge/Python-3.5↗-ff69b4.svg) [![issue](https://img.shields.io/github/issues/sipeed/maixpy3.svg)](https://github.com/sipeed/maixpy3/issues)
 
 MaixPy3 是基于 [cpython](https://github.com/python/cpython) 的 Python3 工具包，意在通过 Python 编程语言简化在 Linux 边缘设备上开发 AIoT （人工智能物联网） = AI（人工智能） + IoT（物联网）应用。
 
