@@ -94,6 +94,10 @@
                         "label": "百度统计",
                         "url": "https://tongji.baidu.com/web/welcome/ico?s=90c693aa2475224142e727c14a50bb49",
                         "target": "_blank"
+                    },
+                    {
+                        "label": "网站地图",
+                        "url": "/sitemap.xml"
                     }
                 ]
             }
