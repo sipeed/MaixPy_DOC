@@ -13,7 +13,7 @@ Linux does not need to install the driver, the system comes with it, use `ls /de
 
 The development board uses `GD32` to simulate `FT2232`, `Windows` users need to install the driver of `FT2232`.
 
-- USB driver: **FT2232** ->[[download link here](https://dl.sipeed.com/MAIX/tools/ftdi_vcp_driver)](https://dl.sipeed.com/MAIX/tools /ftdi_vcp_driver)
+- USB driver: **FT2232** ->[[download link here](https://dl.sipeed.com/MAIX/tools/ftdi_vcp_driver)](https://dl.sipeed.com/MAIX/tools/ftdi_vcp_driver)
 
 When we get the MaixPy development board and connect it to the computer, we can open the device manager to check whether the serial port driver has been installed. The methods to open the device manager are:
 - This computer (right click) -> Properties -> Device Manager
