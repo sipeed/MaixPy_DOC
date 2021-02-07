@@ -29,10 +29,6 @@
                 {
                     "label": "如何参与项目",
                     "file": "guide/participate.md"
-                },
-                {
-                    "label": "认识开源社区",
-                    "file": "guide/open_source.md"
                 }
             ]
         },
