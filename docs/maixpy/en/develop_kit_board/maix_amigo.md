@@ -39,7 +39,7 @@ desc: maixpy ​​doc: MaixAmigo
 
 ### Hardware onboard expansion interface
 
-MaixAmigo has opened two highly extended interfaces to users: three [SP-MOD](./../modules/sp_mod/README.md) and three [Grove](./../modules/grove/README) .md) interface, users can easily do DIY.
+MaixAmigo has opened two highly extended interfaces to users: three [SP-MOD](./../modules/sp_mod/README.md) and three [Grove](./../modules/grove/README.md) .md) interface, users can easily do DIY.
 
 ### Onboard I2C device
 
@@ -78,7 +78,7 @@ Hardware preparation:
 
 Software preparation:
 
-  - USB driver: **FT2232** ->[[download link here](https://dl.sipeed.com/MAIX/tools/ftdi_vcp_driver)](https://dl.sipeed.com/MAIX/tools /ftdi_vcp_driver)
+  - USB driver: **FT2232** ->[[download link here](https://dl.sipeed.com/MAIX/tools/ftdi_vcp_driver)](https://dl.sipeed.com/MAIX/tools/ftdi_vcp_driver)
   - Kflash_gui: [https://dl.sipeed.com/MAIX/tools/kflash_gui](https://dl.sipeed.com/MAIX/tools/kflash_gui)
   - MaixPy IDE: [https://dl.sipeed.com/MAIX/MaixPy/ide/_/v0.2.5](https://dl.sipeed.com/MAIX/MaixPy/ide/_/v0.2.5)
   - Routine library: [https://github.com/sipeed/MaixPy_scripts](https://github.com/sipeed/MaixPy_scripts)
