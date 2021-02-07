@@ -106,7 +106,7 @@ print(tmp)
 
 实时上还有各种各样支持 Python 语言的解释器，虽然写的都是 Python 代码，但并非同一个事物。
 
-我们常说的 Python 通常指 C 语言实现的 Python 代码，涵盖 Python2.7 ~ Python3.10 的语法。
+我们常用的 Python 编程环境通常指 C 语言实现的 Python 解释器，涵盖 Python2.7 ~ Python3.10 的语法。
 
 而在其他领域来说，有各式各样的 Python 语言的实现，如下：
 
