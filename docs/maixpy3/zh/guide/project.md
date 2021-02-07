@@ -10,7 +10,7 @@ desc: maixpy doc: 项目使用说明
 
 ## 如何安装使用？
 
-MaixPy3 是通过 pip 安装得到的，适用于各类 Python3 环境包，请查阅左侧目录的 [如何安装](../install/readme.md) 。
+MaixPy3 是通过 pip 安装得到的，适用于 Python3 环境，请查阅左侧目录的 [如何安装](../install/readme.md) 。
 
 ## 支持哪些开发工具？
 
