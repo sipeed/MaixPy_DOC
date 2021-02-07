@@ -60,7 +60,7 @@ print('1 + 1 = ?', 1 + 1)
 
 > 在线 Python 编程 [runoob-python](https://www.runoob.com/try/runcode.php?filename=HelloWorld&type=python3) [google-colab](https://colab.research.google.com) 备用地址。
 
-没错，现在你已经学会 Python 编程了。
+没错，现在你已经开始 Python 编程了。
 
 ## 就这？就这？？？
 
@@ -69,7 +69,7 @@ print('1 + 1 = ?', 1 + 1)
 - 使用 Python3 标准编程环境，而非 MicroPython 解释器。
 - 提供专为 AIoT 应用开发有关的底层拓展模块。
 - 支持不同芯片的 Linux 平台，自底向上的优化 Python 性能。
-- 对硬件外设的访问与驱动代码，常见于屏幕与摄像头。
+- 访问硬件外设的 Python 驱动代码，常见于各类传感器。
 - 在 GitHub 开源的 [MaixPy3](https://github.com/sipeed/MaixPy3) 仓库。
 
 说了这么多，不妨来看一些示例代码。
