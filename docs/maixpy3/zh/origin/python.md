@@ -112,7 +112,7 @@ print(tmp)
 
 - MicroPython 使用 Python3.5 语法
 
-- Jython 使用 Jave 实现的 Python 语言
+- Jython 使用 Java 实现的 Python 语言
 
 - PyPy 通过 JIT 优化的 Python 语言
 
