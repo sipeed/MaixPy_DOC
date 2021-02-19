@@ -174,6 +174,8 @@ items:
         items:
         -   label: 片上外设
             items:
+            -   label: GPIO
+                file: modules/on_chip/gpio.md
             -   label: I2C
                 file: modules/on_chip/i2c.md
             -   label: PWM
@@ -188,7 +190,7 @@ items:
                 file: modules/on_chip/i2s.md
             -   label: WDT
                 file: modules/on_chip/wdt.md
-        -   label: SPI-MOD
+        -   label: SP-MOD
             file: modules/sp_mod/README.md
             items:
             -   label: BT 蓝牙透传

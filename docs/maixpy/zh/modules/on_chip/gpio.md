@@ -26,7 +26,7 @@ gpio=GPIO(GPIO.GPIO0,GPIO.OUT)
 * 读取或设置 GPIO 电平
 
 ```python
-gpio.value(1)
+gpio.value()
 ```
 
 ## 示例
