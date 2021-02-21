@@ -51,7 +51,7 @@ display.show(camera.capture())
 
 ## 想要图像推流？
 
-请查阅左侧【常用开发工具】> [pyqt_rtsp]((../module/)) 的使用方法。
+请查阅左侧【常用开发工具】> [pyqt_rtsp](../../tools/pyqt_rtsp.md) 的使用方法。
 
 ## 关于 AI 功能
 
