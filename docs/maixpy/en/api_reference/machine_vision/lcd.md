@@ -36,6 +36,8 @@ Initialize the `LCD` screen display
   * `4`: LCD_TYPE_5P0_IPS, 5-inch IPS LCD with a resolution of 854*489 (requires sipeed adapter board)
   * `5`: LCD_TYPE_480_272_4P3, 4.3-inch LCD with a resolution of 480*272 (sipeed adapter board required)
 
+> MaixCube and MaixAmigo need to configure the power chip before using the LCD, otherwise the screen will be blurred. In this step, the MaixPy firmware will be configured automatically, no manual operation is required, the user only needs to understand.
+
 ### lcd.deinit()
 
 Log off the `LCD` driver and release the I/O pins

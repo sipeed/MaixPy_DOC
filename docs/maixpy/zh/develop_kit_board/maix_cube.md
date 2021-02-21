@@ -29,7 +29,7 @@ desc: maixpy doc: MaixCube
 | USB：        | Type-C 接口，正反盲插                                    |
 | 音频：       | 支持音频录制，播放，驱动 IC（ES8374）                    |
 | 板载传感器： | 三轴加速度传感器（MSA301）                               |
-| 灯：         | 板载两颗 RGB LED                                         |
+| 灯：         | 板载两颗 RGB LED，一颗闪光灯                            |
 | TF 卡槽：    | 多媒体资源扩展，支持大容量储存                           |
 | 电源管理：   | AXP173 控制单元，200mAh 锂电池，支持用户充放电控制       |
 
@@ -45,12 +45,11 @@ Maix Cube 对用户开放了两种高度扩展的接口：一个 [SP-MOD](../mod
 
 MaixCube  板载 I2C 传感器/IC
 
-| IC     | 设备 id     | I2C 地址(7位地址) | 配置：SCL：IO_30，SDA：IO_31 |
-| ------ | ----------- | ----------------- | ---------------------------- |
-| ---    | I2C Address | <<1               | MaixPy 读取地址              |
-| ES8374 | 0x08        | 0x10              | D(16)                        |
-| MSA301 | 0x13        | 0x26              | D(38)                        |
-| AXP173 | 0x68        | 0x34              | D(52)                        |
+| IC     | 设备 id     | I2C 地址(7位地址) | MaixPy 读取地址  | 示例代码 |
+| ------ | ----------- | ----------------- | ---------------------------- |----|
+| ES8374 | 0x08        | 0x10              | D(16)                        |[code](https://github.com/sipeed/MaixPy_scripts/blob/79a5485ec983e67bb8861305a52418b29e0dc205/modules/others/es8374/es8374.py)|
+| MSA301 | 0x13        | 0x26              | D(38)                        |[code](https://github.com/sipeed/MaixPy_scripts/blob/7fea2359a7f0c05f586be915aa8e6112262e0caa/multimedia/gui/maixui/msa301.py)|
+| AXP173 | 0x68        | 0x34              | D(52)                        |[code](https://github.com/sipeed/MaixPy_scripts/blob/7fea2359a7f0c05f586be915aa8e6112262e0caa/multimedia/gui/maixui/pmu_axp173.py)|
 
 
 ## 上手把玩

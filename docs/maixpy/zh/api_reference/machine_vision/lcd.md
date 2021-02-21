@@ -36,6 +36,8 @@ desc: maixpy doc: lcd（屏幕显示）
   * `4`: LCD_TYPE_5P0_IPS，5 寸 分辨率为 854*489 的 IPS lcd （需要搭配 sipeed 转接板）
   * `5`: LCD_TYPE_480_272_4P3，4.3 寸分辨率为 480*272 的 lcd （需要搭 sipeed 配转接板）
 
+> MaixCube 和 MaixAmigo 使用 LCD 之前需要配置电源芯片，否则会出现花屏现象，这一步 MaixPy 固件会自动配置，无需手动操作，用户只需要了解即可
+
 ### lcd.deinit()
 
 注销 `LCD` 驱动，释放I/O引脚

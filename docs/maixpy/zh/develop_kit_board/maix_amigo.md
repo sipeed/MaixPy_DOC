@@ -26,6 +26,7 @@ desc: maixpy doc: MaixAmigo
 | 存储：             | 16MiB Flash, 支持 micro SDXC 拓展存储 (最大128GB)                |
 | 屏幕：             | 3.5寸 TFT 显示屏, 分辨率：320\*480, 支持电容触摸(FT6X36)         |
 | 摄像头：           | OV7740 (后摄)与GC0328(前摄) 各 30W 像素(最大分辨率 VGA:640\*480) |
+| 灯：              | 三颗单色 LED 灯，一颗闪光灯                                         |
 | 电池：             | 板载可充电锂聚合物电池 (容量520mAh )                             |
 | 板载扬声器与麦克风 | 集成单音频控制器 ES8374 1W 8Ω 扬声器                             |
 | 板载接口：         | USB-C \*2 (K210 调试供电接口+兼容 STM32 核心板 USB 接口)         |
@@ -45,14 +46,12 @@ MaixAmigo 对用户开放了两种高度扩展的接口：三个 [SP-MOD](./../m
 
 MaixAmigo 板载 I2C 传感器/IC
 
-| IC     | 设备 id     | I2C 地址(7位地址) | 配置：SCL：IO_24, SDA：IO_27 |
-| ------ | ----------- | ----------------- | ---------------------------- |
-| ---    | I2C Address | <<1               | MaixPy 读取地址              |
-| ES8374 | 0x08        | 0x10              | D(16)                        |
-| MSA301 | 0x13        | 0x26              | D(38)                        |
-| AXP173 | 0x68        | 0x34              | D(52)                        |
+| IC     | 设备 id     | I2C 地址(7位地址) | MaixPy 读取地址  | 示例代码 |
+| ------ | ----------- | ----------------- | ---------------------------- |----|
+| ES8374 | 0x08        | 0x10              | D(16)                        |[code](https://github.com/sipeed/MaixPy_scripts/blob/79a5485ec983e67bb8861305a52418b29e0dc205/modules/others/es8374/es8374.py)|
+| MSA301 | 0x13        | 0x26              | D(38)                        |[code](https://github.com/sipeed/MaixPy_scripts/blob/7fea2359a7f0c05f586be915aa8e6112262e0caa/multimedia/gui/maixui/msa301.py)|
+| AXP173 | 0x68        | 0x34              | D(52)                        |[code](https://github.com/sipeed/MaixPy_scripts/blob/7fea2359a7f0c05f586be915aa8e6112262e0caa/multimedia/gui/maixui/pmu_axp173.py)|
 
-----
 
 ## 上手把玩
 

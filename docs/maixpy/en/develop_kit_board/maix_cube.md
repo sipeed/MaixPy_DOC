@@ -29,7 +29,7 @@ desc: maixpy ​​doc: MaixCube
 | USB: | Type-C interface, positive and negative blind plug |
 | Audio: | Support audio recording, playback, driver IC (ES8374) |
 | Onboard sensors: | Three-axis acceleration sensor (MSA301) |
-| Lamp: | Two RGB LEDs on board |
+| Lights: | Onboard two RGB LEDs, one flashlight |
 | TF card slot: | Multimedia resource expansion, support large-capacity storage |
 | Power management: | AXP173 control unit, 200mAh lithium battery, support user charge and discharge control |
 
@@ -45,12 +45,11 @@ Maix Cube opens two highly expanded interfaces to users: one [SP-MOD](../modules
 
 MaixCube onboard I2C sensor/IC
 
-| IC | Device id | I2C address (7-bit address) | Configuration: SCL: IO_30, SDA: IO_31 |
-| --- | --- | --- | --- |
-| --- | I2C Address | <<1 | MaixPy read address |
-| ES8374 | 0x08 | 0x10 | D(16) |
-| MSA301 | 0x13 | 0x26 | D(38) |
-| AXP173 | 0x68 | 0x34 | D(52) |
+| IC     | Device id | I2C address (7-bit address) | MaixPy read address | Sample code |
+| ------ | --------- | --------------------------  | ------------------- | ----------- |
+| ES8374 | 0x08      | 0x10                        | D(16)               |[code](https://github.com/sipeed/MaixPy_scripts/blob/79a5485ec983e67bb8861305a52418b29e0dc205/modules/others/es8374/es8374.py)|
+| MSA301 | 0x13      | 0x26                        | D(38)               |[code](https://github.com/sipeed/MaixPy_scripts/blob/7fea2359a7f0c05f586be915aa8e6112262e0caa/multimedia/gui/maixui/msa301.py)|
+| AXP173 | 0x68      | 0x34                        | D(52)               |[code](https://github.com/sipeed/MaixPy_scripts/blob/7fea2359a7f0c05f586be915aa8e6112262e0caa/multimedia/gui/maixui/pmu_axp173.py)| 
 
 
 ## Get started
