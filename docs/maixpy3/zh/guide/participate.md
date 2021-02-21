@@ -13,8 +13,8 @@ MaixPy3 并不是为了某一款芯片平台制作的，它的初衷就是为了
 对于一台 Linux X86 的个人计算机而言，我们使用如下命令进行构建。
 
 - 编译 `python3 setup.py build`
-- 安装 `pip3 install .`
 - 清理 `python3 setup.py clean`
+- 安装 `pip3 install .`
 
 ```bash
 juwan@juwan-N85-N870HL:~/Desktop/v831_toolchain_linux_x86/MaixPy3$ python3 setup.py build
@@ -30,39 +30,36 @@ writing manifest file 'MaixPy3.egg-info/SOURCES.txt'
 running build_ext
 juwan@juwan-N85-N870HL:~/Desktop/v831_toolchain_linux_x86/MaixPy3$ python3 setup.py clean
 running clean
-juwan@juwan-N85-N870HL:~/Desktop/v831_toolchain_linux_x86/MaixPy3$ pip3 install .
-Looking in indexes: https://pypi.tuna.tsinghua.edu.cn/simple
+juwan@juwan-N85-N870HL:~/Desktop/v831_toolchain_linux_x86/MaixPy3$ pip3 install .Looking in indexes: https://pypi.tuna.tsinghua.edu.cn/simple
 Processing /home/juwan/Desktop/v831_toolchain_linux_x86/MaixPy3
-Requirement already satisfied: Pillow in /usr/lib/python3/dist-packages (from MaixPy3==0.2.6) (7.0.0)
-Requirement already satisfied: evdev in /home/juwan/.local/lib/python3.8/site-packages (from MaixPy3==0.2.6) (1.4.0)
-Requirement already satisfied: gpiod in /home/juwan/.local/lib/python3.8/site-packages (from MaixPy3==0.2.6) (1.4.0)
-Requirement already satisfied: numpy in /home/juwan/.local/lib/python3.8/site-packages (from MaixPy3==0.2.6) (1.19.4)
-Requirement already satisfied: opencv-python in /home/juwan/.local/lib/python3.8/site-packages (from MaixPy3==0.2.6) (4.4.0.46)
-Collecting opencv-python3
-  Using cached https://pypi.tuna.tsinghua.edu.cn/packages/a9/da/cda409fb8d1dcedb2a4ff251e8c3b61b4bf301d080c679c57aa92b62663c/opencv_python3-1.0-py3-none-any.whl (1.6 kB)
-Requirement already satisfied: pyserial in /usr/local/lib/python3.8/dist-packages (from MaixPy3==0.2.6) (3.4)
-Requirement already satisfied: rpyc in /home/juwan/.local/lib/python3.8/site-packages (from MaixPy3==0.2.6) (5.0.1)
-Requirement already satisfied: spidev in /home/juwan/.local/lib/python3.8/site-packages (from MaixPy3==0.2.6) (3.5)
-Requirement already satisfied: plumbum in /home/juwan/.local/lib/python3.8/site-packages (from rpyc->MaixPy3==0.2.6) (1.6.9)
+Requirement already satisfied: Pillow in /usr/lib/python3/dist-packages (from MaixPy3==0.2.9) (7.0.0)
+Requirement already satisfied: evdev in /home/juwan/.local/lib/python3.8/site-packages (from MaixPy3==0.2.9) (1.4.0)
+Requirement already satisfied: gpiod in /home/juwan/.local/lib/python3.8/site-packages (from MaixPy3==0.2.9) (1.4.0)
+Requirement already satisfied: numpy in /home/juwan/.local/lib/python3.8/site-packages (from MaixPy3==0.2.9) (1.19.4)
+Requirement already satisfied: opencv-python in /home/juwan/.local/lib/python3.8/site-packages (from MaixPy3==0.2.9) (4.5.1.48)
+Requirement already satisfied: pyserial in /usr/local/lib/python3.8/dist-packages (from MaixPy3==0.2.9) (3.4)
+Requirement already satisfied: rpyc in /home/juwan/.local/lib/python3.8/site-packages (from MaixPy3==0.2.9) (5.0.1)
+Requirement already satisfied: spidev in /home/juwan/.local/lib/python3.8/site-packages (from MaixPy3==0.2.9) (3.5)
+Requirement already satisfied: plumbum in /home/juwan/.local/lib/python3.8/site-packages (from rpyc->MaixPy3==0.2.9) (1.6.9)
 Building wheels for collected packages: MaixPy3
   Building wheel for MaixPy3 (setup.py) ... done
-  Created wheel for MaixPy3: filename=MaixPy3-0.2.6-cp38-cp38-linux_x86_64.whl size=115594 sha256=77466134ebc37301d47d0926d72c035e5d934f0e4ab8f1897210e1a71f720099
-  Stored in directory: /tmp/pip-ephem-wheel-cache-7uew89j9/wheels/53/7d/47/6cd374fab930089f96a0a3185f5677e52a9b71dbbee769935d
+  Created wheel for MaixPy3: filename=MaixPy3-0.2.9-cp38-cp38-linux_x86_64.whl size=115611 sha256=54f70f181ccc629f1eaf470bf30eccd20389c6333814d7145e16a31db7f6cdcd
+  Stored in directory: /tmp/pip-ephem-wheel-cache-9bf1q3wt/wheels/53/7d/47/6cd374fab930089f96a0a3185f5677e52a9b71dbbee769935d
 Successfully built MaixPy3
-Installing collected packages: opencv-python3, MaixPy3
+Installing collected packages: MaixPy3
   Attempting uninstall: MaixPy3
-    Found existing installation: MaixPy3 0.2.5
-    Uninstalling MaixPy3-0.2.5:
-      Successfully uninstalled MaixPy3-0.2.5
-Successfully installed MaixPy3-0.2.6 opencv-python3-1.0
+    Found existing installation: MaixPy3 0.2.8
+    Uninstalling MaixPy3-0.2.8:
+      Successfully uninstalled MaixPy3-0.2.8
+Successfully installed MaixPy3-0.2.9
 juwan@juwan-N85-N870HL:~/Desktop/v831_toolchain_linux_x86/MaixPy3$ 
 ```
 
 而对于不能在目标平台上编译安装的环境，就需要使用预编译的 whl 包来辅助安装，以 Maix V831 为例。
 
-- 编译 `python3 setup.py bdist_wheel`
+- 编译 `python3.8 setup.py maix_v831 bdist_wheel`
 
-- 安装 `pip3 install ./dist/*.whl`
+- 安装 `pip install ./dist/*.whl`
 
 ```bash
 root@sipeed:/# pip install maixpy3 --upgrade
@@ -137,7 +134,7 @@ MaixPy3 使用面向模块接口开发，链接跨平台的 Python 或 C 包，�
 
 - [Sipeed v831 的 Python3 交叉编译环境](http://pan.sipeed.com/f/ee8f6592b01a45089585/) & [（微云备用）](https://share.weiyun.com/ALdx9GQ7)
 
-通常拿到一个 Python 模块，对它的 `setup.py` 执行 `python setup.py build` 即可进行构建，它的内容通常有如下示例。
+通常拿到一个 Python 模块，对它的 `setup.py` 执行 `python setup.py build` 即可进行构建，它的内容通常有如下示例（只是举例）。
 
 ```python
 
