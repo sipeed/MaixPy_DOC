@@ -40,7 +40,7 @@
                     "file": "install/linux_x86_64/readme.md"
                 },
                 {
-                    "label": "MaixII Dock",
+                    "label": "MaixII M2dock",
                     "file": "install/maixii_m2dock/readme.md",
                     "items": [
                         {
