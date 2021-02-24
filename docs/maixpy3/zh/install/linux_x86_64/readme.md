@@ -36,11 +36,8 @@ Successfully installed MaixPy3-0.2.9
 现在你安装好后，可以在 python3 中复制粘贴如下代码运行。
 
 ```python
-
 from maix import display, camera
-
 display.show(camera.capture())
-
 ```
 
 现在你可以看到系统唤起了图像浏览器显示的摄像头捕获的图像。
@@ -62,3 +59,5 @@ display.show(camera.capture())
 还未想到有哪些什么用法是需要在 PC 机上特别说明的。
 
 欢迎提供你的想法！
+
+## 想知道更多？请往左侧目录的【一些使用案例】上前进吧！

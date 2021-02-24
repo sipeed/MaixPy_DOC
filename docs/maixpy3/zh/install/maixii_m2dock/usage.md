@@ -92,9 +92,19 @@ pip config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple
 - grep 搜索文件内容
 - ln 建立文件链接
 
+## 测试屏幕方法
+
+> 请测试前观察系统上电后屏幕是否会闪烁一次，这表示屏幕已经通电、驱动起来，并对其复位（RST）后产生的。
+
+在 Linux Shell 运行 `cat /dev/urandom > /dev/fb0` 就会输入随机数据到 fb0 产生雪花屏了，这表示屏幕显示是正常的。
+
+![](./asserts/lcd_test.jpg)
+
+> 帧缓冲（framebuffer）是 Linux 为显示设备提供的一个接口，把显存抽象后的一种设备，他允许上层应用程序在图形模式下直接对显示缓冲区进行 读写操作。framebuffer 是 LCD 对应的一种 HAL（硬件抽象层），提供抽象的，统一的接口操作，用户不必关心硬件层是怎么实施的。这些都是由 Framebuffer 设备驱动来完成的。帧缓冲设备对应的设备文件为 /dev/fb*，如果系统有多个显示卡，Linux下还可支持多个帧缓冲设备，最多可达 32 个，分别为 /dev/fb0 到 /dev/fb31，而 /dev/fb 则为当前缺省的帧缓冲设备，通常指向 /dev/fb0，在嵌入式系统中支持一个显示设备就够了。帧缓冲设备为标准字 符设备，主设备号为 29 ，次设备号则从 0 到 31 。分别对应 /dev/fb0-/dev/fb31 。
+
 ## 运行 Python3 解释器
 
-在 Linux 上使用 Python 编程只需要在命令行交互的接口输入 python3 即可启动，可直接复制代码粘贴后按回车键运行。
+在 Linux 上使用 Python 编程只需要在 shell 命令行交互的接口输入 python3 即可启动，可直接复制代码粘贴后按回车键运行。
 
 ```python
 import platform
@@ -120,9 +130,18 @@ Type "help", "copyright", "credits" or "license" for more information.
 >>> print(platform.uname())
 uname_result(system='Linux', node='sipeed', release='4.9.118', version='#77 PREEMPT Wed Feb 3 11:06:36 UTC 2021', machine='armv7l', processor='')
 >>> 
-KeyboardInterrupt
->>> 
 ```
+
+## 测试拍照功能
+
+![](./asserts/hello_world.jpg)
+
+```python
+from maix import display, camera
+display.show(camera.capture())
+```
+
+> 如果发现屏幕没有亮起显示摄像头内容，确保系统是最新的，排查硬件接线与通电方面的问题，通常产品出厂前都会做外设硬件测试的。
 
 ## *使用 Jupyter 开发
 
@@ -142,3 +161,5 @@ KeyboardInterrupt
 - [MaixII M2dock pwm 调试](https://www.cnblogs.com/juwan/p/14343977.html)
 - [MaixII M2dock spi 调试](https://www.cnblogs.com/juwan/p/14341406.html)
 - [MaixII M2dock update_dtb 工具（更新设备树）](https://www.cnblogs.com/juwan/p/14345372.html)
+
+## 想知道更多？请往左侧目录的【一些使用案例】上前进吧！
