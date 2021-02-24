@@ -191,7 +191,7 @@ gc.collect()
 * `success`： `bool` 类型， 是否成功
 
 
-### init_yolo2
+### run_yolo2
 
 ```python
 import KPU as kpu

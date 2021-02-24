@@ -191,7 +191,7 @@ gc.collect()
 * `success`: `bool` type, success
 
 
-### init_yolo2
+### run_yolo2
 
 ```python
 import KPU as kpu
