@@ -96,7 +96,6 @@
         },
         {
             "label": "常用的开发工具",
-            "file": "tools/readme.md",
             "items": [
                 {
                     "label": "MobaXterm",
