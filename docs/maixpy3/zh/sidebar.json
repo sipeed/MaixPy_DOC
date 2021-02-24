@@ -26,7 +26,7 @@
                     "file": "guide/feedback.md"
                 },
                 {
-                    "label": "如何参与项目（需要开发基础）",
+                    "label": "如何参与项目",
                     "file": "guide/participate.md"
                 }
             ]
@@ -78,6 +78,10 @@
                 {
                     "label": "除此之外？",
                     "items": [
+                        {
+                            "label": "MaixPy3开发文档",
+                            "file": "install/others/develop.md"
+                        },
                         {
                             "label": "如何适配你的平台",
                             "file": "install/others/platform.md"
