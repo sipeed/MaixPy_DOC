@@ -9,6 +9,8 @@ Detailed API reference: [audio API](./../../api_reference/media/audio.md)
 
 ## Instructions
 
+> MaixAmigo needs [Initialize ES8374 audio decoder chip](https://github.com/sipeed/MaixPy_scripts/blob/master/modules/others/es8374/es8374.py) before using audio 
+
 * Create audio object
 
 ```python

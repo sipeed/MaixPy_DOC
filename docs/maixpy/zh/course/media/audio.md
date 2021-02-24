@@ -9,6 +9,8 @@ desc: maixpy doc: audio（音频） 的使用
 
 ## 使用方法
 
+> MaixAmigo 在使用音频前需要[初始化 ES8374 音频解码芯片](https://github.com/sipeed/MaixPy_scripts/blob/master/modules/others/es8374/es8374.py)
+
 * 创建 audio 对象
 
 ```python 
