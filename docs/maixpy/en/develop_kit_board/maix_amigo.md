@@ -55,7 +55,7 @@ MaixAmigo onboard I2C sensor/IC
 
 ## Get started
 
-MaixAmigo also uses MaixPy to get started with AIoT. Due to the particularity of the hardware, please use MaixPy after [Configure amigo hardware](https://github.com/sipeed/MaixPy_scripts/blob/master/board/config_maix_amigo.py).
+MaixAmigo also uses MaixPy to get started with AIoT. Due to the particularity of the hardware, please use MaixPy after [Configure amigo hardware](https://github.com/sipeed/MaixPy_scripts/blob/master/board/config_maix_amigo.py)(If not configured, the photos taken by the camera will be noisy) .
 
 Before development, we need to understand and prepare related tools to reduce the pitfalls we have to follow because of insufficient preparation.
 

@@ -55,7 +55,7 @@ MaixAmigo 板载 I2C 传感器/IC
 
 ## 上手把玩
 
-MaixAmigo 同样使用 MaixPy 入门 AIoT ，由于硬件特殊性，请在[配置 amigo 硬件](https://github.com/sipeed/MaixPy_scripts/blob/master/board/config_maix_amigo.py) 后再使用 MaixPy 。
+MaixAmigo 同样使用 MaixPy 入门 AIoT ，由于硬件特殊性，请在[配置 amigo 硬件](https://github.com/sipeed/MaixPy_scripts/blob/master/board/config_maix_amigo.py) 后再使用 MaixPy （如果不配置会导致摄像头拍摄的照片有噪点）。
 
 而在开发之前我们需要了解并准备相关工具，以减少我们后边因为准备不足而走的坑路
 
