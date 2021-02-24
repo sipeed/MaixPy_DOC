@@ -98,7 +98,7 @@ pip config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple
 
 在 Linux Shell 运行 `cat /dev/urandom > /dev/fb0` 就会输入随机数据到 fb0 产生雪花屏了，这表示屏幕显示是正常的。
 
-![](./asserts/lcd_test.jpg)
+<center><img src="./asserts/lcd_test.jpg" width="400"></center>
 
 > 帧缓冲（framebuffer）是 Linux 为显示设备提供的一个接口，把显存抽象后的一种设备，他允许上层应用程序在图形模式下直接对显示缓冲区进行 读写操作。framebuffer 是 LCD 对应的一种 HAL（硬件抽象层），提供抽象的，统一的接口操作，用户不必关心硬件层是怎么实施的。这些都是由 Framebuffer 设备驱动来完成的。帧缓冲设备对应的设备文件为 /dev/fb*，如果系统有多个显示卡，Linux下还可支持多个帧缓冲设备，最多可达 32 个，分别为 /dev/fb0 到 /dev/fb31，而 /dev/fb 则为当前缺省的帧缓冲设备，通常指向 /dev/fb0，在嵌入式系统中支持一个显示设备就够了。帧缓冲设备为标准字 符设备，主设备号为 29 ，次设备号则从 0 到 31 。分别对应 /dev/fb0-/dev/fb31 。
 
@@ -134,16 +134,16 @@ uname_result(system='Linux', node='sipeed', release='4.9.118', version='#77 PREE
 
 ## 测试拍照功能
 
-![](./asserts/hello_world.jpg)
-
 ```python
 from maix import display, camera
 display.show(camera.capture())
 ```
 
+<center><img src="./asserts/hello_world.jpg" width="500"></center>
+
 > 如果发现屏幕没有亮起显示摄像头内容，确保系统是最新的，排查硬件接线与通电方面的问题，通常产品出厂前都会做外设硬件测试的。
 
-## *使用 Jupyter 开发
+## **使用 Jupyter 开发**
 
 > 注意！！！！ MaixPy M2dock 不支持在本机安装 Jupyter ！！！
 
