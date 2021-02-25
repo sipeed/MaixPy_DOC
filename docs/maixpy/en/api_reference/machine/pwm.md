@@ -149,7 +149,7 @@ no
 ```python
 from machine import Timer,PWM
 import time
-from fpioa_manager import board_info
+from board import board_info
 
 tim = Timer(Timer.TIMER0, Timer.CHANNEL0, mode=Timer.MODE_PWM)
 ch = PWM(tim, freq=500000, duty=50, pin=board_info.LED_G)
@@ -175,7 +175,7 @@ while True:
 ```python
 import time
 import machine
-from fpioa_manager import board_info
+from board import board_info
 
 tim = machine.Timer(machine.Timer.TIMER0, machine.Timer.CHANNEL0, mode=machine.Timer.MODE_PWM)
 ch0 = machine.PWM(tim, freq=3000000, duty=20, pin=board_info.LED_G, enable=False)
