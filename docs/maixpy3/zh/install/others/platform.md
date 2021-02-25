@@ -179,15 +179,13 @@ except ModuleNotFoundError as e:
 
 现在已经成功适配到具体的屏幕操作了，但这样就足够了吗？
 
-### 怎样实现会更好？
+### 这样还不够，这样实现仅是完成了功能。
 
-这样还不够，这样实现仅是完成了功能。
-
-简单分析以上上述实现，其性能损耗主要发生在当图像对象进入 pillow show_file 的时候需要对其编码保存到某个临时文件（/tmp）中，然后再交给 fbviewer 去打开文件，fbviewer 对其解码后再写到 framebuffer 的设备（/dev/fb0）上。
+简单分析一下，上述实现性能损耗主要发生在当图像对象进入 pillow show_file 的时候需要对其编码保存到某个临时文件（/tmp）中，然后再交给 fbviewer 去打开文件，fbviewer 对其解码后再写到 framebuffer 的设备（/dev/fb0）上。
 
 问：为什么不把图像的 rgb 数组直接写到 fb 上呢？
 
-答：没错，内部的 _maix_display 拓展模块实现亦如此。
+答：没错，内部的 _maix_display 拓展模块实现是这样做的。
 
 ```c++
 PyDoc_STRVAR(Display_draw_doc, "draw()\nDraw image(rgb888) bytes data to lcd.\n");
@@ -242,9 +240,9 @@ display.show(camera.capture())
 
 包括后来加入的 i2c \ spi \ pwm \ gpio 亦如此。
 
-但也有一些例外，如音频驱动设备存在 alsa 和 tinyalsa 两类接口，需要从源头上去完成 Python 拓展模块的编写，而人工智能 NN 模块的实现更是千奇百怪，难以统一。
+但也有一些例外，如音频驱动设备存在 alsa 和 tinyalsa 两类接口，需要从源头上去完成 Python 拓展模块的编写，而神经网络的 NN 模块实现更是千奇百怪，难以统一。
 
-所以我们可以通过 maix 模块作为入口，重新围绕功能来抽象设计接口。
+所以可以通过 maix 模块作为用户调用的 API 入口，重新围绕功能来抽象设计通用接口。
 
 这样在不同平台上只需要链接不同的 Python 依赖模块即可，如 v831 链接的是 _maix_camera 模块，而 pc 上直接使用 opencv-python 模块，当然也可以是任意调用其他模块，不一定是 MaixPy3 所提供的参考模块，这取决于你的想法。
 
@@ -256,5 +254,198 @@ display.show(camera.capture())
 
 那么执行性能究竟差在哪里？除了上述说的【显示器】适配时的优化，下面再以 GPIO 的实现为例说明这个问题。
 
-待更
+如果站在使用 Python 进行的 Linux 应用编程角度，可以这样实现 GPIO 的控制。
+
+### 第一种使用 sysfs 的接口
+
+可以在 shell 接口配置 gpio 完成输入输出、拉高拉低。
+
+```bash
+sudo su
+cd /sys/class/gpio
+echo 12 > export
+echo out > gpio12/direction       # io used for output
+echo 1 > gpio12/value             # output logic 1 level
+echo 0 > gpio12/value             # output logic 0 level
+echo 12 > unexport
+```
+
+而在 Python 里可以使用 os.system() 来输入 shell 命令完成。
+
+### 第二种使用 gpiod 的接口
+
+可以参考 [python3-gpiod](https://github.com/hhk7734/python3-gpiod) 的实现，主要它是对 /dev/gpiodchipX 设备进行操作的。
+
+```python
+
+def gpiod_chip_open(path: str) -> Optional[gpiod_chip]:
+    """
+    @brief Open a gpiochip by path.
+    @param path: Path to the gpiochip device file.
+    @return GPIO chip handle or None if an error occurred.
+    """
+    info = gpiochip_info()
+
+    try:
+        fd = os_open(path, O_RDWR | O_CLOEXEC)
+    except FileNotFoundError:
+        return None
+
+    # We were able to open the file but is it really a gpiochip character
+    # device?
+    if not _is_gpiochip_cdev(path):
+        os_close(fd)
+        return None
+
+    status = ioctl(fd, GPIO_GET_CHIPINFO_IOCTL, info)
+    if status < 0:
+        os_close(fd)
+        return None
+
+    if info.label[0] == "\0":
+        label = "unknown"
+    else:
+        label = info.label.decode()
+
+    return gpiod_chip(
+        num_lines=info.lines, fd=fd, name=info.name.decode(), label=label
+    )
+
+```
+
+可以通过 shell 接口操作 /sys/class/gpio 对象，也可以通过 `from fcntl import ioctl` 操作字符设备文件进行控制，与第一种差别不大。
+
+### 第三种使用 mmap 的接口
+
+在 Linux 下直接读写物理地址，打开设备文件 /dev/mem 后使用 mmap 进行物理地址的映射，最后查阅数据手册获取寄存器地址读写相应的寄存器。
+
+> 节选部分代码说明意图
+
+```c++
+
+unsigned int SUNXI_PIO_BASE = 0;
+static volatile long int *gpio_map = NULL;
+
+int sunxi_gpio_init(void) {
+    int fd;
+    unsigned int addr_start, addr_offset;
+    unsigned int PageSize, PageMask;
+
+
+    fd = open("/dev/mem", O_RDWR);
+    if(fd < 0) {
+        return SETUP_DEVMEM_FAIL;
+    }
+
+    PageSize = sysconf(_SC_PAGESIZE);
+    PageMask = (~(PageSize-1));
+
+    addr_start = SW_PORTC_IO_BASE & PageMask;
+    addr_offset = SW_PORTC_IO_BASE & ~PageMask;
+
+    gpio_map = (void *)mmap(0, PageSize*2, PROT_READ|PROT_WRITE, MAP_SHARED, fd, addr_start);
+    if(gpio_map == MAP_FAILED) {
+        return SETUP_MMAP_FAIL;
+    }
+
+    SUNXI_PIO_BASE = (unsigned int)gpio_map;
+    SUNXI_PIO_BASE += addr_offset;
+
+    close(fd);
+    return SETUP_OK;
+}
+
+```
+
+然后编写相应的 Python 拓展 C 模块调用上述接口。
+
+```c++
+
+#define PD0    SUNXI_GPD(0)
+#define PD1    SUNXI_GPD(1)
+#define PD2    SUNXI_GPD(2)
+#define PD3    SUNXI_GPD(3)
+#define PD4    SUNXI_GPD(4)
+#define PD5    SUNXI_GPD(5)
+#define PD6    SUNXI_GPD(6)
+#define PD7    SUNXI_GPD(7)
+#define PD8    SUNXI_GPD(8)
+#define PD9    SUNXI_GPD(9)
+#define PD10    SUNXI_GPD(10)
+#define PD11    SUNXI_GPD(11)
+#define PD12    SUNXI_GPD(12)
+#define PD13    SUNXI_GPD(13)
+#define PD14    SUNXI_GPD(14)
+#define PD15    SUNXI_GPD(15)
+#define PD16    SUNXI_GPD(16)
+#define PD17    SUNXI_GPD(17)
+#define PD18    SUNXI_GPD(18)
+#define PD19    SUNXI_GPD(19)
+#define PD20    SUNXI_GPD(20)
+#define PD21    SUNXI_GPD(21)
+#define PD22    SUNXI_GPD(22)
+#define PD23    SUNXI_GPD(23)
+#define PD24    SUNXI_GPD(24)
+#define PD25    SUNXI_GPD(25)
+#define PD26    SUNXI_GPD(26)
+#define PD27    SUNXI_GPD(27)
+
+#define MISO    SUNXI_GPE(3)
+#define MOSI    SUNXI_GPE(2)
+#define SCK     SUNXI_GPE(1)
+#define CS      SUNXI_GPE(0)
+
+static int module_setup(void) {
+    int result;
+
+    result = sunxi_gpio_init();
+    if(result == SETUP_DEVMEM_FAIL) {
+        PyErr_SetString(SetupException, "No access to /dev/mem. Try running as root!");
+        return SETUP_DEVMEM_FAIL;
+    }
+    else if(result == SETUP_MALLOC_FAIL) {
+        PyErr_NoMemory();
+        return SETUP_MALLOC_FAIL;
+    }
+    else if(result == SETUP_MMAP_FAIL) {
+        PyErr_SetString(SetupException, "Mmap failed on module import");
+        return SETUP_MMAP_FAIL;
+    }
+    else {
+        return SETUP_OK;
+    }
+
+    return SETUP_OK;
+}
+
+static PyObject* py_init(PyObject* self, PyObject* args) {
+
+    module_setup();
+
+    Py_RETURN_NONE;
+}
+
+PyMethodDef module_methods[] = {
+    {"init", py_init, METH_NOARGS, "Initialize module"},
+    {"cleanup", py_cleanup, METH_NOARGS, "munmap /dev/map."},
+    {"setcfg", py_setcfg, METH_VARARGS, "Set direction."},
+    {"getcfg", py_getcfg, METH_VARARGS, "Get direction."},
+    {"output", py_output, METH_VARARGS, "Set output state"},
+    {"input", py_input, METH_VARARGS, "Get input state"},
+    {NULL, NULL, 0, NULL}
+};
+
+```
+
+这样与上述实现 display 模块到优化处理的思路是相通的，目的都是减少不必要的接口之间的数据交换达到最终优化的目的。
+
+### 总结
+
+无论是哪种方法本意想通过抽象封装的通用接口来解决不同硬件上的差异，但有时会因为性能和内存的问题，只能放弃抽象直接访问底层寄存器硬件以提高性能。
+
+> 上述接口的操作都是处于 linux 用户空间进行的，使用 Python 和 C 访问 /sys/class/gpio 设备在程序逻辑上并无区别，但从执行代码段和传递变量消耗的角度来看，越靠近底层的实现执行效率自然越高，通过 Python 拓展模块实现的 mmap 映射操作相对于直接使用 C 代码实现而言，两者性能差异几乎可以忽略不计，所以 Python 程序也不一定会性能低下，主要还是取决于具体的实现方式。
+
+如果还想继续提高性能，就需要把寄存器操作下到内核空间了，可能这对于一些用户来说并不是必要的，例如用户控制 GPIO 点灯相对于系统而言是低频操作，而模拟 SPI 通信需要控制 GPIO 翻转则是高频操作。
+
+因此要根据硬件的实际情况，在性能与功能之间选择一个折衷的实现。
 
