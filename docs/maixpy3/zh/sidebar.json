@@ -83,8 +83,22 @@
                             "file": "install/others/develop.md"
                         },
                         {
-                            "label": "如何适配你的平台",
-                            "file": "install/others/platform.md"
+                            "label": "如何适配更多产品",
+                            "file": "install/others/platform.md",
+                            "items": [
+                                {
+                                    "label": "linux_x86_64",
+                                    "file": "install/others/platform/develop_linux_x86_64.md"
+                                },
+                                {
+                                    "label": "v831",
+                                    "file": "install/others/platform/develop_v831.md"
+                                },
+                                {
+                                    "label": "rv1126",
+                                    "file": "install/others/platform/develop_rv1126.md"
+                                }
+                            ]
                         },
                         {
                             "label": "如何提交你的产品",
@@ -247,32 +261,6 @@
                 {
                     "label": "Python3 标准库",
                     "url": "https://docs.python.org/3/library/"
-                }
-            ]
-        },
-        {
-            "label": "支持的芯片平台",
-            "items": [
-                {
-                    "label": "针对不同平台的开发方法",
-                    "items": [
-                        {
-                            "label": "linux_x86_64",
-                            "file": "platform/develop_linux_x86_64.md"
-                        },
-                        {
-                            "label": "v831",
-                            "file": "platform/develop_v831.md"
-                        },
-                        {
-                            "label": "rv1126",
-                            "file": "platform/develop_rv1126.md"
-                        }
-                    ]
-                },
-                {
-                    "label": "如何支持其他平台的说明",
-                    "file": "platform/others.md"
                 }
             ]
         },
