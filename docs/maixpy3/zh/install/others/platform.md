@@ -20,7 +20,7 @@ desc: maixpy doc: 如何适配你的平台
 
 除去必要 Python3 调取硬件资源的方法，在 MaixPy3 上的开发更像是自上而下的模块接口统一的工作。
 
-所以可以从上层软件往下要求硬件提供相关功能模块的适配。
+可以从上层软件往下要求硬件提供相关功能模块的适配。
 
 从用户角度描述常用的功能如下：
 
@@ -156,7 +156,7 @@ fbv - The Framebuffer Viewer
 140 x 140
 ```
 
-所以如何注入 fbviewer 的显示接口进 pillow 模块呢？（在 `maix/__init__.py` 中有如下一段代码）
+如何注入 fbviewer 的显示接口进 pillow 模块呢？（在 `maix/__init__.py` 中有如下一段代码）
 
 ```python
 try:
@@ -221,7 +221,7 @@ __fastview__.draw(img.tobytes(), __fastview__.width, __fastview__.height)
 
 > 可以自行查阅 Linux framebuffer 相关资料了解更多。
 
-### 以 Maix 包为公共入口
+### 以 Maix 包作为通用的 Python API
 
 做完上述功能后，就要回到这里思考一个用户体验的问题（开发者也可以是用户）。
 
@@ -229,34 +229,140 @@ __fastview__.draw(img.tobytes(), __fastview__.width, __fastview__.height)
 
 > 若是不使用某个模块（maix）去约束入口代码，就会产生代码碎片化，就如同你所看到的 Linux 上各种 Python 功能模块，做同一件事，不同平台上的接口与用法都不尽相同，但你需要花费不少时间去寻找并使用，为什么不能统一常用的功能接口呢，答案肯定是可以的，但这可能需要一些时间。
 
-从摄像头获取一张图片并显示出来这样的功能，只需要使用如下代码就可以实现这个功能，并且它在大多数平台上都是可以做到的。
+从摄像头获取一张图片并显示出来这样的功能，使用如下代码就可以实现这个功能，并且它在大多数平台上都是可以做到的。
 
 ```python
 from maix import display, camera
 display.show(camera.capture())
 ```
 
-像 MaixPy3 在设计 display 和 camera 模块的时候都尽可能围绕则 pillow 和 python-opencv 模块的接口设计衍生而来的。
+为了实现上述统一接口，就需要在 [maix/video.py](https://github.com/sipeed/MaixPy3/blob/main/maix/video.py) 中多次 import 直到能够匹配的平台接口，这就会产生很多肮脏的接口代码，就如下所示。
 
-包括后来加入的 i2c \ spi \ pwm \ gpio 亦如此。
+```python
 
-但也有一些例外，如音频驱动设备存在 alsa 和 tinyalsa 两类接口，需要从源头上去完成 Python 拓展模块的编写，而神经网络的 NN 模块实现更是千奇百怪，难以统一。
+camera = MaixVideo()
 
-所以可以通过 maix 模块作为用户调用的 API 入口，重新围绕功能来抽象设计通用接口。
+try:
+    # use libmaix on v831
+    from _maix_camera import V831Camera
+
+    class V831MaixVideo(MaixVideo):
+
+        def __init__(self, source="/v831"):
+            self.source = source
+            self.cam = None
+
+        def config(self, size=(480, 360)):
+            if self.cam == None:
+                super(V831MaixVideo, self).__init__(size)
+                self.cam = V831Camera(self.width(), self.height())
+                import time
+                time.sleep(0.2) # wait init
+                print('[camera] config input size(%d, %d)' %
+                      (self.width(), self.height()))
+
+        def read(self):
+            if self.cam == None:
+                print('[camera] run config(size=(w, h)) before capture.')
+                self.config()
+            if self.cam:
+                ret, frame = self.cam.read()
+                if ret:
+                    return frame  # bytes
+            return None
+
+        def __del__(self):
+            if self.cam:
+                self.cam.close()
+                self.cam = None
+
+    camera = V831MaixVideo()
+except Exception as e:
+    pass
+
+try:
+    from cv2 import VideoCapture
+
+    class CvMaixVideo(MaixVideo):
+
+        def __init__(self, source=0):
+            super(CvMaixVideo, self).__init__((640, 480))
+            self.source = source
+            self.cam = VideoCapture(0)
+
+        def read(self):
+            ret, frame = self.cam.read()
+            if ret:
+                bgr = frame[..., ::-1]  # bgr2rgb
+                return bgr.tobytes()  # bytes
+            return None
+
+        def __del__(self):
+            self.cam.release()
+
+    camera = CvMaixVideo()
+except Exception as e:
+    pass
+
+```
+
+> 这样的代码并不会多次运行，只会 import 的时候载入一次。
+
+像 MaixPy3 在设计 display 和 camera 模块的时候都尽可能围绕则 pillow 和 python-opencv 模块的接口设计衍生而来的，可以看到 camera 的 MaixVideo 定义如下，是参考 opencv 结构实现的。
+
+```python
+
+class MaixVideo():
+
+    def __init__(self, size=(640, 480)):
+        self._width, self._height = size
+        
+    def width(self):
+        return self._width
+      
+    def height(self):
+        return self._height
+      
+    def write(self):
+        pass  # for file
+
+    def read(self):
+        return b'\xFF\x00\x00' * (self._width * self._height)
+
+    def config(self, size):
+        pass
+
+    def capture(self):
+        from PIL import Image
+        tmp = self.read()
+        if tmp:
+            return Image.frombytes("RGB", (self._width, self._height), tmp)
+        return None
+
+    def close(self):
+        pass  # for file
+
+```
+
+后来加入的 i2c \ spi \ pwm \ gpio 也尽量以通用接口实现。
+
+但也有一些例外，如 [PyAudio](http://people.csail.mit.edu/hubert/pyaudio/) 在对接具体音频驱动设备存在 alsa 和 tinyalsa 两类接口，就需要从底层上去完成 Python 拓展 C 模块的编写，从而实现上层接口的一致，而截止 2021 年的神经网络 NN 模块实现更是千奇百怪，还难以统一。
+
+所以通过 maix 模块作为用户调用的 API 入口，重新围绕功能来抽象设计对用户友好且统一的通用接口。
 
 这样在不同平台上只需要链接不同的 Python 依赖模块即可，如 v831 链接的是 _maix_camera 模块，而 pc 上直接使用 opencv-python 模块，当然也可以是任意调用其他模块，不一定是 MaixPy3 所提供的参考模块，这取决于你的想法。
 
-## 附录（一）：通用软件模块和经过优化的模块有什么不同？
+## 附录：如何优化 Python 模块？（以 GPIO 为例）
 
-通用软件的操作接口大多都是通过 shell 接口调用系统程序完成的功能，所以在执行性能上有很大的损失。
+Python 上通用软件的接口大多都是通过 shell 接口调用系统程序完成的功能，所以在执行性能上有很大的损失。
 
-所谓经过优化实际上只是通过内置代码模块的方式进行操作的，这样就减少了不必要的数据交换了。
+所谓经过优化实际上是通过内置代码模块的方式进行操作的，这样就减少了不必要的数据交换了。
 
 那么执行性能究竟差在哪里？除了上述说的【显示器】适配时的优化，下面再以 GPIO 的实现为例说明这个问题。
 
 如果站在使用 Python 进行的 Linux 应用编程角度，可以这样实现 GPIO 的控制。
 
-### 第一种使用 sysfs 的接口
+### 使用 sysfs 的接口
 
 可以在 shell 接口配置 gpio 完成输入输出、拉高拉低。
 
@@ -272,7 +378,7 @@ echo 12 > unexport
 
 而在 Python 里可以使用 os.system() 来输入 shell 命令完成。
 
-### 第二种使用 gpiod 的接口
+### 使用 gpiod 的接口
 
 可以参考 [python3-gpiod](https://github.com/hhk7734/python3-gpiod) 的实现，主要它是对 /dev/gpiodchipX 设备进行操作的。
 
@@ -315,11 +421,11 @@ def gpiod_chip_open(path: str) -> Optional[gpiod_chip]:
 
 可以通过 shell 接口操作 /sys/class/gpio 对象，也可以通过 `from fcntl import ioctl` 操作字符设备文件进行控制，与第一种差别不大。
 
-### 第三种使用 mmap 的接口
+### 使用 mmap 的接口
 
 在 Linux 下直接读写物理地址，打开设备文件 /dev/mem 后使用 mmap 进行物理地址的映射，最后查阅数据手册获取寄存器地址读写相应的寄存器。
 
-> 节选部分代码说明意图
+> 节选部分代码说明意图，注意不同平台的定义和实现都不尽相同。
 
 ```c++
 
@@ -445,7 +551,7 @@ PyMethodDef module_methods[] = {
 
 > 上述接口的操作都是处于 linux 用户空间进行的，使用 Python 和 C 访问 /sys/class/gpio 设备在程序逻辑上并无区别，但从执行代码段和传递变量消耗的角度来看，越靠近底层的实现执行效率自然越高，通过 Python 拓展模块实现的 mmap 映射操作相对于直接使用 C 代码实现而言，两者性能差异几乎可以忽略不计，所以 Python 程序也不一定会性能低下，主要还是取决于具体的实现方式。
 
-如果还想继续提高性能，就需要把寄存器操作下到内核空间了，可能这对于一些用户来说并不是必要的，例如用户控制 GPIO 点灯相对于系统而言是低频操作，而模拟 SPI 通信需要控制 GPIO 翻转则是高频操作。
+如果还想继续提高性能，就需要把寄存器操作下到内核空间了，可能这对于一些用户来说并不是必要的，例如用户点灯相对于系统而言是低频操作，而模拟 SPI 通信需要控制 GPIO 翻转则是高频操作，而从用户的角度来说，实现这个点灯功能（低频操作）对性能的要求不敏感，可以不做优化。
 
 因此要根据硬件的实际情况，在性能与功能之间选择一个折衷的实现。
 
