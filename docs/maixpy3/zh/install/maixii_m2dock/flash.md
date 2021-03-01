@@ -4,7 +4,7 @@ keywords: MaixII, MaixPy3, Python, Python3, M2dock
 desc: maixpy doc: MaixII M2dock 烧录系统
 ---
 
-> ！！！一定要严格按照步骤操作！！！
+> ！！！一定要严格按照步骤操作！！！请使用大于 1G 的 TF/SD 卡进行烧录，开源版本要求使用 TF/SD 卡来启动系统。
 
 V831 为全志的 SOC， 所以 Windwos 使用 **PhoenixSuit**, Linux 上使用 **Livesuit** 烧录镜像文件。
 
