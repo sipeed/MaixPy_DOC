@@ -6,7 +6,7 @@ desc: maixpy doc: 如何安装 mobaxterm
 
 ## mobaxterm 是什么？
 
-这是在 Windows 下使用的全能终端管理软件，可以在 [mobaxterm.mobatek.net/download](https://mobaxterm.mobatek.net/download.html) 获取免费版本使用，在国内网站上有中文版。
+这是在 Windows 下使用的全能终端管理软件，对开发与运维人员必备，可以在 [mobaxterm.mobatek.net/download](https://mobaxterm.mobatek.net/download.html) 获取免费版本使用，在国内网站上有中文版。
 
 ![](https://mobaxterm.mobatek.net/img/moba/features/feature-terminal.png)
 
@@ -46,14 +46,22 @@ desc: maixpy doc: 如何安装 mobaxterm
 
 ![](./asserts/mobaxterm_ftp.png)
 
-进入后就可以看到文件夹了，可以拖拽文件上传和下载。
+进入后就可以看到文件夹了。
 
 ![](./asserts/mobaxterm_ftp.jpg)
 
+可以拖拽文件上传和下载。
+
+![](./asserts/mobaxterm_ftp_ud.png)
+
 ### 如何进行编程
 
-除了使用串口进行 Python 代码的复制粘贴运行，还可以通过在 FTP 文件管理获取下图的代码编辑器，编辑后保存就会自动上传同步。
+除了使用串口进行 Python 代码的复制粘贴运行，还可以通过在 FTP 文件管理获取下图的代码编辑器，编辑后保存就会自动同步上传（下图为 C 代码参考，其他代码同理）。
 
 ![](https://mobaxterm.mobatek.net/img/moba/features/feature-mobatexteditor.png)
 
 这时候再拿到终端里运行 Python 脚本即可。
+
+```bash
+python xxxx.py
+```
