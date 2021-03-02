@@ -5,7 +5,7 @@ desc: maixpy ​​doc: first program: use screen and camera
 ---
 
 
-The development board has a matching camera and screen, please check whether the hardware connection is correct before powering on
+The development board has a matching camera and screen, please check whether the hardware connection is correct before powering on(**Align according to the No. 1 pin marked on the cable**)
 
 Then power on, open the serial terminal, press the keyboard `Ctrl+E`, and paste the following code:
 
