@@ -1556,6 +1556,20 @@ Return the image object so that you can call another method using. Notation.
 
 Does not support compressed images and bayer images.
 
+#### image.draw_ellipse(cx, cy, rx, ry, rotation[, color[, thickness=1[, fill=False]]])
+
+Draws an ellipse on the image. You may either pass cx, cy, rx, ry, and the rotation (in degrees) separately or as a tuple (cx, yc, rx, ry, rotation).
+
+color is an RGB888 tuple for Grayscale or RGB565 images. Defaults to white. However, you may also pass the underlying pixel value (0-255) for grayscale images or a RGB565 value for RGB565 images.
+
+thickness controls how thick the edges are in pixels.
+
+Pass fill set to True to fill the ellipse.
+
+Returns the image object so you can call another method using . notation.
+
+Not supported on compressed images or bayer images.
+
 #### image.draw_circle(x, y, radius[, color[, thickness=1[, fill=False]]])
 
 Draw a circle on the image. You can pass x, y, radius individually or as a tuple (x, y, radius).

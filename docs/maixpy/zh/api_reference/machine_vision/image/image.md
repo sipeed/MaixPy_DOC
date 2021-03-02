@@ -1561,6 +1561,20 @@ thickness 控制线的粗细像素。
 
 不支持压缩图像和bayer图像。
 
+#### image.draw_ellipse(cx, cy, rx, ry, rotation[, color[, thickness=1[, fill=False]]])
+
+在图像上绘制椭圆。您可以单独传递cx、cy、rx、ry和rotation(以度为单位)，也可以作为元组传递(cx、yc、rx、ry、rotation)。
+
+color 是用于灰度或RGB565图像的RGB888元组。默认为白色。 但是，您也可以为灰度图像传递基础像素值(0-255)，或者为RGB565图像传递字节反转的RGB565值。
+
+thickness 控制边缘的厚度，以像素为单位。
+
+传递 fill 设置为True来填充椭圆。
+
+返回图像对象，以便您可以使用 . 表示法调用另一个方法。
+
+不支持压缩图像或bayer图像。
+
 #### image.draw_circle(x, y, radius[, color[, thickness=1[, fill=False]]])
 
 在图像上绘制一个圆形。 您可以单独传递x，y，半径 或 作为元组(x，y，radius)传递。
