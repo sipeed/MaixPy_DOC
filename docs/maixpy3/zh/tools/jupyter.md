@@ -56,19 +56,19 @@ jupyter 可以在文档中运行很多代码，但为什么能运行代码取决
 
 > 同理运行其他语言，也只需要更换相应的内核即可。
 
-### 本机执行 Python 代码
+### 在本机执行 Python 代码
 
 接着上述说明，选择了内置的 Python3 内核就可以在文档中运行一些 Python code ，使用效果如下：
 
-![](https://img2018.cnblogs.com/blog/662544/201812/662544-20181223023511657-1267401491.png)
+![](./asserts/jupyter_python_0.png)
 
 这种方式的文档并不存在本地，需要在硬件中部署 jupyter 和 ipython 的程序，常见于 PC / 服务器 / 树莓派等内存大于 512M 的设备，运行代码有如下效果。
 
-![](https://img2018.cnblogs.com/blog/662544/201812/662544-20181223025027983-678348093.png)
+![](./asserts/jupyter_python_1.png)
 
 > 执行流程为 notebook 文档中的 Python 代码传递到本机的 jupyter kernel 中被解释执行。
 
-### 远端执行 Python 代码
+### 在远端执行 Python 代码
 
 和本机执行 Python 代码不同的是内存需求不同，当嵌入式 Linux 设备内存低于 128M 的时候启动 jupyter 服务对 Linux 系统来说是一种负担，更不用说后续的开发过程中的内存消耗了。
 
