@@ -1,7 +1,7 @@
 ---
-title: 如何安装 mobaxterm 
+title: 如何使用 mobaxterm 
 keywords: Jupyter, MaixPy3, Python, Python3
-desc: maixpy doc: 如何安装 mobaxterm 
+desc: maixpy doc: 如何使用 mobaxterm 
 ---
 
 ## mobaxterm 是什么？
