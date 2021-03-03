@@ -28,7 +28,7 @@ desc: maixpy doc: 如何使用 mobaxterm
 
 同样【session】会保存在左侧的【session】标签页里，方便下次连接。
 
-### 连接 SSH
+## 连接 SSH
 
 除了有线串口的方式，还可以通过无线访问 SSH 登录 Linux 系统，如一般的家用路由器。
 
@@ -40,7 +40,7 @@ desc: maixpy doc: 如何使用 mobaxterm
 
 ![](./asserts/mobaxterm_ssh_view.jpg)
 
-### 连接 FTP
+## 连接 FTP
 
 与 SSH 同理。
 
@@ -54,7 +54,7 @@ desc: maixpy doc: 如何使用 mobaxterm
 
 ![](./asserts/mobaxterm_ftp_ud.png)
 
-### 如何进行编程
+## 如何进行编程
 
 除了使用串口进行 Python 代码的复制粘贴运行，还可以通过在 FTP 文件管理获取下图的代码编辑器，编辑后保存就会自动同步上传（下图为 C 代码参考，其他代码同理）。
 
