@@ -10,7 +10,7 @@
         "items": [
             {
                 "url": "/",
-                "label": "文档首页",
+                "label": "首页",
                 "position": "left"
             },
             {
@@ -66,13 +66,13 @@
                 ]
             },
             {
-                "label": "云服务",
+                "label": "云平台",
                 "position": "left",
                 "type": "list",
                 "items": [
                     {
                         "url": "https://www.maixhub.com",
-                        "label": "Maixhub 模型训练平台",
+                        "label": "Maixhub 在线训练模型",
                         "target": "_blank"
                     },
                     {
@@ -83,50 +83,9 @@
                 ]
             },
             {
-                "label": "交流平台",
-                "position": "left",
-                "type": "list",
-                "items": [
-                    {
-                        "url": "https://github.com/sipeed",
-                        "label": "Github 开源组织",
-                        "target": "_blank"
-                    },
-                    {
-                        "url": "https://bbs.sipeed.com",
-                        "label": "Sipeed 官方论坛",
-                        "target": "_blank"
-                    },
-                    {
-                        "url": "https://mc.dfrobot.com.cn/forum-216-1.html",
-                        "label": "dfrobot MaixPy 板块",
-                        "target": "_blank"
-                    },
-                    {
-                        "url": "https://jq.qq.com/?_wv=1027&k=VCYCOAJS",
-                        "label": "点此加入荔枝 MaixPy AI 一群"
-                    },
-                    {
-                        "url": "https://jq.qq.com/?_wv=1027&k=i4QYoiGW",
-                        "label": "点此进入荔枝开源 MaixPy AI 二群"
-                    },
-                    {
-                        "url": "https://jq.qq.com/?_wv=1027&k=Zfm7twCQ",
-                        "label": "点此进入荔枝 MaixPy3 AI 交流群"
-                    },
-                    {
-                        "url": "https://jq.qq.com/?_wv=1027&k=UX0gCmHg",
-                        "label": "点此进入荔枝派 Linux 技术交流群"
-                    },
-                    {
-                        "url": "https://jq.qq.com/?_wv=1027&k=FBIceOy0",
-                        "label": "点此进入荔枝糖 FPGA 交流群"
-                    },
-                    {
-                        "url": "https://jq.qq.com/?_wv=1027&k=eKS0t0Ld",
-                        "label": "点此进入荔枝派大开源交流群（水群）"
-                    }
-                ]
+                "url": "https://wiki.sipeed.com/community.html",
+                "label": "社区",
+                "position": "left"
             },
             {
                 "url": "https://wiki.sipeed.com/store.html",
