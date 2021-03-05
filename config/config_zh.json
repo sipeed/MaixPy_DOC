@@ -72,12 +72,12 @@
                 "items": [
                     {
                         "url": "https://www.maixhub.com",
-                        "label": "Maixhub 在线训练模型",
+                        "label": "Maixhub 在线模型训练平台",
                         "target": "_blank"
                     },
                     {
                         "url": "https://www.maixhub.com/compile",
-                        "label": "在线编译 MaixPy 固件",
+                        "label": "在线固件编译平台",
                         "target": "_blank"
                     }
                 ]
