@@ -73,7 +73,7 @@ print('1 + 1 = ?', 1 + 1)
 ### 体验一下？
 
 <div align="center" >
-    <iframe src="https://tool.lu/coderunner/embed/awD.html" style="width:50%; height:320px;" frameborder="0" mozallowfullscreen webkitallowfullscreen allowfullscreen></iframe>
+    <iframe src="https://tool.lu/coderunner/embed/awD.html" style="width:90%; height:320px;" frameborder="0" mozallowfullscreen webkitallowfullscreen allowfullscreen></iframe>
 </div>
 
 > 在线 Python 编程 [runoob-python](https://www.runoob.com/try/runcode.php?filename=HelloWorld&type=python3) [google-colab](https://colab.research.google.com) 备用地址。

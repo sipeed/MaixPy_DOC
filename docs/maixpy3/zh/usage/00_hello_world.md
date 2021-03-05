@@ -47,7 +47,7 @@ print("hello world")
 > 点击下方的 run 按钮即可运行，如果有条件就在本机运行测试。
 
 <div align="center" >
-    <iframe src="https://tool.lu/coderunner/embed/aEj.html" style="width:50%; height:320px;" frameborder="0" mozallowfullscreen webkitallowfullscreen allowfullscreen></iframe>
+    <iframe src="https://tool.lu/coderunner/embed/aEj.html" style="width:90%; height:320px;" frameborder="0" mozallowfullscreen webkitallowfullscreen allowfullscreen></iframe>
 </div>
 
 > 在线 Python 编程 [runoob-python](https://www.runoob.com/try/runcode.php?filename=HelloWorld&type=python3) [google-colab](https://colab.research.google.com) 备用地址。
@@ -146,7 +146,7 @@ except Exception as e:
 
 在 Python 上有很多封装参考，主要是为了形成抽象的函数模块。
 
-所以出现了一些经典的编程思想，如面向过程、面向对象、面向装饰、面向函数等编程方法，哪一种更好就不比较和讨论了。
+所以出现了一些经典的编程思想，如面向过程、面向对象、面向切面、面向函数等编程方法，哪一种更好就不比较和讨论了。
 
 这里就简单叙述一下这些编程方法的逐渐发展与变化的过程，可以如何做出选择。
 
@@ -185,7 +185,7 @@ print(mul(one, two)) # 1 * 2 = 2
 
 面向对象是相对于面向过程来讲的，把相关的数据和方法组织为一个整体来看待，从更高的层次来进行系统建模，更贴近事物的自然运行模式，一切事物皆对象，通过面向对象的方式，将现实世界的事物抽象成对象，现实世界中的关系抽象成类、[继承](https://baike.baidu.com/item/继承)，帮助人们实现对现实世界的[抽象](https://baike.baidu.com/item/抽象)与数字建模。
 
-在看了一些面向对象的描述后，你会意识到上节面向对象的函数操作可能很通用，应该不只适用于一种变量类型，所以可以通过面向对象（class）的方法来封装它，于是可以试着这样写。
+在看了一些面向对象的描述后，你会意识到上节面向过程的函数操作可能很通用，应该不只适用于一种变量类型，所以可以通过面向对象（class）的方法来封装它，于是可以试着这样写。
 
 ```python
 class object:
