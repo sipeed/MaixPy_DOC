@@ -10,12 +10,12 @@
         "items": [
             {
                 "url": "/",
-                "label": "首页",
+                "label": "文档首页",
                 "position": "left"
             },
             {
                 "url": "https://www.sipeed.com",
-                "label": "矽速首页",
+                "label": "矽速官网",
                 "target": "_blank",
                 "position": "left"
             },
@@ -44,11 +44,11 @@
                 "type": "list",
                 "items": [
                     {
-                        "url": "https://wiki.sipeed.com/hardware/maix/zh/",
+                        "url": "https://maixpy.sipeed.com/maixpy/zh/develop_kit_board/get_hardware.html",
                         "label": "Maix"
                     },
                     {
-                        "url": "https://wiki.sipeed.com/hardware/maixii/zh/",
+                        "url": "https://maixpy.sipeed.com/maixpy3/zh/install/maixii_m2dock/index.html",
                         "label": "Maix II"
                     },
                     {
@@ -66,55 +66,65 @@
                 ]
             },
             {
-                "label": "商业产品",
-                "position": "left",
-                "type": "list",
-                "items": [
-                    {
-                        "url": "https://wiki.sipeed.com/mf/zh",
-                        "label": "Maix Face"
-                    }
-                ]
-            },
-            {
-                "label": "平台",
+                "label": "云服务",
                 "position": "left",
                 "type": "list",
                 "items": [
                     {
                         "url": "https://www.maixhub.com",
-                        "label": "Maixhub",
+                        "label": "Maixhub 模型训练平台",
                         "target": "_blank"
                     },
                     {
                         "url": "https://www.maixhub.com/compile",
-                        "label": "固件在线编译",
+                        "label": "在线编译 MaixPy 固件",
                         "target": "_blank"
                     }
                 ]
             },
             {
-                "label": "社区",
+                "label": "交流平台",
                 "position": "left",
                 "type": "list",
                 "items": [
                     {
                         "url": "https://github.com/sipeed",
-                        "label": "github",
+                        "label": "Github 开源组织",
                         "target": "_blank"
                     },
                     {
                         "url": "https://bbs.sipeed.com",
-                        "label": "论坛",
+                        "label": "Sipeed 官方论坛",
                         "target": "_blank"
                     },
                     {
-                        "url": "https://wiki.sipeed.com/social_group.html",
-                        "label": "群聊"
+                        "url": "https://mc.dfrobot.com.cn/forum-216-1.html",
+                        "label": "dfrobot MaixPy 板块",
+                        "target": "_blank"
                     },
                     {
-                        "url": "https://wiki.sipeed.com/social_others.html",
-                        "label": "其它"
+                        "url": "https://jq.qq.com/?_wv=1027&k=VCYCOAJS",
+                        "label": "点此加入荔枝 MaixPy AI 一群"
+                    },
+                    {
+                        "url": "https://jq.qq.com/?_wv=1027&k=i4QYoiGW",
+                        "label": "点此进入荔枝开源 MaixPy AI 二群"
+                    },
+                    {
+                        "url": "https://jq.qq.com/?_wv=1027&k=Zfm7twCQ",
+                        "label": "点此进入荔枝 MaixPy3 AI 交流群"
+                    },
+                    {
+                        "url": "https://jq.qq.com/?_wv=1027&k=UX0gCmHg",
+                        "label": "点此进入荔枝派 Linux 技术交流群"
+                    },
+                    {
+                        "url": "https://jq.qq.com/?_wv=1027&k=FBIceOy0",
+                        "label": "点此进入荔枝糖 FPGA 交流群"
+                    },
+                    {
+                        "url": "https://jq.qq.com/?_wv=1027&k=eKS0t0Ld",
+                        "label": "点此进入荔枝派大开源交流群（水群）"
                     }
                 ]
             },
