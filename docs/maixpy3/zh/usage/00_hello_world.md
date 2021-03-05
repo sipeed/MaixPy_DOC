@@ -223,7 +223,7 @@ Traceback (most recent call last):
 TypeError: can't multiply sequence by non-int of type 'str'
 ```
 
-显然这样写代码就不合理了，但这时运用的面向对象的思想是可行的，只是实现的方式不够好而已，所以这时候应该写成下面的类结构。
+显然这样写代码就不合理了，但这时运用的面向对象的思想是可行的，只是实现的方式不够好而已，所以这时候应该运用面向对象的思维，重新设计类结构，例如可以写成下面的类结构。
 
 ```python
 class obj:
@@ -275,13 +275,15 @@ class str_number(obj):
             return str(self.value * int(obj.value))
         return str(super().__mul__(int(obj)))
 
-print(str_number(1) + '2')
-print(str_number(1) * '2')
-print(str_number(1) + str_number(2))
-print(str_number(1) * str_number(2))
+print(str_number('1') + '2')
+print(str_number('1') * '2')
+print(str_number('1') + str_number('2'))
+print(str_number('1') * str_number('2'))
 ```
 
 现在就可以解决了最初的同类操作适用不同的数据类型，把最初的一段操作通用到数值和字符串了，可以受此启发，它不仅仅只是加法或乘法，还有可能是其他操作，关于面向对象的内容就说到这里，感兴趣的可以查阅相关资料深入学习，本节只讲述可以怎样使用面向对象的思维写代码，而不是单纯把 Class 当 Struct 来使用。
+
+> 像最初写的代码，如果不通过对象继承分解函数，最终将会形成一个巨大的 Struct 结构。
 
 ### 面向切面
 
