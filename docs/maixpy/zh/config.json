@@ -1,130 +1,23 @@
 {
+    "import": "config_zh",
     "class": "language_zh",
     "navbar": {
-        "title": "MaixPy",
-        "logo": {
-            "alt": "MaixPy logo",
-            "src": "/static/image/logo.png"
-        },
-        "home_url": "/",
         "items": [
             {
-                "url": "/maixpy/zh/",
-                "label": "MaixPy",
-                "position": "left"
-            },
-            {
-                "url": "/maixpy3/zh/",
-                "label": "MaixPy3",
-                "position": "left"
-            },
-            {
-                "url": "https://github.com/sipeed",
-                "label": "github",
-                "target": "_blank",
-                "position": "right"
-            },
-            {
-                "label": "Language: ",
-                "position": "right",
+                "id": "language",
                 "items": [
                     {
+                        "id": "zh",
                         "url": "/maixpy/zh/",
                         "label": "中文"
                     },
                     {
+                        "id": "en",
                         "url": "/maixpy/en/",
                         "label": "English"
                     }
                 ]
             }
         ]
-    },
-    "footer":{
-        "top":[
-            {
-                "label": "链接",
-                "items": [
-                    {
-                        "label": "Sipeed",
-                        "url": "https://www.sipeed.com",
-                        "target": "_blank"
-                    },
-                    {
-                        "label": "BBS 论坛",
-                        "url": "https://bbs.sipeed.com/",
-                        "target": "_blank"
-                    },
-                    {
-                        "label": "Sipeed 淘宝",
-                        "url": "https://sipeed.taobao.com/",
-                        "target": "_blank"
-                    },
-                    {
-                        "label": "使用 teedoc 构建",
-                        "url": "https://github.com/neutree/teedoc",
-                        "target": "_blank"
-                    }
-                ]
-            },
-            {
-                "label": "源码",
-                "items": [
-                    {
-                        "label": "MaixPy3",
-                        "url": "https://github.com/sipeed/MaixPy3",
-                        "target": "_blank"
-                    },
-                    {
-                        "label": "MaixPy",
-                        "url": "https://github.com/sipeed/MaixPy",
-                        "target": "_blank"
-                    },
-                    {
-                        "label": "文档源文件",
-                        "url": "https://github.com/sipeed/MaixPy_DOC",
-                        "target": "_blank"
-                    }
-                ]
-            },
-            {
-                "label": "网站统计",
-                "items": [
-                    {
-                        "label": "百度统计",
-                        "url": "https://tongji.baidu.com/web/welcome/ico?s=90c693aa2475224142e727c14a50bb49",
-                        "target": "_blank"
-                    },
-                    {
-                        "label": "网站地图",
-                        "url": "/sitemap.xml"
-                    }
-                ]
-            }
-        ],
-        "bottom": [
-            {
-                "label": "Copyright © 2018-2021 Sipeed Ltd",
-                "url": "https://www.sipeed.com",
-                "target": "_blank"
-            },
-            {
-                "label": "粤ICP备19015433号",
-                "url": "https://beian.miit.gov.cn",
-                "target": "_blank"
-            }
-        ]
-    },
-    "plugins": {
-        "teedoc-plugin-search":{
-            "config": {
-                "search_hint": "搜索",
-                "input_hint": "输入关键词，多关键词空格隔开",
-                "loading_hint": "正在加载，请稍候。。。",
-                "download_err_hint": "下载文件失败，请刷新重试或检查网络",
-                "other_docs_result_hint": "来自其它文档的结果",
-                "curr_doc_result_hint": "当前文档搜索结果"
-            }
-        }
     }
 }

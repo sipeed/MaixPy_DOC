@@ -4,6 +4,7 @@
     "site_root_url": "/",
     "site_domain": "maixpy.sipeed.com",
     "site_protocol": "https",
+    "config_template_dir": "config",
     "route": {
         "docs": {
             "/maixpy/zh": "docs/maixpy/zh",
