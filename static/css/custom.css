@@ -39,10 +39,7 @@ iframe {
 .dark #home_page .big_btn a:hover {
     background-color: #1f1f1f;
 }
-#sidebar .active > a, #navbar .active > a {
-    background-color: #ff6b63;
-    color: #ffffff;
-}
+
 #sidebar li > a:hover, #sidebar li.active_parent > a:hover, #navbar li > a:hover, #navbar .sub_items > a:hover {
     background-color: #ff6b63;
     color: #ffffff;
@@ -80,9 +77,6 @@ blockquote {
 th {
     background-color: #ff6b63;
     border: 2px solid #d8524b;
-}
-#footer_top > ul {
-    margin: 0 15em;
 }
 
 @media screen and (max-width: 900px) {
