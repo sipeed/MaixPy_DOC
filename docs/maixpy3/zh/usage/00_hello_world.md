@@ -223,7 +223,7 @@ Traceback (most recent call last):
 TypeError: can't multiply sequence by non-int of type 'str'
 ```
 
-显然这样写代码就不合理了，但这时运用的面向对象的思想是可行的，只是实现的方式不够好而已，所以这时候应该运用面向对象的思维，重新设计类结构，例如可以写成下面的类结构。
+显然这样写代码就不合理了，但这时运用的面向对象的思想是可行的，只是实现的方式不够好而已，所以重新设计类结构，例如可以写成下面的类结构。
 
 ```python
 class obj:
