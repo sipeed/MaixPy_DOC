@@ -160,7 +160,7 @@ Type "help", "copyright", "credits" or "license" for more information.
 
 ![](./asserts/time_python.png)
 
-为什么会造成这种差异的原因是因为串口依次输入命令执行会存在误差，而 jupyter 是通过网络 socket 连接传输显示到屏幕上，所以耗时误差只会发生在运算重定向输出结果的时候，最终结果会较为贴近真实运算结果，通过保存下述代码文件来运行即可得知真实情况下约为 26 ~ 28ms 完成。
+为什么会造成这种差异的原因是因为串口依次输入命令输出结果需要时间，所以依次输入语句执行自然会存在误差，而 jupyter 是通过网络 socket 连接传输显示到屏幕上，所以耗时误差只会发生在运算重定向输出结果的时候，最终结果会较为贴近真实运算结果，通过保存下述代码文件来运行即可得知真实情况下约为 26 ~ 28ms 完成。
 
 ```bash
 root@sipeed:/# cat test.py
@@ -523,7 +523,7 @@ this is code
 
 这样你写的代码就可以作为一个模块被其他人所使用了，注意 import 只会加载并执行一次，想要再次加载请使用 reload 函数。
 
-### 如何进行内存或空间上的分析？
+### 如何进行内存上的分析？
 
 这里就推荐 [memory_profiler](https://github.com/pythonprofilers/memory_profiler) 开源工具，快去体验吧。
 
