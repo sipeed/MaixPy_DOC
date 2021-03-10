@@ -33,6 +33,8 @@ items:
                 file: develop_kit_board/maix_go.md
             -   label: Maix Nano
                 file: develop_kit_board/maix_nano.md
+            -   label: Grove AI HAT
+                file: develop_kitboard/grove_ai_hat.md
         -   label: 外设模组（配件）
             items:
             -   label: SP-MOD
@@ -61,13 +63,15 @@ items:
             -   label: Maix Bit
                 file: get_started/install_driver/bit.md
             -   label: Maix Amigo
-                file: get_started/install_driver/amigo.md
+                file: get_started/install_driver/ft2232.md
             -   label: Maix Cube
-                file: get_started/install_driver/cube.md
+                file: get_started/install_driver/ft2232.md
             -   label: Maix Go
                 file: get_started/install_driver/go.md
             -   label: Maix Nano
                 file: get_started/install_driver/nano.md
+            -   label: Grove AI HAT
+                file: get_started/install_driver/ft2232.md
         -   label: 更新 MaixPy 固件
             file: get_started/upgrade_maixpy_firmware.md
         -   label: 使用串口终端工具
