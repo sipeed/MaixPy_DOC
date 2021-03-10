@@ -72,6 +72,14 @@ desc: maixpy doc: 如何选购开发板
         <td>兼容 Arduino，支持 ESP32 WIFI，支持 ESP32 5个 ADC 通道的读取</td>
     </tr>
     <tr>
+        <td>Grove AI HAT</td>
+        <td>
+            <img src="../../assets/hardware/grove_ai_hat/grove_ai_hat.jpg" height="200"></br>
+            </p><a href="https://sipeed.taobao.com/">点击购买 Grove AI HAT</a>
+        </td>
+        <td>板载加速度计和高精度 ADC, 引出多个 Grove/Spmod 接口, 可用作树莓派配件</td>
+    </tr>
+    <tr>
         <td>Maix GO</td>
         <td>
             <img src="../../assets/hardware/maix_go/sipeed_maix_go_400x400.jpg" height="200">
@@ -106,16 +114,17 @@ desc: maixpy doc: 如何选购开发板
 
 从淘宝官方购买可以询问是否包含, 推荐用户购买带 LCD 的板子或者套餐,方便后续运行程序时结果的直观展示,
 
-| 板型                | 屏幕驱动 IC | 支持分辨率 | 是否支持触摸 | 备注 |
-| ------------------- | ----------- | ---------- | ------------ | ---- |
-| Maix Cube(IPS)      | ST7789      | 240\*240   | 不支持       | ---  |
-| Maix Amigo          | ILI9486     | 320\*480   | 支持(FT6X36) | ---  |
-| Maix Amigo(IPS 版)  | ILI9486     | 320\*480   | 支持(FT6X36) | ---  |
-| Maix Nano(不带屏幕) | ---         | ---        | ---          | ---  |
-| Maix Dock           | ST7789      | 320\*240   | 不支持       | ---  |
-| Maix Bit            | ST7789      | 320\*240   | 不支持       | ---  |
-| Maix Dock           | ST7789      | 320\*240   | 不支持       | ---  |
-| Maix Go             | ST7789      | 320\*240   | 支持(FT6X36) | ---  |
+| 板型                | 屏幕驱动 IC | 支持分辨率 | 备注 |
+| ------------------- | ----------- | ---------- | ---- |
+| Maix Cube(IPS)      | ST7789      | 240\*240   | ---  |
+| Maix Amigo          | ILI9486     | 320\*480   | ---  |
+| Maix Amigo(IPS 版)  | ILI9486     | 320\*480   | ---  |
+| Maix Nano(不带屏幕) | ---         | ---        | ---  |
+| Maix Dock           | ST7789      | 320\*240   | ---  |
+| Maix Bit            | ST7789      | 320\*240   | ---  |
+| Maix Dock           | ST7789      | 320\*240   | ---  |
+| Maix Go             | ST7789      | 320\*240   | ---  |
+| Grove AI HAT        | ST7789      | 320\*240   | ---  |
 
 ### 摄像头
 
@@ -133,7 +142,8 @@ desc: maixpy doc: 如何选购开发板
 | GC0328  | 0x9d    | 30W  | 支持度较好           |      |
 | GC2145  | 0x2145  | 200W | 兼容运行             |      |
 | MT9D111 | 0x1519  | 200W | 可以运行，支持不完整 |      |
-| OV5640  | 0x5640  | 500W | 支持度较好 | --- |
+| OV5640  | 0x5640  | 500W | 支持度较好           | ---  |
+| OV5642  | 0x5642  | 500w | 支持度较好           |      |
 
 
 截止至固件版本 `MicroPython v0.5.0-173` 相关摄像头测试情况如下:
@@ -142,8 +152,8 @@ desc: maixpy doc: 如何选购开发板
 | -------------------------------------- | -------------------------------------- |
 | M1/M1W 模组系列（Maixduino、Dock、Go） | OV2640、GC0328、OV7740、GC2145、OV5640 |
 | M1n 模组系列（Nano、Cube）             | OV2640、GC0328、OV7740、GC2145、OV5640 |
-| MaixBit             | OV2640、GC0328、OV7740、GC2145、OV5640 |
-| Maix Amigo                  | OV7740（后摄）、GC0328（前摄）                       |
+| MaixBit                                | OV2640、GC0328、OV7740、GC2145、OV5640 |
+| Maix Amigo                             | OV7740（后摄）、GC0328（前摄）         |
 
 - 目前摄像头的颜色模式
 
@@ -151,7 +161,7 @@ desc: maixpy doc: 如何选购开发板
 | ------ | --------------- |
 | OV2640 | OV5640          |
 | OV7740 | GC2145          |
-| GC0328 | --- |
+| GC0328 | OV5642          |
 
 
 从淘宝官方购买可以询问型号, OV7740 帧率相对高一点; OV2640 比较古老, 画质稍不如 GC0328

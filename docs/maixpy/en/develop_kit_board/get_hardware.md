@@ -72,6 +72,14 @@ Since MaixPy has many early product lines, the specific development board and pa
         <td>Compatible with Arduino, supports ESP32 WIFI, supports reading of 5 ADC channels of ESP32</td>
     </tr>
     <tr>
+        <td>Grove AI HAT</td>
+         <td>
+             <img src="../../assets/hardware/grove_ai_hat/grove_ai_hat.jpg" height="200"></br>
+             </p><a href="https://sipeed.taobao.com/">Click to buy Grove AI HAT</a>
+         </td>
+         <td>Onboard accelerometer and high-precision ADC, lead to multiple Grove/Spmod interfaces, which can be used as Raspberry Pi accessories</td>
+     </tr>
+    <tr>
         <td>Maix GO</td>
         <td>
             <img src="../../assets/hardware/maix_go/sipeed_maix_go_400x400.jpg" height="200">
@@ -106,16 +114,17 @@ You can ask if it is included in the official purchase from Taobao. At present, 
 
 From Taobao official purchase, you can ask whether it is included. It is recommended that users buy a board or package with LCD to facilitate the visual display of the results when running the program later.
 
-| Board type | Screen driver IC | Support resolution | Whether to support touch | Remarks |
-| --- | --- | --- | --- | --- |
-| Maix Cube(IPS) | ST7789 | 240\*240 | Not supported | --- |
-| Maix Amigo | ILI9486 | 320\*480 | Support (FT6X36) | --- |
-| Maix Amigo (IPS version) | ILI9486 | 320\*480 | Support (FT6X36) | --- |
-| Maix Nano (without screen) | --- | --- | --- | --- |
-| Maix Dock | ST7789 | 320\*240 | Not Supported | --- |
-| Maix Bit | ST7789 | 320\*240 | Not Supported | --- |
-| Maix Dock | ST7789 | 320\*240 | Not Supported | --- |
-| Maix Go | ST7789 | 320\*240 | Support (FT6X36) | --- |
+| 板型                      | 屏幕驱动 IC | 支持分辨率 | 备注 |
+| ------------------------- | ----------- | ---------- | ---- |
+| Maix Cube(IPS)            | ST7789      | 240\*240   | ---  |
+| Maix Amigo                | ILI9486     | 320\*480   | ---  |
+| Maix Amigo(IPS version)   | ILI9486     | 320\*480   | ---  |
+| Maix Nano(without screen) | ---         | ---        | ---  |
+| Maix Dock                 | ST7789      | 320\*240   | ---  |
+| Maix Bit                  | ST7789      | 320\*240   | ---  |
+| Maix Dock                 | ST7789      | 320\*240   | ---  |
+| Maix Go                   | ST7789      | 320\*240   | ---  |
+| Grove AI HAT              | ST7789      | 320\*240   | ---  |
 ### camera
 
 On sale are: OV2640 (conventional, M12), OV7740, GC0328;
@@ -124,33 +133,33 @@ Since the resolution supported by the K210 DVP interface is VGA (640*480 30W), y
 
 As of MaixPy firmware version: `MaixPy 0.5.0_160`, the supported camera models are as follows
 
-| Model | Device id | Pixel | Description | Remarks |
-| --- | --- | --- | --- | --- |
-| OV2640 | 0x2642 | 200W | Better support | |
-| OV7740 | 0x7742 | 30W | Better support | |
-| OV3660 | 0x3660 | 300W | Compatible operation | |
-| GC0328 | 0x9d | 30W | Better support | |
-| GC2145 | 0x2145 | 200W | Compatible operation | |
-| MT9D111 | 0x1519 | 200W | Can run, support is incomplete | |
-| OV5640 | 0x5640 | 500W | Better support | --- |
+| Model   | Device id | Pixel | Description                    | Remarks |
+| ------- | --------- | ----- | ------------------------------ | ------- |
+| OV2640  | 0x2642    | 200W  | Better support                 |         |
+| OV7740  | 0x7742    | 30W   | Better support                 |         |
+| OV3660  | 0x3660    | 300W  | Compatible operation           |         |
+| GC0328  | 0x9d      | 30W   | Better support                 |         |
+| GC2145  | 0x2145    | 200W  | Compatible operation           |         |
+| MT9D111 | 0x1519    | 200W  | Can run, support is incomplete |         |
+| OV5640  | 0x5640    | 500W  | Better support                 | ---     |
 
 
 As of the firmware version `MicroPython v0.5.0-173`, the related camera test conditions are as follows:
 
-| Hardware model | Monocular or binocular camera that passed the test |
-| --- | --- |
-| M1/M1W Module Series (Maixduino, Dock, Go) | OV2640, GC0328, OV7740, GC2145, OV5640 |
-| M1n Module Series (Nano, Cube) | OV2640, GC0328, OV7740, GC2145, OV5640 |
-| MaixBit | OV2640, GC0328, OV7740, GC2145, OV5640 |
-| Maix Amigo | OV7740 (rear shot), GC0328 (front shot) |
+| Hardware model                             | Monocular or binocular camera that passed the test |
+| ------------------------------------------ | -------------------------------------------------- |
+| M1/M1W Module Series (Maixduino, Dock, Go) | OV2640, GC0328, OV7740, GC2145, OV5640             |
+| M1n Module Series (Nano, Cube)             | OV2640, GC0328, OV7740, GC2145, OV5640             |
+| MaixBit                                    | OV2640, GC0328, OV7740, GC2145, OV5640             |
+| Maix Amigo                                 | OV7740 (rear shot), GC0328 (front shot)            |
 
 - The color mode of the current camera
 
 | YUV422 | RGB565 & YUV422 |
-| --- | --- |
-| OV2640 | OV5640 |
-| OV7740 | GC2145 |
-| GC0328 | --- |
+| ------ | --------------- |
+| OV2640 | OV5640          |
+| OV7740 | GC2145          |
+| GC0328 | OV5642          |
 
 
 You can ask for the model from Taobao official purchase, OV7740 frame rate is relatively high; OV2640 is relatively old, and the picture quality is slightly inferior to GC0328
