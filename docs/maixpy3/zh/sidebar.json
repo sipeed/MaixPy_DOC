@@ -56,12 +56,12 @@
                             "file": "install/maixii_m2dock/verify.md",
                             "items": [
                                 {
-                                    "label": "安装驱动",
-                                    "file": "install/maixii_m2dock/drive.md"
-                                },
-                                {
                                     "label": "烧录系统",
                                     "file": "install/maixii_m2dock/flash.md"
+                                },
+                                {
+                                    "label": "访问串口",
+                                    "file": "install/maixii_m2dock/drive.md"
                                 },
                                 {
                                     "label": "配置系统",

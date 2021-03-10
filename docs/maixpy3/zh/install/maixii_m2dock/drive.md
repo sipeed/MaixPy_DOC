@@ -1,12 +1,14 @@
 ---
-title: 安装 USB 驱动
+title: 安装 USB 串口驱动
 keywords: MaixII, MaixPy3, Python, Python3, M2dock
-desc: maixpy doc: 安装 USB 驱动
+desc: maixpy doc: 安装 USB 串口驱动
 ---
+
+> 请将 USB 口插入到 USB UART 口从而获得串口。
 
 ## Linux & macOS
 
-Linux & macOS 系统自带驱动不需要装，使用 `ls /dev/ttyUSB*` 即可看到设备号。
+Linux & macOS 系统自带驱动不需要安装，使用 `ls /dev/ttyUSB*` 即可看到设备号。
 
 ```bash
 juwan@juwan-N85-N870HL:~$ ls /dev/ttyUSB*
@@ -16,13 +18,13 @@ juwan@juwan-N85-N870HL:~$
 
 ## Windows
 
-> 不想手动安装就去下载安装[驱动精灵](http://www.drivergenius.com/)自动完成驱动安装。
+> 不想手动安装就去下载安装[驱动精灵](http://www.drivergenius.com/)自动完成串口驱动安装。
 
-开发板使用 `GD32` 模拟 `FT2232`，`Windows` 用户需要安装 `FT2232` 的驱动。
+开发板使用 `GD32` 模拟 `FT2232`，`Windows` 用户需要安装 `FT2232` 的串口驱动。
 
-- USB 驱动: **FT2232** ->[[下载链接点这里](https://dl.sipeed.com/MAIX/tools/ftdi_vcp_driver)](https://dl.sipeed.com/MAIX/tools/ftdi_vcp_driver)
+- USB 串口驱动: **FT2232** ->[[下载链接点这里](https://dl.sipeed.com/MAIX/tools/ftdi_vcp_driver)](https://dl.sipeed.com/MAIX/tools/ftdi_vcp_driver)
 
-我们在拿到 MaixPy 开发板并连接到电脑的时候, 可以打开设备管理器查看串口驱动是否已经安装,打开设备管理器的方法有:
+在拿到开发板并连接到电脑的时候, 可以打开设备管理器查看串口驱动是否已经安装,打开设备管理器的方法有:
 - 此电脑(右键) -> 属性 -> 设备管理器
 - 开始菜单(右键) -> 设备管理器
 - 控制面板 -> (搜索)设备管理器
