@@ -12,6 +12,13 @@ desc: maixpy doc: MaixPy 相关开源项目精选
 * 与 MaixPy 相关
 * 项目有完整清晰的`README`，包括简介，效果，代码，使用方法等
 
+## 应用
+
+| 项目主页 | 简介 | 作者 |
+| --  |  --  | --  |
+| [LZBUAV/K210_Python](https://github.com/LZBUAV/K210_Python) | Kendryte K210 AI芯片应用程序的集合，其中包括面部检测，颜色检测，目标检测和分类，QR码和Apriltag码检测以及与ArduPilot飞行软件的通信 | [LZBUAV](https://github.com/LZBUAV) |
+| [BBS](https://cn.bbs.sipeed.com/d/490-maixpy-maixpy-explorer-aiot) | MaixPy + 腾讯云Explorer+小程序 快速打造一个 AIOT应用 | [neucrack](https://github.com/neutree) |
+
 
 ## 模型训练
 
