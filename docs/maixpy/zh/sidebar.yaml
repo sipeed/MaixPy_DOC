@@ -34,7 +34,7 @@ items:
             -   label: Maix Nano
                 file: develop_kit_board/maix_nano.md
             -   label: Grove AI HAT
-                file: develop_kitboard/grove_ai_hat.md
+                file: develop_kit_board/grove_ai_hat.md
         -   label: 外设模组（配件）
             items:
             -   label: SP-MOD
