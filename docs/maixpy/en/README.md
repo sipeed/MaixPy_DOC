@@ -83,6 +83,8 @@ print(devices) # print device
 
 Similarly, we need to implement a **breathing light**, just the following code:
 
+> `board_info` is related to the board, and different board configurations are different. [Manual configuration](api_reference/builtin_py/board_info.md) is required before use.
+
 ```python
 from machine import Timer,PWM
 from board import board_info

@@ -258,6 +258,8 @@ if __name__ == "__main__":
 
 Use the AT firmware of ESP8266/85 to connect to the Internet and upload the library [network_espat.py](https://github.com/sipeed/MaixPy_scripts/blob/master/network/network_espat.py)
 
+> `board_info` is related to the board, and different board configurations are different. [Manual configuration](../../api_reference/builtin_py/board_info.md) is required before use.
+
 ```python
 # This file is part of MaixPY
 # Copyright (c) sipeed.com

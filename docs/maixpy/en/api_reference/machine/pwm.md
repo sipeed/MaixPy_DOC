@@ -146,6 +146,8 @@ no
 
 ### Routine 1 (breathing light)
 
+> `board_info` is related to the board, and different board configurations are different. [Manual configuration](../builtin_py/board_info.md) is required before use.
+
 ```python
 from machine import Timer,PWM
 import time
@@ -171,6 +173,8 @@ while True:
 ```
 
 ### Routine 2
+
+> `board_info` is related to the board, and different board configurations are different. [Manual configuration](../builtin_py/board_info.md) is required before use.
 
 ```python
 import time

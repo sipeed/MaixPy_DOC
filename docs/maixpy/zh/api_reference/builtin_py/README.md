@@ -11,6 +11,8 @@ desc: maixpy doc: 内置类（builtin_py）
 * [board_info](board_info.md)
 * [pye](pye.md)
 
+> `board_info` 与板卡相关，不同板卡配置不同，使用前需要[手动配置](../builtin_py/board_info.md)。
+
 ```python
 from board import board_info
 from fpioa_manager import fm

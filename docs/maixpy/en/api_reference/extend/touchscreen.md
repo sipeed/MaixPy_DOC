@@ -73,6 +73,7 @@ Black background and white pen drawing board, use the `boot` button to clear the
 
 > Cancel the comment of `ts.calibrate()` to start the touch screen calibration program
 
+> `board_info` is related to the board, and different board configurations are different. [Manual configuration](../builtin_py/board_info.md) is required before use.
 
 ```python
 import touchscreen as ts

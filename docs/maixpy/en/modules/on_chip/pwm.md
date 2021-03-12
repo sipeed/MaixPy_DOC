@@ -32,6 +32,8 @@ ch.duty(duty)
 
 Control the brightness of LED_G
 
+> `board_info` is related to the board, and different board configurations are different. [Manual configuration](../../api_reference/builtin_py/board_info.md) is required before use.
+
 ```python
 from machine import Timer,PWM
 import time

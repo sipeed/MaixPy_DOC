@@ -211,6 +211,8 @@ GPIO.mode(MODE)
 
 ### DEMO1: 点亮 LED
 
+> `board_info` 与板卡相关，不同板卡配置不同，使用前需要[手动配置](../builtin_py/board_info.md)。
+
 ```python
 import utime
 from Maix import GPIO
@@ -225,6 +227,8 @@ fm.unregister(board_info.LED_R)
 ```
 
 ### DEMO2: 按键按下点亮 LED
+
+> `board_info` 与板卡相关，不同板卡配置不同，使用前需要[手动配置](../builtin_py/board_info.md)。
 
 ```python
 import utime
@@ -255,6 +259,8 @@ fm.unregister(board_info.BOOT_KEY)
 ```
 
 ### DEMO3: 在 3 秒内等待按键触发中断
+
+> `board_info` 与板卡相关，不同板卡配置不同，使用前需要[手动配置](../builtin_py/board_info.md)。
 
 ```python
 import utime

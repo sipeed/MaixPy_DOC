@@ -32,6 +32,8 @@ ch.duty(duty)
 
 控制 LED_G 灯亮度
 
+> `board_info` 与板卡相关，不同板卡配置不同，使用前需要[手动配置](../../api_reference/builtin_py/board_info.md)。
+
 ```python
 from machine import Timer,PWM
 import time

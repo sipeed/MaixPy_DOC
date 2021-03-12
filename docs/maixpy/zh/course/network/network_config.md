@@ -258,6 +258,8 @@ if __name__ == "__main__":
 
 使用 ESP8266/85 的 AT 固件联网，上传该类库 [network_espat.py](https://github.com/sipeed/MaixPy_scripts/blob/master/network/network_espat.py) 即可
 
+> `board_info` 与板卡相关，不同板卡配置不同，使用前需要[手动配置](../../api_reference/builtin_py/board_info.md)。
+
 ```python
 # This file is part of MaixPY
 # Copyright (c) sipeed.com
