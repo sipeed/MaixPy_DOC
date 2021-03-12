@@ -31,6 +31,8 @@ gpio.value()
 
 ## 示例
 
+> `board_info` 与板卡相关，不同板卡配置不同，使用前需要[手动配置](../../api_reference/builtin_py/board_info.md)。
+
 点亮 LED
 
 ```python

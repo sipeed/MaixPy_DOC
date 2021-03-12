@@ -81,6 +81,8 @@ print(devices)                                   # 打印设备
 
 同样，我们需要实现一个**呼吸灯**，只需要如下代码：
 
+> `board_info` 与板卡相关，不同板卡配置不同，使用前需要[手动配置](api_reference/builtin_py/board_info.md)。
+
 ```python
 from machine import Timer,PWM
 from board import board_info

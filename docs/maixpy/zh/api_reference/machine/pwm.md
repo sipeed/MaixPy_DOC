@@ -146,6 +146,8 @@ del pwm
 
 ### 例程 1 （呼吸灯）
 
+> `board_info` 与板卡相关，不同板卡配置不同，使用前需要[手动配置](../builtin_py/board_info.md)。
+
 ```python
 from machine import Timer,PWM
 import time
@@ -171,6 +173,8 @@ while True:
 ```
 
 ### 例程 2
+
+> `board_info` 与板卡相关，不同板卡配置不同，使用前需要[手动配置](../builtin_py/board_info.md)。
 
 ```python
 import time

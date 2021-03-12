@@ -73,6 +73,7 @@ desc: maixpy doc: touchscreen（触摸屏幕）
 
 > 取消 `ts.calibrate()` 的注释可以在开始运行触摸屏校准程序
 
+> `board_info` 与板卡相关，不同板卡配置不同，使用前需要[手动配置](../builtin_py/board_info.md)。
 
 ```python
 import touchscreen as ts

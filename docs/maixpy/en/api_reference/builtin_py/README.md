@@ -11,6 +11,8 @@ The `builtin_py` library (builtin_py) is a user-level interface that encapsulate
 * [board_info](board_info.md)
 * [pye](pye.md)
 
+> `board_info` is related to the board, and different board configurations are different. [Manual configuration](board_info.md) is required before use.
+
 ```python
 from board import board_info
 from fpioa_manager import fm

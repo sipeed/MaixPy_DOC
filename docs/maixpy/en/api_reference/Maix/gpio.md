@@ -211,6 +211,8 @@ no
 
 ### DEMO1: Turn on the LED
 
+> `board_info` is related to the board, and different board configurations are different. [Manual configuration](../builtin_py/board_info.md) is required before use.
+
 ```python
 import utime
 from Maix import GPIO
@@ -225,6 +227,8 @@ fm.unregister(board_info.LED_R)
 ```
 
 ### DEMO2: Press the button to light up the LED
+
+> `board_info` is related to the board, and different board configurations are different. [Manual configuration](../builtin_py/board_info.md) is required before use.
 
 ```python
 import utime
@@ -255,6 +259,8 @@ fm.unregister(board_info.BOOT_KEY)
 ```
 
 ### DEMO3: Wait for the key to trigger an interrupt within 3 seconds
+
+> `board_info` is related to the board, and different board configurations are different. [Manual configuration](../builtin_py/board_info.md) is required before use.
 
 ```python
 import utime
