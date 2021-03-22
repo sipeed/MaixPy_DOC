@@ -32,9 +32,9 @@ The development version opens four [Grove](https://cn.maixpy.sipeed.com/eh/modul
 
 | Sensor  | Function                 | I2C address (7-bit address) | SCL  | SDA  | Sample code            |
 | ------- | ------------------------ | --------------------------- | ---- | ---- | ---------------------- |
-| ADS1115 | ADC                      | 0x48                        | IO23 | IO24 | [script](./ads1115.py) |
-| ADXL345 | Three-axis accelerometer | 0x53                        | IO23 | IO24 | [script](./adxl345.py) |
+| ADS1115 | ADC                      | 0x48                        | IO23 | IO24 | [script](https://github.com/sipeed/MaixPy_scripts/tree/master/modules/others/ads1115) |
+| ADXL345 | Three-axis accelerometer | 0x53                        | IO23 | IO24 | [script](https://github.com/sipeed/MaixPy_scripts/tree/master/modules/others/adxl345) |
 
 ## Download
 
-[Schematic](./Grove_AI_HAT_for_Edge_Computing_v1.0_SCH_190514.pdf)
+[Schematic](http://dl.sipeed.com/fileList/MAIX/HDK/Sipeed-Grove_AI_HAT/Grove_AI_HAT_for_Edge_Computing_v1.0_SCH_190514.pdf)
