@@ -65,6 +65,11 @@ Mic-Array 麦克风阵列，截止 MaixPy 版本 `MicroPython v0.5.0-218-g8053a7
 | LED_DAT | 24 | SK9822 DAT |
 | LED_CLK | 25 | SK9822 CLK |
 
+### 资料
+
+1. 原理图： http://dl.sipeed.com/shareURL/MAIX/HDK/Sipeed-R6+1_MicArray/Sipeed-R6+1_MicArray_11.16
+2. 规格书： http://dl.sipeed.com/fileList/MAIX/HDK/Spmod_EN/SP-MicArray%20Daatasheet%20V1.0.pdf
+
 ### 例程
 
 声源定位

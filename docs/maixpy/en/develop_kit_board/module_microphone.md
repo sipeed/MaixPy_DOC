@@ -65,6 +65,11 @@ Mic-Array microphone array, as of MaixPy version `MicroPython v0.5.0-218-g8053a7
 | LED_DAT | 24 | SK9822 DAT |
 | LED_CLK | 25 | SK9822 CLK |
 
+### Information
+
+1. Schematic diagram: http://dl.sipeed.com/shareURL/MAIX/HDK/Sipeed-R6+1_MicArray/Sipeed-R6+1_MicArray_11.16
+2. Specification: http://dl.sipeed.com/fileList/MAIX/HDK/Spmod_EN/SP-MicArray%20Daatasheet%20V1.0.pdf
+
 ### Routine
 
 Sound source localization
