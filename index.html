@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html  class="language_zh">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="maixpy, maixpy3, k210, AIOT, 边缘计算, AI, 单片机, 人脸识别, v831, v833, 嵌入式芯片">
+    <meta name="description" content="maixpy doc: MaixPy, 易用的 AI 边缘计算 SDK, 让 AIOT 开发更简单">
+    <meta name="generator" content="teedoc">
+    <meta name="markdown-generator" content="teedoc-plugin-markdown-parser">
+        <link rel="stylesheet" href="/static/css/theme_default/prism.min.css" type="text/css"/>
+        <link rel="stylesheet" href="/static/css/theme_default/dark.css" type="text/css"/>
+        <link rel="stylesheet" href="/static/css/theme_default/light.css" type="text/css"/>
+        <link rel="stylesheet" href="/static/css/custom.css" type="text/css"/>
+        <script src="/static/js/theme_default/jquery.min.js"></script>
+        <script src="/static/js/theme_default/pre_main.js"></script>
+        <link rel="stylesheet" href="/static/css/search/style.css" type="text/css"/>
+        <script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?90c693aa2475224142e727c14a50bb49";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+    <title>MaixPy - 易用的 AI 边缘计算 SDK - MaixPy</title>
+</head>
+<body>
+    
+            <div id="navbar">
+                <div id="navbar_menu">
+                    <a class="site_title" href="/"><img class="site_logo" src="/static/image/logo.png" alt="MaixPy logo"><h2>MaixPy</h2></a>
+                    <a id="navbar_menu_btn"></a>
+                </div>
+                <div id="navbar_items">
+                    <div>
+                        <ul id="nav_left">
+<li class="active"><a  href="/">首页</a></li>
+<li class=""><a target="_blank" href="https://www.sipeed.com">矽速官网</a></li>
+<li class="sub_items "><a>开源软件</a><ul><li class=""><a  href="/maixpy/zh/">Maixpy</a></li>
+<li class=""><a  href="/maixpy3/zh/">Maixpy3</a></li>
+<li class=""><a  href="https://wiki.sipeed.com/licheeos/zh/">Lichee OS</a></li>
+</ul>
+</li>
+<li class="sub_items "><a>开源硬件</a><ul><li class=""><a  href="https://maixpy.sipeed.com/maixpy/zh/develop_kit_board/get_hardware.html">Maix</a></li>
+<li class=""><a  href="https://maixpy.sipeed.com/maixpy3/zh/install/maixii_m2dock/index.html">Maix II</a></li>
+<li class=""><a  href="https://wiki.sipeed.com/hardware/lichee/zh/">Lichee Pi</a></li>
+<li class=""><a  href="https://wiki.sipeed.com/hardware/tang/zh/">Tang</a></li>
+<li class=""><a  href="https://wiki.sipeed.com/hardware/logan/zh/">Longan</a></li>
+</ul>
+</li>
+<li class="sub_items "><a>云平台</a><ul><li class=""><a target="_blank" href="https://www.maixhub.com">Maixhub 在线模型训练平台</a></li>
+<li class=""><a target="_blank" href="https://www.maixhub.com/compile">在线固件编译平台</a></li>
+</ul>
+</li>
+<li class=""><a  href="https://wiki.sipeed.com/community.html">社区</a></li>
+<li class=""><a  href="https://wiki.sipeed.com/store.html">商城</a></li>
+</ul>
+
+                    </div>
+                    <div>
+                        <ul id="nav_right">
+<li class="sub_items "><a  href="">Language: 中文</a><ul><li class="active"><a  href="/">中文</a></li>
+<li class=""><a  href="/en/">English</a></li>
+</ul></li>
+</ul>
+
+                        <ul class="nav_plugins"><li><a id="themes" class="light"></a></li></ul><ul class="nav_plugins"><li><a id="search"><span class="icon"></span><span class="placeholder">搜索</span>
+                            <div id="search_hints">
+                                <span id="search_input_hint">输入关键词，多关键词空格隔开</span>
+                                <span id="search_loading_hint">正在加载，请稍候。。。</span>
+                                <span id="search_download_err_hint">下载文件失败，请刷新重试或检查网络</span>
+                                <span id="search_other_docs_result_hint">来自其它文档的结果</span>
+                                <span id="search_curr_doc_result_hint">当前文档搜索结果</span>
+                            </div></a></li></ul>
+                    </div>
+                </div>
+            </div>
+    
+                <div id="page_wrapper">
+                    <div id="page_content"><div><div id="home_page">
+    <div>
+        <h1><span style="color: #ff6b63;">Maix</span><span style="color: #5097ff;">Py</span></h1>
+        <h3>易用的 AI 边缘计算 SDK</h3>
+    </div>
+    <div id="big_btn_wrapper">
+        <div class="big_btn">
+            <a href="/maixpy/zh/">MaixPy for Micropython</a>
+        </div>
+        <div class="big_btn">
+            <a href="/maixpy3/zh/">MaixPy for Python3</a>
+        </div>
+    </div>
+
+</div>
+</div></div>
+                    <a id="to_top" href="#"></a>
+                    <div id="page_footer">
+            <div id="footer">
+                <div id="footer_top">
+                    <ul>
+<li><a>链接</a><ul><li><a target="_blank" href="https://www.sipeed.com">Sipeed</a></li>
+<li><a target="_blank" href="https://bbs.sipeed.com/">BBS 论坛</a></li>
+<li><a target="_blank" href="https://maixhub.sipeed.com/">Maixhub</a></li>
+<li><a target="_blank" href="https://sipeed.taobao.com/">Sipeed 淘宝</a></li>
+<li><a target="_blank" href="https://github.com/neutree/teedoc">使用 teedoc 构建</a></li>
+</ul>
+</li>
+<li><a>网站统计</a><ul><li><a target="_blank" href="https://tongji.baidu.com/web/welcome/ico?s=90c693aa2475224142e727c14a50bb49">百度统计</a></li>
+<li><a  href="/sitemap.xml">网站地图</a></li>
+</ul>
+</li>
+<li><a>源码</a><ul><li><a target="_blank" href="https://github.com/sipeed/MaixPy3">MaixPy3</a></li>
+<li><a target="_blank" href="https://github.com/sipeed/MaixPy">MaixPy</a></li>
+<li><a target="_blank" href="https://github.com/sipeed/MaixPy_DOC">文档源文件</a></li>
+<li><a target="_blank" href="https://github.com/sipeed">其它开源项目源码</a></li>
+</ul>
+</li>
+<li><a>关注我们</a><ul><li><a target="_blank" href="https://github.com/sipeed">github</a></li>
+<li><a target="_blank" href="https://twitter.com/SipeedIO">twitter</a></li>
+<li><a target="_blank" href="https://sipeed.taobao.com/">淘宝</a></li>
+<li><a  href="/social_group.html">更多</a></li>
+</ul>
+</li>
+<li><a>联系我们</a><ul><li><a>电话: +86 0755-27808509</a>
+</li>
+<li><a>商业支持: support@sipeed.com</a>
+</li>
+<li><a>地址: 深圳市宝安区新湖路华美居B区1号楼713-715</a>
+</li>
+<li><a  href="/join_us.html">加入我们</a></li>
+</ul>
+</li>
+</ul>
+
+                </div>
+                <div id="footer_bottom">
+                    <ul>
+<li><a target="_blank" href="https://www.sipeed.com">©2018-2021 深圳矽速科技有限公司</a></li>
+<li><a target="_blank" href="https://beian.miit.gov.cn/#/Integrated/index">粤ICP备19015433号-1</a></li>
+</ul>
+
+                </div>
+            </div></div>
+                </div>
+</body>
+<script src="/static/js/theme_default/tocbot.min.js"></script>
+<script src="/static/js/theme_default/main.js"></script>
+<script src="/static/css/theme_default/prism.min.js"></script>
+<script src="/static/js/custom.js"></script>
+<script src="/static/js/search/search_main.js"></script>
+</html>

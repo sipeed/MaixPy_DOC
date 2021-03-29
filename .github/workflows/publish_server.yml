@@ -1,0 +1,33 @@
+name: push to server
+
+on:
+  push:
+    paths-ignore:
+      .git
+    branches: [ gh-pages ]
+
+  pull_request:
+    paths-ignore:
+      .git
+    branches: [ gh-pages ]
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+      - name: Deploy to Server
+        uses: myuanz/rsync-deploy@master
+        env:
+          DEPLOY_KEY: ${{ secrets.PRIVATE_KEY }}   # 引用配置，SSH私钥
+          ARGS: "-avz -e -c -r --exclude='.git'"
+          SERVER_PORT: 22
+          FOLDER: ./  # 要推送的文件夹，路径相对于代码仓库的根目录
+          SERVER_IP: '111.231.79.44'
+          USERNAME: 'root'
+          SERVER_DESTINATION: /home/www/cn_maixpy    # 部署到目标文件夹
+
